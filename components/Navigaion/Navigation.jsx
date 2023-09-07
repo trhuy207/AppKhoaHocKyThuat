@@ -13,10 +13,9 @@ import MainHome from '../MainHome/MainHome';
 import Document from '../Document/Document';
 import Info from '../Info/Info';
 
-import Chemistry from '../HomeStack/Chemistry/Chemistry';
-import Physics from '../HomeStack/Physics/Physics';
-import Math from '../HomeStack/Math/Math';
-import English from '../HomeStack/English/English';
+import Chemistry from '../Chemistry/Chemistry';
+import Physics from '../Physics/Physics';
+import English from '../English/English';
 
 // Stack
 const HomeStack = createNativeStackNavigator();
