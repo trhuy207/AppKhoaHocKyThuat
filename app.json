@@ -1,4 +1,13 @@
 {
-  "name": "AppKhoaHocKyThuat",
-  "displayName": "AppKhoaHocKyThuat"
+  "expo": {
+    "scheme": "acme",
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "name": "AppKhoaHocKyThuat",
+    "slug": "AppKhoaHocKyThuat"
+  }
 }
