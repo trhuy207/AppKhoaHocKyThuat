@@ -3,23 +3,22 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'center',
+        // justifyContent: 'center',
         alignItems: 'center',
     },
 
     card: {
-        backgroundColor: 'white',
-        borderRadius: 10,
-        width: "90%",
-        marginBottom: 10,
-        flexDirection: 'column',
-        justifyContent: 'space-between',
+        flexDirection: 'row',
+        justifyContent: 'space-evenly',
+        flexWrap: 'wrap'
     },
 
     ChemistryBtn: {
+        width: 180,
+        height: "auto",
         borderRadius: 10,
-        marginTop: 10,
         marginBottom: 10,
+        marginTop: 10,
         backgroundColor: '#049dff',
         alignItems: 'center'
     },
@@ -31,15 +30,17 @@ const styles = StyleSheet.create({
 
     ChemistryBtnText: {
         padding: 10,
-        fontSize: 20,
+        fontSize: 14,
         fontWeight: 'bold',
         color: '#fff'
     },
 
     PhysicsBtn: {   
+        width: 180,
+        height: "auto",
         borderRadius: 10,
-        marginTop: 10,
         marginBottom: 10,
+        marginTop: 10,
         backgroundColor: '#049dff',
         alignItems: 'center'
     },
@@ -51,14 +52,36 @@ const styles = StyleSheet.create({
 
     PhysicsBtnText: {
         padding: 10,
-        fontSize: 20,
+        fontSize: 14,
+        fontWeight: 'bold',
+        color: '#fff'
+    },
+
+    MathBtn: {
+        width: 180,
+        height: "auto",
+        borderRadius: 10,
+        marginBottom: 10,
+        backgroundColor: '#049dff',
+        alignItems: 'center'
+    },
+
+    MathBtnImage: {
+        width: 80,
+        height: 80,
+    },
+
+    MathBtnText: {
+        padding: 10,
+        fontSize: 14,
         fontWeight: 'bold',
         color: '#fff'
     },
 
     EnglishBtn: {
+        width: 180,
+        height: "auto",
         borderRadius: 10,
-        marginTop: 10,
         marginBottom: 10,
         backgroundColor: '#049dff',
         alignItems: 'center'
@@ -71,7 +94,7 @@ const styles = StyleSheet.create({
 
     EnglishBtnText: {
         padding: 10,
-        fontSize: 20,
+        fontSize: 14,
         fontWeight: 'bold',
         color: '#fff'
     },

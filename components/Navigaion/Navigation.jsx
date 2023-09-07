@@ -16,6 +16,7 @@ import Info from '../Info/Info';
 import Chemistry from '../Chemistry/Chemistry';
 import Physics from '../Physics/Physics';
 import English from '../English/English';
+import Math from '../Math/Math';
 
 // Stack
 const HomeStack = createNativeStackNavigator();
@@ -62,7 +63,7 @@ const TabGroup = () => {
                 component={MainHome}
                 options={{
                     title: 'AH STUDY',
-                    tabBarLabel: 'Trang Chủ',
+                    tabBarLabel: 'Trang Chủ'
                 }}
             />
 
@@ -71,6 +72,7 @@ const TabGroup = () => {
                 component={Document}
                 options={{
                     title: 'Tài Liệu',
+                    headerShown: false
                 }}
             />
 
@@ -79,6 +81,7 @@ const TabGroup = () => {
                 component={Info}
                 options={{
                     title: 'Thông Tin',
+                    headerShown: false
                 }}
             />
         </Tab.Navigator>
@@ -95,7 +98,7 @@ const DrawerGroup = () => {
                 name='HomeStackGroup'
                 component={HomeStackGroup}
                 options={{
-                    title: 'AH STUDY'
+                    title: 'AH STUDY',
                 }}
             />
 
@@ -114,6 +117,15 @@ const DrawerGroup = () => {
                 options={{
                     headerShown: true,
                     title: 'Công Thức Vật Lý'
+                }}
+            />
+
+            <Drawer.Screen 
+                name='Math'
+                component={Math}
+                options={{
+                    headerShown: true,
+                    title: 'Công Thức Toán'
                 }}
             />
 

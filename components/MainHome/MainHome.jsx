@@ -22,7 +22,6 @@ const MainHome = () => {
                 </TouchableOpacity>
 
                 <TouchableOpacity
-                
                     style={styles.PhysicsBtn}
                     onPress={() => navigate('Physics')}
                 >
@@ -31,6 +30,17 @@ const MainHome = () => {
                         source={require('../../assets/img/physics.png')}
                     />
                     <Text style={styles.PhysicsBtnText}>Công Thức Vật Lý</Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity
+                    style={styles.MathBtn}
+                    onPress={() => navigate('Math')}
+                >
+                    <Image 
+                        style={styles.MathBtnImage}
+                        source={require('../../assets/img/math.png')}
+                    />
+                    <Text style={styles.MathBtnText}>Công Thức Toán</Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity
