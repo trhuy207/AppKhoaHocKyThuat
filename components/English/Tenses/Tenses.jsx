@@ -7,7 +7,7 @@ import { AntDesign } from '@expo/vector-icons';
 
 import styles from './Tenses.style'
 
-const Tenses = () => {
+const Tenses = ({ navigation }) => {
     const { navigate } = useNavigation()
     return (
         <SafeAreaView style={styles.container}>
@@ -25,70 +25,70 @@ const Tenses = () => {
                     <View style={styles.card}>
                         <TouchableOpacity
                             style={styles.btn}
-                            onPress={() => {}}
+                            onPress={() => navigation.navigate('FirstTense')}
                         >
                             <Text style={styles.btnText}>Hiện tại đơn {'\n'}(Simple Present Tense)</Text>
                         </TouchableOpacity>
 
                         <TouchableOpacity
                             style={styles.btn}
-                            onPress={() => {}}
+                            onPress={() => navigation.navigate('SecondTense')}
                         >
                             <Text style={styles.btnText}>Hiện tại tiếp diễn {'\n'}(Present Continuous)</Text>
                         </TouchableOpacity>
 
                         <TouchableOpacity
                             style={styles.btn}
-                            onPress={() => {}}
+                            onPress={() => navigation.navigate('ThirdTense')}
                         >
                             <Text style={styles.btnText}>Hiện tại hoàn thành {'\n'}(Present Perfect Tense)</Text>
                         </TouchableOpacity>
 
                         <TouchableOpacity
                             style={styles.btn}
-                            onPress={() => {}}
+                            onPress={() => navigation.navigate('FourthTense')}
                         >
                             <Text style={styles.btnText}>Quá khứ đơn {'\n'}(Simple Past Tense)</Text>
                         </TouchableOpacity>
 
                         <TouchableOpacity
                             style={styles.btn}
-                            onPress={() => {}}
+                            onPress={() => navigation.navigate('FifthTense')}
                         >
                             <Text style={styles.btnText}>Quá khứ tiếp diễn {'\n'}(Past Continuous Tense)</Text>
                         </TouchableOpacity>
 
                         <TouchableOpacity
                             style={styles.btn}
-                            onPress={() => {}}
+                            onPress={() => navigation.navigate('SixthTense')}
                         >
                             <Text style={styles.btnText}>Quá khứ hoàn thành {'\n'}(Past Perfect Tense)</Text>
                         </TouchableOpacity>
 
                         <TouchableOpacity
                             style={styles.btn}
-                            onPress={() => {}}
+                            onPress={() => navigation.navigate('SeventhTense')}
                         >
                             <Text style={styles.btnText}>Tương Lai Đơn {'\n'}(Simple Future Tense)</Text>
                         </TouchableOpacity>
 
                         <TouchableOpacity
                             style={styles.btn}
-                            onPress={() => {}}
+                            onPress={() => navigation.navigate('EighthTense')}
                         >
                             <Text style={styles.btnText}>Tương lai gần {'\n'}(Near Future)</Text>
                         </TouchableOpacity>
 
                         <TouchableOpacity
                             style={styles.btn}
-                            onPress={() => {}}
+                            onPress={() => navigation.navigate('NinethTense')}
                         >
                             <Text style={styles.btnText}>Tương lai tiếp diễn {'\n'}(Future Continuous)</Text>
                         </TouchableOpacity>
 
                         <TouchableOpacity
                             style={styles.btn}
-                            onPress={() => {}}
+                            onPress={() => navigation.navigate('TenthTense')}
                         >
                             <Text style={styles.btnText}>Tương lai hoàn thành {'\n'}(Future Perfect Tense)</Text>
                         </TouchableOpacity>

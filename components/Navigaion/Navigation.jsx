@@ -11,18 +11,33 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { Entypo } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
 
+// Tab
 import MainHome from '../MainHome/MainHome';
 import Document from '../Document/Document';
 import Info from '../Info/Info';
 
+// Subject
 import Chemistry from '../Chemistry/Chemistry';
 import Physics from '../Physics/Physics';
 import English from '../English/English';
 import Math from '../Math/Math';
 
+// English Child
 import Tenses from '../English/Tenses/Tenses'
 import Grammar from '../English/Grammar/Grammar'
 import IrregularVerbs from '../English/IrregularVerbs/IrregularVerbs'
+
+// English Tenses Child
+import FirstTense from '../English/Tenses/FirstTense/FirstTense'
+import SecondTense from '../English/Tenses/SecondTense/SecondTense'
+import ThirdTense from '../English/Tenses/ThirdTense/ThirdTense'
+import FourthTense from '../English/Tenses/FourthTense/FourthTense'
+import FifthTense from '../English/Tenses/FifthTense/FifthTense'
+import SixthTense from '../English/Tenses/SixthTense/SixthTense'
+import SeventhTense from '../English/Tenses/SeventhTense/SeventhTense'
+import EighthTense from '../English/Tenses/EighthTense/EightTense'
+import NinethTense from '../English/Tenses/NinethTense/NinethTense'
+import TenthTense from '../English/Tenses/TenthTense/TenthTense'
 
 // Stack
 const Stack = createNativeStackNavigator();
@@ -65,6 +80,86 @@ const StackGroup = () => {
             <Stack.Screen
                 name='IrregularVerbs'
                 component={IrregularVerbs}
+                options={{
+                    headerShown: false
+                }}
+            />
+
+            <Stack.Screen
+                name='FirstTense'
+                component={FirstTense}
+                options={{
+                    headerShown: false
+                }}
+            />
+
+            <Stack.Screen
+                name='SecondTense'
+                component={SecondTense}
+                options={{
+                    headerShown: false
+                }}
+            />
+
+            <Stack.Screen
+                name='ThirdTense'
+                component={ThirdTense}
+                options={{
+                    headerShown: false
+                }}
+            />
+
+            <Stack.Screen
+                name='FourthTense'
+                component={FourthTense}
+                options={{
+                    headerShown: false
+                }}
+            />
+
+            <Stack.Screen
+                name='FifthTense'
+                component={FifthTense}
+                options={{
+                    headerShown: false
+                }}
+            />
+
+            <Stack.Screen
+                name='SixthTense'
+                component={SixthTense}
+                options={{
+                    headerShown: false
+                }}
+            />
+
+            <Stack.Screen
+                name='SeventhTense'
+                component={SeventhTense}
+                options={{
+                    headerShown: false
+                }}
+            />
+
+            <Stack.Screen
+                name='EighthTense'
+                component={EighthTense}
+                options={{
+                    headerShown: false
+                }}
+            />
+            
+            <Stack.Screen
+                name='NinethTense'
+                component={NinethTense}
+                options={{
+                    headerShown: false
+                }}
+            />
+
+            <Stack.Screen
+                name='TenthTense'
+                component={TenthTense}
                 options={{
                     headerShown: false
                 }}
