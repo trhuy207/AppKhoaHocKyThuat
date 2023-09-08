@@ -5,7 +5,7 @@ import styles from './Info.style'
 
 const Info = () => {
     return (
-        <View>
+        <View style={styles.container}>
             <Text>Info</Text>
         </View>
     )

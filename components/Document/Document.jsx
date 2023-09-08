@@ -5,7 +5,7 @@ import styles from './Document.style'
 
 const Document = () => {
     return (
-        <View>
+        <View style={styles.container}>
             <Text>Document</Text>
         </View>
     )

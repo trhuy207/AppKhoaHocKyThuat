@@ -5,7 +5,7 @@ import styles from './Physics.style'
 
 const Physics = () => {
     return (
-        <View>
+        <View style={styles.container}>
             <Text>Physics</Text>
         </View>
     )

@@ -5,7 +5,7 @@ import styles from './Math.style'
 
 const Math = () => {
     return (
-        <View>
+        <View style={styles.container}>
             <Text>Math</Text>
         </View>
     )

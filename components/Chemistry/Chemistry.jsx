@@ -5,7 +5,7 @@ import styles from './Chemistry.style'
 
 const Chemistry = () => {
     return (
-        <View>
+        <View style={styles.container}>
             <Text>Chemistry</Text>
         </View>
     )

@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import { StatusBar } from 'react-native';
+
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -63,7 +65,7 @@ const TabGroup = () => {
                 component={MainHome}
                 options={{
                     title: 'AH STUDY',
-                    tabBarLabel: 'Trang Chủ'
+                    tabBarLabel: 'Trang Chủ',
                 }}
             />
 
@@ -72,7 +74,7 @@ const TabGroup = () => {
                 component={Document}
                 options={{
                     title: 'Tài Liệu',
-                    headerShown: false
+                    headerShown: true
                 }}
             />
 
@@ -81,7 +83,7 @@ const TabGroup = () => {
                 component={Info}
                 options={{
                     title: 'Thông Tin',
-                    headerShown: false
+                    headerShown: true
                 }}
             />
         </Tab.Navigator>
@@ -134,7 +136,7 @@ const DrawerGroup = () => {
                 component={English}
                 options={{
                     headerShown: true,
-                    title: 'Công Thức Tiếng Anh'
+                    title: 'Công Thức Tiếng Anh',
                 }}
             />
         </Drawer.Navigator>
@@ -145,6 +147,7 @@ export default class Navigation extends Component {
     render() {
         return (
             <NavigationContainer independent={true}>
+                <StatusBar barStyle={'dark-content'} translucent={true} />
                 <DrawerGroup />
             </NavigationContainer>
         )
