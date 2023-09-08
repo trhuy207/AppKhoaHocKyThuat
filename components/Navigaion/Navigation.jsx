@@ -20,20 +20,56 @@ import Physics from '../Physics/Physics';
 import English from '../English/English';
 import Math from '../Math/Math';
 
-// Stack
-const HomeStack = createNativeStackNavigator();
+import Tenses from '../English/Tenses/Tenses'
+import Grammar from '../English/Grammar/Grammar'
+import IrregularVerbs from '../English/IrregularVerbs/IrregularVerbs'
 
-const HomeStackGroup = () => {
+// Stack
+const Stack = createNativeStackNavigator();
+
+const StackGroup = () => {
     return(
-        <HomeStack.Navigator>
-            <HomeStack.Screen
+        <Stack.Navigator>
+            {/* <Stack.Screen
                 name='TabGroup'
                 component={TabGroup}
                 options={{
                     headerShown: false
                 }}
+            /> */}
+
+            <Stack.Screen
+                name='DrawerGroup'
+                component={DrawerGroup}
+                options={{
+                    headerShown: false
+                }}
             />
-        </HomeStack.Navigator>
+
+            <Stack.Screen
+                name='Tenses'
+                component={Tenses}
+                options={{
+                    headerShown: false
+                }}
+            />
+
+            <Stack.Screen
+                name='Grammar'
+                component={Grammar}
+                options={{
+                    headerShown: false
+                }}
+            />
+
+            <Stack.Screen
+                name='IrregularVerbs'
+                component={IrregularVerbs}
+                options={{
+                    headerShown: false
+                }}
+            />
+        </Stack.Navigator>
     )
 }
 
@@ -97,8 +133,8 @@ const DrawerGroup = () => {
     return(
         <Drawer.Navigator screenOptions={{headerShown: false}}>
             <Drawer.Screen 
-                name='HomeStackGroup'
-                component={HomeStackGroup}
+                name='TabGroup'
+                component={TabGroup}
                 options={{
                     title: 'AH STUDY',
                 }}
@@ -148,7 +184,7 @@ export default class Navigation extends Component {
         return (
             <NavigationContainer independent={true}>
                 <StatusBar barStyle={'dark-content'} translucent={true} />
-                <DrawerGroup />
+                <StackGroup />
             </NavigationContainer>
         )
     }

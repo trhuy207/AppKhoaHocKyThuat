@@ -2,11 +2,36 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
     container: {
-        flex:1,
-        alignItems: 'center',
-        backgroundColor: '#2c3e56'
+        flex: 1,
     },
 
+    // Header
+    header: {
+        flexDirection:"row",
+        height: 50,
+        alignItems: 'center',
+        justifyContent: 'flex-start',
+        borderBottomWidth: 0.25,
+        backgroundColor: 'white',
+    },
+
+    icon : {
+        marginLeft: 20
+    },
+
+    headerTitle: {
+        fontWeight: 'bold',
+        fontSize: 18,
+        marginLeft: 30,
+    },
+
+    // Body
+    body: {
+        flex:1,
+        alignItems: 'center',
+    },
+
+    // Card 
     card: {
         width: '80%',
         backgroundColor: '#d3dde4',
@@ -16,7 +41,7 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
 
-    button: {
+    btn: {
         backgroundColor: '#5DA3FA',
         borderRadius: 20,
         marginTop: 10,
@@ -29,7 +54,8 @@ const styles = StyleSheet.create({
         padding: 10,
         fontSize: 18,
         fontWeight: 'bold',
-        color: 'white'
+        color: 'white',
+        textAlign: 'center'
     },
 })
 

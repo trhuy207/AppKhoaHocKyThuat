@@ -3,10 +3,31 @@ import React from 'react'
 
 import styles from './English.style'
 
-const English = () => {
+const English = ({ navigation }) => {
     return (
         <View style={styles.container}>
-            <Text>English</Text>
+            <View style={styles.card}>
+                <TouchableOpacity
+                    style={styles.button}
+                    onPress={() => navigation.navigate('Tenses')}
+                >
+                    <Text style={styles.btnText}>10 Thì Cơ Bản Tiếng Anh</Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity
+                    style={styles.button}
+                    onPress={() => navigation.navigate('IrregularVerbs')}
+                >
+                    <Text style={styles.btnText}>Động Từ Bất Quy Tắc</Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity
+                    style={styles.button}
+                    onPress={() => navigation.navigate('Grammar')}
+                >
+                    <Text style={styles.btnText}>Ngữ Pháp Khác</Text>
+                </TouchableOpacity>
+            </View>
         </View>
     )
 }
