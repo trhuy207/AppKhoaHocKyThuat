@@ -19,7 +19,7 @@ const Grammar = () => {
                 </TouchableOpacity>
                 <Text style={styles.headerTitle}>Ngữ Pháp Khác</Text>
             </View>
-            <Text>Tenses</Text>
+            <Text>Grammar</Text>
         </SafeAreaView>
     )
 }
