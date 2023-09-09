@@ -1,13 +1,22 @@
-import { View, Text } from 'react-native'
+import { View, Text, SafeAreaView, TouchableOpacity } from 'react-native'
 import React from 'react'
+
+import { AntDesign } from '@expo/vector-icons';
 
 import styles from './FifthTense.style'
 
-const FifthTense = () => {
+const FifthTense = ({navigation}) => {
     return (
-        <View>
-            <Text>FifthTense</Text>
-        </View>
+        <SafeAreaView style={styles.container}>
+            <View style={styles.header}>
+                <TouchableOpacity
+                    onPress={() => navigation.goBack()}
+                >
+                    <AntDesign name="back" size={24} color="black" style={styles.icon}/>
+                </TouchableOpacity>
+                <Text style={styles.headerTitle}>Quá Khứ Tiếp Diễn</Text>
+            </View>
+        </SafeAreaView>
     )
 }
 

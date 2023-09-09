@@ -3,9 +3,9 @@ import React from 'react'
 
 import { AntDesign } from '@expo/vector-icons';
 
-import styles from './SecondTense.style'
+import styles from './EighthTense.style'
 
-const SecondTense = ({navigation}) => {
+const EighthTense = ({navigation}) => {
     return (
         <SafeAreaView style={styles.container}>
             <View style={styles.header}>
@@ -14,10 +14,10 @@ const SecondTense = ({navigation}) => {
                 >
                     <AntDesign name="back" size={24} color="black" style={styles.icon}/>
                 </TouchableOpacity>
-                <Text style={styles.headerTitle}>Hiện Tại Tiếp Diễn</Text>
+                <Text style={styles.headerTitle}>Tương Lai Gần</Text>
             </View>
         </SafeAreaView>
     )
 }
 
-export default SecondTense
+export default EighthTense

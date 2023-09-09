@@ -35,7 +35,7 @@ import FourthTense from '../English/Tenses/FourthTense/FourthTense'
 import FifthTense from '../English/Tenses/FifthTense/FifthTense'
 import SixthTense from '../English/Tenses/SixthTense/SixthTense'
 import SeventhTense from '../English/Tenses/SeventhTense/SeventhTense'
-import EighthTense from '../English/Tenses/EighthTense/EightTense'
+import EighthTense from '../English/Tenses/EighthTense/EighthTense'
 import NinethTense from '../English/Tenses/NinethTense/NinethTense'
 import TenthTense from '../English/Tenses/TenthTense/TenthTense'
 
@@ -45,14 +45,6 @@ const Stack = createNativeStackNavigator();
 const StackGroup = () => {
     return(
         <Stack.Navigator>
-            {/* <Stack.Screen
-                name='TabGroup'
-                component={TabGroup}
-                options={{
-                    headerShown: false
-                }}
-            /> */}
-
             <Stack.Screen
                 name='DrawerGroup'
                 component={DrawerGroup}
