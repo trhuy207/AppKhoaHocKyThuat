@@ -39,6 +39,9 @@ import EighthTense from '../English/Tenses/EighthTense/EighthTense'
 import NinethTense from '../English/Tenses/NinethTense/NinethTense'
 import TenthTense from '../English/Tenses/TenthTense/TenthTense'
 
+// Cau Hinh Electron
+import CauHinhE from '../Chemistry/CauHinhE/CauHinhE';
+
 // Stack
 const Stack = createNativeStackNavigator();
 
@@ -69,6 +72,15 @@ const StackGroup = () => {
                 }}
             />
 
+            <Stack.Screen
+                name='CauHinhE'
+                component={CauHinhE}
+                options={{
+                    headerShown: false
+                }}
+            /> 
+
+            {/* 10 basic tense */}
             <Stack.Screen
                 name='IrregularVerbs'
                 component={IrregularVerbs}
