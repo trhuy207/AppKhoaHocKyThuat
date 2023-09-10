@@ -22,8 +22,6 @@ const CauHinhE = ({navigation}) => {
             </View>
             <FlatList
                 data={data}
-                showsVerticalScrollIndicator={false}
-                decelerationRate='fast'
                 renderItem={({item}) => {
                     return(
                         <ScrollView>
