@@ -11,47 +11,47 @@ const MainHome = () => {
         <View style={styles.container}>
             <View style={styles.card}>
                 <TouchableOpacity
-                    style={styles.ChemistryBtn}
+                    style={styles.Btn}
                     onPress={() => navigate('Chemistry')}
                 >   
                     <Image 
-                        style={styles.ChemistryBtnImage}
+                        style={styles.BtnImage}
                         source={require('../../assets/img/chemistry.png')}
                     />
-                    <Text style={styles.ChemistryBtnText}>Từ Điển Hóa Học</Text>
+                    <Text style={styles.BtnText}>Từ Điển Hóa Học</Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity
-                    style={styles.PhysicsBtn}
+                    style={styles.Btn}
                     onPress={() => navigate('Physics')}
                 >
                     <Image 
-                        style={styles.PhysicsBtnImage}
+                        style={styles.BtnImage}
                         source={require('../../assets/img/physics.png')}
                     />
-                    <Text style={styles.PhysicsBtnText}>Công Thức Vật Lý</Text>
+                    <Text style={styles.BtnText}>Công Thức Vật Lý</Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity
-                    style={styles.MathBtn}
+                    style={styles.Btn}
                     onPress={() => navigate('Math')}
                 >
                     <Image 
-                        style={styles.MathBtnImage}
+                        style={styles.BtnImage}
                         source={require('../../assets/img/math.png')}
                     />
-                    <Text style={styles.MathBtnText}>Công Thức Toán</Text>
+                    <Text style={styles.BtnText}>Công Thức Toán</Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity
-                    style={styles.EnglishBtn}
+                    style={styles.Btn}
                     onPress={() => navigate('English')}
                 >
                     <Image 
-                        style={styles.EnglishBtnImage}
+                        style={styles.BtnImage}
                         source={require('../../assets/img/english.png')}
                     />
-                    <Text style={styles.EnglishBtnText}>Công Thức Anh Văn</Text>
+                    <Text style={styles.BtnText}>Công Thức Anh Văn</Text>
                 </TouchableOpacity>
             </View>
         </View>

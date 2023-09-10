@@ -7,9 +7,11 @@ const styles = StyleSheet.create({
     },
 
     card: {
+        display: 'flex',
         flexDirection: 'row',
-        justifyContent: 'space-evenly',
-        flexWrap: 'wrap'
+        justifyContent: 'space-around',
+        flexWrap: 'wrap',
+        gap: 8
     },
 
     CauHinhElectronBtn: {

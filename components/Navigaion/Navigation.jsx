@@ -39,8 +39,10 @@ import EighthTense from '../English/Tenses/EighthTense/EighthTense'
 import NinethTense from '../English/Tenses/NinethTense/NinethTense'
 import TenthTense from '../English/Tenses/TenthTense/TenthTense'
 
-// Cau Hinh Electron
+// Chemistry Child
 import CauHinhE from '../Chemistry/CauHinhE/CauHinhE';
+import ColorChemistry from '../Chemistry/ColorChemistry/ColorChemistry';
+import TraCuuNT from '../Chemistry/TraCuuNT/TraCuuNT';
 
 // Stack
 const Stack = createNativeStackNavigator();
@@ -72,9 +74,26 @@ const StackGroup = () => {
                 }}
             />
 
+            {/* Chemistry child */}
             <Stack.Screen
                 name='CauHinhE'
                 component={CauHinhE}
+                options={{
+                    headerShown: false
+                }}
+            /> 
+
+            <Stack.Screen
+                name='ColorChemistry'
+                component={ColorChemistry}
+                options={{
+                    headerShown: false
+                }}
+            /> 
+
+            <Stack.Screen
+                name='TraCuuNT'
+                component={TraCuuNT}
                 options={{
                     headerShown: false
                 }}

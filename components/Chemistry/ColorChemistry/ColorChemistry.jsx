@@ -1,15 +1,15 @@
-import { View, Text, TouchableOpacity, SafeAreaView, ScrollView, FlatList } from 'react-native'
+import { View, Text, TouchableOpacity, ScrollView, FlatList, SafeAreaView } from 'react-native'
 import React from 'react'
 
 import { Table, Row, Rows, TableWrapper } from 'react-native-table-component';
 
 import { AntDesign } from '@expo/vector-icons';
 
-import styles from './CauHinhE.style'
-
 import data from './data'
 
-const CauHinhE = ({navigation}) => {
+import styles from './ColorChemistry.style'
+
+const ColorChemistry = ({navigation}) => {
     return (
         <SafeAreaView style={styles.container}>
             <View style={styles.header}>
@@ -18,22 +18,23 @@ const CauHinhE = ({navigation}) => {
                 >
                     <AntDesign name="back" size={24} color="black" style={styles.icon}/>
                 </TouchableOpacity>
-                <Text style={styles.headerTitle}>Cấu Hình Electron</Text>
+                <Text style={styles.headerTitle}>Màu Một Số Chất Phổ Biến</Text>
             </View>
-            <FlatList
+            
+            <FlatList 
                 data={data}
                 renderItem={({item}) => {
                     return(
                         <ScrollView>
                             <View>
-                                <Table borderStyle={{borderWidth:1, borderColor: '#c8e1ff'}}>
+                                <Table borderStyle={{borderWidth: 1, borderColor: '#c8e1ff'}}>
                                     <Row 
                                         data={item.header}
                                         style={{
                                             backgroundColor:'white',
                                         }} 
                                         height={40}
-                                        flexArr={[0.7,1.5,0.75,1.5]}
+                                        flexArr={[0.75,1,1]}
                                         textStyle={{
                                             textAlign: 'center',
                                             fontSize: 16,
@@ -43,8 +44,8 @@ const CauHinhE = ({navigation}) => {
 
                                     <TableWrapper style={{flexDirection: 'row'}}>
                                         <Rows 
-                                            data={item.cauhinhe}  
-                                            flexArr={[0.7,1.5,0.75,1.5]} 
+                                            data={item.mauSac}  
+                                            flexArr={[0.75,1,1]} 
                                             style={{
                                                 backgroundColor: 'white',
                                                 height: 'auto'
@@ -61,8 +62,10 @@ const CauHinhE = ({navigation}) => {
                     )
                 }}
             />
+            
+
         </SafeAreaView>
     )
 }
 
-export default CauHinhE
+export default ColorChemistry
