@@ -18,14 +18,14 @@ const English = ({ navigation }) => {
                     style={styles.button}
                     onPress={() => navigation.navigate('IrregularVerbs')}
                 >
-                    <Text style={styles.btnText}>Động Từ Bất Quy Tắc</Text>
+                    <Text style={styles.btnText}>Động Từ Bất Quy Tắc{'\n'}(Đang phát triển)</Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity
                     style={styles.button}
                     onPress={() => navigation.navigate('Grammar')}
                 >
-                    <Text style={styles.btnText}>Ngữ Pháp Khác</Text>
+                    <Text style={styles.btnText}>Ngữ Pháp Khác{'\n'}(Đang phát triển)</Text>
                 </TouchableOpacity>
             </View>
         </View>

@@ -43,6 +43,11 @@ import TenthTense from '../English/Tenses/TenthTense/TenthTense'
 import CauHinhE from '../Chemistry/CauHinhE/CauHinhE';
 import ColorChemistry from '../Chemistry/ColorChemistry/ColorChemistry';
 import TraCuuNT from '../Chemistry/TraCuuNT/TraCuuNT';
+import PTHH from '../Chemistry/PTHH/PTHH'
+import DayDienHoa from '../Chemistry/DayDienHoa/DayDienHoa'
+import NTHHLop8 from '../Chemistry/NTHHLop8/NTHHLop8'
+import BangTinhTan from '../Chemistry/BangTinhTan/BangTinhTan'
+import BangTuanHoan from '../Chemistry/BangTuanHoan/BangTuanHoan'
 
 // Stack
 const Stack = createNativeStackNavigator();
@@ -94,6 +99,46 @@ const StackGroup = () => {
             <Stack.Screen
                 name='TraCuuNT'
                 component={TraCuuNT}
+                options={{
+                    headerShown: false
+                }}
+            /> 
+
+            <Stack.Screen
+                name='PTHH'
+                component={PTHH}
+                options={{
+                    headerShown: false
+                }}
+            /> 
+
+            <Stack.Screen
+                name='DayDienHoa'
+                component={DayDienHoa}
+                options={{
+                    headerShown: false
+                }}
+            /> 
+
+            <Stack.Screen
+                name='NTHHLop8'
+                component={NTHHLop8}
+                options={{
+                    headerShown: false
+                }}
+            /> 
+
+            <Stack.Screen
+                name='BangTinhTan'
+                component={BangTinhTan}
+                options={{
+                    headerShown: false
+                }}
+            /> 
+
+            <Stack.Screen
+                name='BangTuanHoan'
+                component={BangTuanHoan}
                 options={{
                     headerShown: false
                 }}
