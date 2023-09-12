@@ -62,7 +62,8 @@ const styles = StyleSheet.create({
         width: 130,
         fontWeight: 'bold',
         height: "auto",
-        fontSize: 18
+        fontSize: 18,
+        backgroundColor: '#fff'
     },
 
     tableBodyText1: {
@@ -89,6 +90,45 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         height: "auto",
         fontSize: 18
+    },
+
+    // Chú Thích
+    chuThich: {
+        marginTop: 10
+    },
+
+    chuThichNT: {
+        marginLeft: 10,
+        marginBottom: 10
+    },
+
+    chuThichNTText: {
+        padding: 8,
+        borderWidth: 0.25,
+        width: 180,
+        fontWeight: 'bold',
+        height: "auto",
+        fontSize: 18
+    },
+
+    chuThichNTBlock: {
+        flexDirection: 'row',
+    },
+
+    chuThichKL: {
+        marginRight: 20
+    },
+
+    chuThichAK: {
+        marginRight: 20
+    },
+
+    chuThichPK: {
+        marginRight: 20
+    },
+    
+    chuThichCR: {
+        marginRight: 20
     },
 })
 

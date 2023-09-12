@@ -834,6 +834,43 @@ const BangTuanHoan = ({navigation}) => {
                             </View>  
                         </View>
                     </ScrollView>
+
+                    <View style={styles.chuThich}>
+                        <View style={styles.chuThichNT}>
+                            <Text style={{fontSize: 18, fontWeight: 'bold'}}>Các Xem:</Text>
+                            <View style={[styles.chuThichNTText, {backgroundColor: '#afc0de'}]}>
+                                <Text style={{fontSize: 15.5, fontStyle: 'italic'}}>(Số hiệu nguyên tử)</Text>
+                                <Text style={{fontSize: 18, fontWeight: 'bold', fontStyle: 'italic'}}>(Ký hiệu nguyên tố)</Text>
+                                <Text style={{fontSize: 15.5, fontStyle: 'italic'}}>(Tên nguyên tố)</Text>
+                                <Text style={{fontSize: 15.5, fontStyle: 'italic'}}>(Nguyên tử khối)</Text>
+                            </View>
+                        </View>
+
+                        <View style={styles.chuThichNT}>
+                            <Text style={{fontSize: 18, fontWeight: 'bold'}}>Ghi Chú:</Text>
+                            <View style={styles.chuThichNTBlock}>
+                                <View style={styles.chuThichKL}>
+                                    <View style={{backgroundColor: '#afc0de', width: 50, height: 50, borderWidth: 1}}></View>
+                                    <Text style={{fontSize: 13.5, fontStyle: 'italic'}}>Kim loại</Text>
+                                </View>
+
+                                <View style={styles.chuThichAK}>
+                                    <View style={{backgroundColor: '#a7c797', width: 50, height: 50, borderWidth: 1}}></View>
+                                    <Text style={{fontSize: 13.5, fontStyle: 'italic'}}>Á kim</Text>
+                                </View>
+
+                                <View style={styles.chuThichPK}>
+                                    <View style={{backgroundColor: '#ed9e9a', width: 50, height: 50, borderWidth: 1}}></View>
+                                    <Text style={{fontSize: 13.5, fontStyle: 'italic'}}>Phi kim</Text>
+                                </View>
+
+                                <View style={styles.chuThichCR}>
+                                    <View style={{backgroundColor: '#fff', width: 50, height: 50, borderWidth: 1}}></View>
+                                    <Text style={{fontSize: 13.5, fontStyle: 'italic'}}>Chưa rõ</Text>
+                                </View>
+                            </View>
+                        </View>
+                    </View>
                 </View>
             </ScrollView>
         </SafeAreaView>
