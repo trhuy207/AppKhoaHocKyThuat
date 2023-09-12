@@ -16,9 +16,9 @@ const DayDienHoa = ({navigation}) => {
                 </TouchableOpacity>
                 <Text style={styles.headerTitle}>Dãy Hoạt Động Kim Loại</Text>
             </View>
-            
-            <ScrollView horizontal={true}>
-                <View style={styles.body}>
+
+            <View style={styles.body}>
+                <ScrollView horizontal={true}>
                     <View style={styles.dayHoatDong}>
                         <View style={styles.kimLoaiManh}>
                             <Text style={styles.titleKLM}>Kim Loại Mạnh</Text>
@@ -58,7 +58,7 @@ const DayDienHoa = ({navigation}) => {
                                 <Text style={styles.contentKLTB1}>      </Text>
                                 <Text style={styles.contentKLTB1}>Giáp</Text>
                                 <Text style={styles.contentKLTB1}>Sắt</Text>
-                                <Text style={styles.contentKLTB1}>             </Text>
+                                <Text style={styles.contentKLTB1}>            </Text>
                                 <Text style={styles.contentKLTB1}>Nhớ</Text>
                                 <Text style={styles.contentKLTB1}>Sang</Text>
                                 <Text style={styles.contentKLTB1}>Phố</Text>
@@ -97,8 +97,8 @@ const DayDienHoa = ({navigation}) => {
                             </View>
                         </View>
                     </View>
-                </View>
-            </ScrollView>
+                </ScrollView>
+            </View>
         </SafeAreaView>
     )
 }

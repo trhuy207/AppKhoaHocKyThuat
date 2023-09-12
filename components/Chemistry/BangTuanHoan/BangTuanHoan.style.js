@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     },
 
     tableHeaderText: {
-        width: 90,
+        width: 130,
         fontWeight: 'bold',
         textAlign: 'center',
         borderWidth: 0.25,
@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
     },
 
     tableHeaderText1: {
-        width: 90,
+        width: 130,
         fontWeight: 'bold',
         height: "auto",
         fontSize: 16,
@@ -57,22 +57,38 @@ const styles = StyleSheet.create({
     },
 
     tableBodyText: {
-        padding: 20,
+        padding: 8,
         borderWidth: 0.25,
-        width: 90,
+        width: 130,
         fontWeight: 'bold',
         height: "auto",
-        fontSize: 14
+        fontSize: 18
+    },
+
+    tableBodyText1: {
+        padding: 8,
+        width: 130,
+        fontWeight: 'bold',
+        height: "auto",
+        fontSize: 18
     },
 
     tableBodyTextKhac: {
-        padding: 20,
+        padding: 8,
         borderWidth: 0.25,
         borderBottomWidth: 0,
-        width: 90,
+        width: 130,
         fontWeight: 'bold',
         height: "auto",
-        fontSize: 14
+        fontSize: 18
+    },
+
+    tableBodyTextKhac1: {
+        padding: 8,
+        width: 130,
+        fontWeight: 'bold',
+        height: "auto",
+        fontSize: 18
     },
 })
 

@@ -56,7 +56,8 @@ const styles = StyleSheet.create({
         alignSelf: 'flex-start',
         fontWeight: 'bold',
         color: '#fff',
-        fontSize: 18
+        fontSize: 18,
+        marginLeft: 5
     },
 
     titleKLTB: {
@@ -66,7 +67,8 @@ const styles = StyleSheet.create({
         alignSelf: 'flex-start',
         fontWeight: 'bold',
         color: '#fff',
-        fontSize: 18
+        fontSize: 18,
+        marginLeft: 5
     },
 
     titleKLY: {
@@ -76,7 +78,8 @@ const styles = StyleSheet.create({
         alignSelf: 'flex-start',
         fontWeight: 'bold',
         color: '#fff',
-        fontSize: 18
+        fontSize: 18,
+        marginLeft: 5
     },
 
     titleH: {
