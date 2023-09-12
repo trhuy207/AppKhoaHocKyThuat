@@ -31,13 +31,13 @@ const Chemistry = ({navigation}) => {
 
                 <TouchableOpacity
                     style={styles.CauHinhElectronBtn}
-                    onPress={() => navigation.navigate('DayDienHoa')}
+                    onPress={() => navigation.navigate('DayHoatDongKimLoai')}
                 >   
                     <Image 
                         style={styles.CauHinhElectronImage}
                         source={require('../../assets/img/Chemistry/dayDienHoa.png')}
                     />
-                    <Text style={styles.CauHinhElectronBtnText}>Dãy Điện Hóa Kim Loại{'\n'}(Đang phát triển)</Text>
+                    <Text style={styles.CauHinhElectronBtnText}>Dãy Hoạt Động Kim Loại</Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity

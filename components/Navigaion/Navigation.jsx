@@ -44,7 +44,7 @@ import CauHinhE from '../Chemistry/CauHinhE/CauHinhE';
 import ColorChemistry from '../Chemistry/ColorChemistry/ColorChemistry';
 import TraCuuNT from '../Chemistry/TraCuuNT/TraCuuNT';
 import PTHH from '../Chemistry/PTHH/PTHH'
-import DayDienHoa from '../Chemistry/DayDienHoa/DayDienHoa'
+import DayHoatDongKimLoai from '../Chemistry/DayHoatDongKimLoai/DayHoatDongKimLoai'
 import NTHHLop8 from '../Chemistry/NTHHLop8/NTHHLop8'
 import BangTinhTan from '../Chemistry/BangTinhTan/BangTinhTan'
 import BangTuanHoan from '../Chemistry/BangTuanHoan/BangTuanHoan'
@@ -113,8 +113,8 @@ const StackGroup = () => {
             /> 
 
             <Stack.Screen
-                name='DayDienHoa'
-                component={DayDienHoa}
+                name='DayHoatDongKimLoai'
+                component={DayHoatDongKimLoai}
                 options={{
                     headerShown: false
                 }}

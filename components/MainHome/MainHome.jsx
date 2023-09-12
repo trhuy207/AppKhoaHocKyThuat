@@ -18,7 +18,7 @@ const MainHome = () => {
                         style={styles.BtnImage}
                         source={require('../../assets/img/chemistry.png')}
                     />
-                    <Text style={styles.BtnText}>Từ Điển Hóa Học</Text>
+                    <Text style={styles.BtnText}>Từ Điển Hóa Học{'\n'}(Đang phát triển)</Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity
@@ -29,7 +29,7 @@ const MainHome = () => {
                         style={styles.BtnImage}
                         source={require('../../assets/img/physics.png')}
                     />
-                    <Text style={styles.BtnText}>Công Thức Vật Lý</Text>
+                    <Text style={styles.BtnText}>Công Thức Vật Lý{'\n'}(Đang phát triển)</Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity
@@ -40,7 +40,7 @@ const MainHome = () => {
                         style={styles.BtnImage}
                         source={require('../../assets/img/math.png')}
                     />
-                    <Text style={styles.BtnText}>Công Thức Toán</Text>
+                    <Text style={styles.BtnText}>Công Thức Toán{'\n'}(Đang phát triển)</Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity
@@ -51,7 +51,7 @@ const MainHome = () => {
                         style={styles.BtnImage}
                         source={require('../../assets/img/english.png')}
                     />
-                    <Text style={styles.BtnText}>Công Thức Anh Văn</Text>
+                    <Text style={styles.BtnText}>Công Thức Anh Văn{'\n'}(Đang phát triển)</Text>
                 </TouchableOpacity>
             </View>
         </View>
