@@ -31,6 +31,15 @@ const DayDienHoa = ({navigation}) => {
                                 <Text style={styles.contentKLM}>Mg</Text>
                                 <Text style={styles.contentKLM}>Al</Text>
                             </View>
+                            <View style={styles.content}>
+                                <Text style={styles.contentKLM1}>     </Text>
+                                <Text style={styles.contentKLM1}>Khi</Text>
+                                <Text style={styles.contentKLM1}>Ba</Text>
+                                <Text style={styles.contentKLM1}>Cần</Text>
+                                <Text style={styles.contentKLM1}>Nàng</Text>
+                                <Text style={styles.contentKLM1}>May</Text>
+                                <Text style={styles.contentKLM1}>Áo</Text>
+                            </View>
                         </View>
 
                         <View style={styles.kimLoaiTrungBinh}>
@@ -45,12 +54,24 @@ const DayDienHoa = ({navigation}) => {
                                 <Text style={styles.contentKLTB}>Pb</Text>
                                 <Text style={styles.contentKLTB}>Fe3+/Fe</Text>
                             </View>
+                            <View style={styles.content}>
+                                <Text style={styles.contentKLTB1}>      </Text>
+                                <Text style={styles.contentKLTB1}>Giáp</Text>
+                                <Text style={styles.contentKLTB1}>Sắt</Text>
+                                <Text style={styles.contentKLTB1}>             </Text>
+                                <Text style={styles.contentKLTB1}>Nhớ</Text>
+                                <Text style={styles.contentKLTB1}>Sang</Text>
+                                <Text style={styles.contentKLTB1}>Phố</Text>
+                            </View>
                         </View>
 
                         <View style={styles.hydro}>
-                            <Text style={styles.titleH}></Text>
+                            <Text style={styles.titleH}> </Text>
                             <View style={styles.content}>
                                 <Text style={styles.contentH}>H</Text>
+                            </View>
+                            <View style={styles.content}>
+                                <Text style={styles.contentH1}>Hỏi</Text>
                             </View>
                         </View>
 
@@ -60,10 +81,19 @@ const DayDienHoa = ({navigation}) => {
                                 <Text style={styles.contentKLY}>Cu</Text>
                                 <Text style={styles.contentKLY}>Fe3+/Fe2+</Text>
                                 <Text style={styles.contentKLY}>Hg</Text>
-                                <Text style={styles.contentKLY}>Ag+</Text>
-                                <Text style={styles.contentKLY}>Hg2+</Text>
+                                <Text style={styles.contentKLY}>Ag</Text>
+                                <Text style={styles.contentKLY}>Hg</Text>
                                 <Text style={styles.contentKLY}>Pt</Text>
                                 <Text style={styles.contentKLY}>Au</Text>
+                            </View>
+                            <View style={styles.content}>
+                                <Text style={styles.contentKLY1}>Cửa</Text>
+                                <Text style={styles.contentKLY1}>                        </Text>
+                                <Text style={styles.contentKLY1}>Hàng</Text>
+                                <Text style={styles.contentKLY1}>Á</Text>
+                                <Text style={styles.contentKLY1}>               </Text>
+                                <Text style={styles.contentKLY1}>Phi</Text>
+                                <Text style={styles.contentKLY1}>Âu</Text>
                             </View>
                         </View>
                     </View>

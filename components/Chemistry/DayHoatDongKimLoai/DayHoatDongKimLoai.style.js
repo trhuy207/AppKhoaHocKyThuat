@@ -98,6 +98,12 @@ const styles = StyleSheet.create({
         color: '#fff'
     },
 
+    contentKLM1: {
+        padding: 10,
+        marginLeft: 10,
+        fontSize: 15,
+    },
+
     contentKLTB: {
         padding: 15,
         backgroundColor: '#0381c7',
@@ -105,6 +111,12 @@ const styles = StyleSheet.create({
         margin: 5,
         fontSize: 15,
         color: '#fff'
+    },
+
+    contentKLTB1: {
+        padding: 10,
+        marginLeft: 10,
+        fontSize: 15,
     },
 
     contentH: {
@@ -116,6 +128,12 @@ const styles = StyleSheet.create({
         color: '#fff'
     },
 
+    contentH1: {
+        padding: 10,
+        marginLeft: 4,
+        fontSize: 15,
+    },
+
     contentKLY: {
         padding: 15,
         backgroundColor: '#0399ed',
@@ -123,6 +141,12 @@ const styles = StyleSheet.create({
         margin: 5,
         fontSize: 15,
         color: '#fff'
+    },
+
+    contentKLY1: {
+        padding: 10,
+        marginLeft: 6,
+        fontSize: 15,
     },
 })
 
