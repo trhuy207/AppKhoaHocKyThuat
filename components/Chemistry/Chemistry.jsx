@@ -70,7 +70,7 @@ const Chemistry = ({navigation}) => {
                         style={styles.CauHinhElectronImage}
                         source={require('../../assets/img/Chemistry/searchChemistry.png')}
                     />
-                    <Text style={styles.CauHinhElectronBtnText}>Bảng Tính Tan{'\n'}(Đang phát triển)</Text>
+                    <Text style={styles.CauHinhElectronBtnText}>Bảng Tính Tan</Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity
@@ -81,7 +81,7 @@ const Chemistry = ({navigation}) => {
                         style={styles.CauHinhElectronImage}
                         source={require('../../assets/img/Chemistry/bangtuanhoan.png')}
                     />
-                    <Text style={styles.CauHinhElectronBtnText}>Bảng Tuần Hoàn{'\n'}(Đang phát triển)</Text>
+                    <Text style={styles.CauHinhElectronBtnText}>Bảng Tuần Hoàn</Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity
