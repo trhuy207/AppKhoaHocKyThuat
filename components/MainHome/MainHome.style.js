@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
 
     card: {
         flexDirection: 'row',
-        justifyContent: 'space-evenly',
+        justifyContent: 'space-around',
         flexWrap: 'wrap'
     },
 
