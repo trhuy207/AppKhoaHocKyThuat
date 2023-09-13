@@ -114,6 +114,11 @@ const styles = StyleSheet.create({
         fontSize: 16,
         height: 25
     },
+
+    tho: {
+        marginTop: 20,
+        marginLeft: 20,
+    },
 })
 
 export default styles

@@ -2065,6 +2065,24 @@ const BangTinhTan = ({navigation}) => {
                                 </View>
                             </ScrollView>
                         </View>
+                        
+                        <View style={styles.tho}>
+                            <Text style={{fontSize: 18, fontWeight: 'bold'}}>Thơ về bảng tính tan{'\n'}</Text>
+                            <Text style={{fontSize: 15}}>
+                                Loại muối tan tất cả
+                                {'\n'}là muối ni-tơ-rat
+                                {'\n'}Và muối axetat
+                                {'\n'}Bất kể kim loại nào.
+                                {'\n'}{'\n'}Những muối hầu hết tan
+                                {'\n'}Là clorua, sunfat
+                                {'\n'}Trừ bạc, chì clorua
+                                {'\n'}Bari, chì sunfat.
+                                {'\n'}{'\n'}Những muối không hòa tan
+                                {'\n'}Cacbonat, photphat
+                                {'\n'}Sunfua và sunfit
+                                {'\n'}Trừ kiềm, amoni.
+                            </Text>
+                        </View>
                     </View>
                 </ScrollView>
             </View>

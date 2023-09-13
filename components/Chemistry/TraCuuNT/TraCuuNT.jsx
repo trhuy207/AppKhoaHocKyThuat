@@ -1,8 +1,6 @@
 import { View, Text, TouchableOpacity, SafeAreaView, FlatList } from 'react-native'
 import React from 'react'
 
-import { Table, Row, Rows, TableWrapper } from 'react-native-table-component';
-
 import { AntDesign } from '@expo/vector-icons';
 
 import styles from './TraCuuNT.style'
