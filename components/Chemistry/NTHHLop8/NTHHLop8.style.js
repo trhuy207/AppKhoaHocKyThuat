@@ -28,7 +28,6 @@ const styles = StyleSheet.create({
 
     // body
     body: {
-        marginBottom: 50
     },
 
     tableHeader: {
@@ -47,6 +46,20 @@ const styles = StyleSheet.create({
         width: 110
     },
 
+    tableHeaderText1: {
+        padding: 10,
+        borderWidth: 0.25,
+        textAlign: 'center',
+        width: 60
+    },
+
+    tableHeaderText2: {
+        padding: 10,
+        borderWidth: 0.25,
+        textAlign: 'center',
+        width: 120
+    },
+
     tableBodyText: {
         width: 110,
         fontWeight: 'bold',
@@ -55,7 +68,27 @@ const styles = StyleSheet.create({
         fontSize: 16,
         height: 'auto',
         padding: 5
-    }
+    },
+
+    tableBodyText1: {
+        width: 60,
+        fontWeight: 'bold',
+        textAlign: 'center',
+        borderWidth: 0.25,
+        fontSize: 16,
+        height: 'auto',
+        padding: 5
+    },
+
+    tableBodyText2: {
+        width: 120,
+        fontWeight: 'bold',
+        textAlign: 'center',
+        borderWidth: 0.25,
+        fontSize: 16,
+        height: 'auto',
+        padding: 5
+    },
 })
 
 export default styles
