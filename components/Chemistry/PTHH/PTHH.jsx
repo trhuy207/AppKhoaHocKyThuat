@@ -16,6 +16,9 @@ const PTHH = ({navigation}) => {
                 </TouchableOpacity>
                 <Text style={styles.headerTitle}>Phương Trình Hóa Học</Text>
             </View>
+            <View>
+                <Text>Coming soon</Text>
+            </View>
         </SafeAreaView>
     )
 }

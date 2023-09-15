@@ -450,10 +450,10 @@ const NTHHLop8 = ({navigation}) => {
                                     <View style={styles.tableBodyText}>
                                         <Text style={{fontSize: 15, textAlign: 'center'}}>Crom</Text>
                                     </View>
-                                    <View style={styles.tableBodyText2}>
+                                    <View style={styles.tableBodyText}>
                                         <Text style={{fontSize: 15, textAlign: 'center'}}>Cr</Text>
                                     </View>
-                                    <View style={styles.tableBodyText}>
+                                    <View style={styles.tableBodyText2}>
                                         <Text style={{fontSize: 15, textAlign: 'center'}}>52</Text>
                                     </View>
                                     <View style={styles.tableBodyText}>

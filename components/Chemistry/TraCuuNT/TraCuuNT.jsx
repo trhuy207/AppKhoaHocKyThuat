@@ -18,6 +18,9 @@ const TraCuuNT = ({navigation}) => {
                 </TouchableOpacity>
                 <Text style={styles.headerTitle}>Tra Cứu Nguyên Tố</Text>
             </View>
+            <View>
+                <Text>Coming soon</Text>
+            </View>
         </SafeAreaView>
     ) 
 }
