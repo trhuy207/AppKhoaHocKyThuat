@@ -39,6 +39,9 @@ import EighthTense from '../English/Tenses/EighthTense/EighthTense'
 import NinethTense from '../English/Tenses/NinethTense/NinethTense'
 import TenthTense from '../English/Tenses/TenthTense/TenthTense'
 
+// English Grammar Child
+import CauDieuKien from '../English/Grammar/CauDieuKien/CauDieuKien';
+
 // Chemistry Child
 import CauHinhE from '../Chemistry/CauHinhE/CauHinhE';
 import ColorChemistry from '../Chemistry/ColorChemistry/ColorChemistry';
@@ -228,6 +231,15 @@ const StackGroup = () => {
             <Stack.Screen
                 name='TenthTense'
                 component={TenthTense}
+                options={{
+                    headerShown: false
+                }}
+            />
+
+            {/* English Grammar Child */}
+            <Stack.Screen
+                name='CauDieuKien'
+                component={CauDieuKien}
                 options={{
                     headerShown: false
                 }}
