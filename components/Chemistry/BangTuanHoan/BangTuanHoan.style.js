@@ -26,6 +26,35 @@ const styles = StyleSheet.create({
     },
 
     // Body
+    table: {
+        flexDirection: 'row'
+    },
+
+    tableBodyColumn: {
+        backgroundColor: '#fff',
+    },
+
+    tableColumnText: {
+        padding: 8,
+        borderWidth: 0.25,
+        width: 80,
+        fontWeight: 'bold',
+        height: 93.35,
+        fontSize: 18,
+        backgroundColor: '#fff',
+        textAlign: 'center'
+    },
+
+    tableColumnHeader: {
+        width: 80,
+        fontWeight: 'bold',
+        textAlign: 'center',
+        borderWidth: 0.25,
+        fontSize: 16,
+        height: 45,
+        backgroundColor: '#e2e2e2',
+    },
+
     tableHeader: {
         flexDirection: 'row',
         backgroundColor: '#e2e2e2',
@@ -36,7 +65,8 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         textAlign: 'center',
         borderWidth: 0.25,
-        fontSize: 16
+        fontSize: 16,
+        height: 45
     },
 
     tableHeaderText1: {
