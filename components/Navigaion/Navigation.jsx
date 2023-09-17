@@ -41,6 +41,7 @@ import TenthTense from '../English/Tenses/TenthTense/TenthTense'
 
 // English Grammar Child
 import CauDieuKien from '../English/Grammar/CauDieuKien/CauDieuKien';
+import CauDieuUoc from '../English/Grammar/CauDieuUoc/CauDieuUoc';
 
 // Chemistry Child
 import CauHinhE from '../Chemistry/CauHinhE/CauHinhE';
@@ -240,6 +241,14 @@ const StackGroup = () => {
             <Stack.Screen
                 name='CauDieuKien'
                 component={CauDieuKien}
+                options={{
+                    headerShown: false
+                }}
+            />
+
+            <Stack.Screen
+                name='CauDieuUoc'
+                component={CauDieuUoc}
                 options={{
                     headerShown: false
                 }}
