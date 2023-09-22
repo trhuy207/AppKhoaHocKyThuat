@@ -9,13 +9,12 @@ const styles = StyleSheet.create({
     card: {
         display: 'flex',
         flexDirection: 'row',
-        justifyContent: 'space-around',
+        justifyContent: 'space-evenly',
         flexWrap: 'wrap',
-        gap: 8
     },
 
-    CauHinhElectronBtn: {
-        width: 180,
+    Btn: {
+        width: 170,
         height: "auto",
         borderRadius: 10,
         marginBottom: 10,
@@ -25,14 +24,14 @@ const styles = StyleSheet.create({
         borderColor: '#8d60bd'
     },
 
-    CauHinhElectronImage: {
+    BtnImage: {
         width: 80,
         height: 80,
     },
 
-    CauHinhElectronBtnText: {
-        padding: 10,
-        fontSize: 14,
+    BtnText: {
+        padding: 3,
+        fontSize: 13,
         fontWeight: 'bold',
         color: '#8d60bd',
     },

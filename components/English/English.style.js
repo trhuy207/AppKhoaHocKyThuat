@@ -4,32 +4,36 @@ const styles = StyleSheet.create({
     container: {
         flex:1,
         alignItems: 'center',
-        backgroundColor: '#2c3e56'
     },
 
     card: {
-        width: '80%',
-        backgroundColor: '#d3dde4',
-        justifyContent: 'center',
-        marginTop: 15,
-        borderRadius: 20,
-        alignItems: 'center'
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-evenly',
+        flexWrap: 'wrap',
     },
 
     button: {
-        backgroundColor: '#5DA3FA',
-        borderRadius: 20,
-        marginTop: 10,
+        width: 170,
+        height: "auto",
+        borderRadius: 10,
         marginBottom: 10,
-        width: '90%',
-        alignItems: 'center'
+        marginTop: 10,
+        alignItems: 'center',
+        borderWidth: 1.5,
+        borderColor: '#8d60bd'
+    },
+
+    btnImage: {
+        width: 100,
+        height: 100,
     },
 
     btnText: {
-        padding: 10,
-        fontSize: 18,
+        padding: 8,
+        fontSize: 13,
         fontWeight: 'bold',
-        color: 'white'
+        color: '#8d60bd',
     },
 })
 

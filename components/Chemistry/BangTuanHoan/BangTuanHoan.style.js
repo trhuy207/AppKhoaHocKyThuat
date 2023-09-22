@@ -26,12 +26,16 @@ const styles = StyleSheet.create({
     },
 
     // Body
+    body: {
+        marginTop: 20
+    },
+
     table: {
         flexDirection: 'row'
     },
 
     tableBodyColumn: {
-        backgroundColor: '#fff',
+        
     },
 
     tableColumnText: {
@@ -39,10 +43,11 @@ const styles = StyleSheet.create({
         borderWidth: 0.25,
         width: 80,
         fontWeight: 'bold',
-        height: 93.35,
+        height: 100,
         fontSize: 18,
-        backgroundColor: '#fff',
-        textAlign: 'center'
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderWidth: 0.5
     },
 
     tableColumnHeader: {
@@ -50,9 +55,10 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         textAlign: 'center',
         borderWidth: 0.25,
-        fontSize: 16,
+        fontSize: 14,
         height: 45,
         backgroundColor: '#e2e2e2',
+        borderWidth: 0.5
     },
 
     tableHeader: {
@@ -62,19 +68,42 @@ const styles = StyleSheet.create({
 
     tableHeaderText: {
         width: 130,
-        fontWeight: 'bold',
-        textAlign: 'center',
-        borderWidth: 0.25,
-        fontSize: 16,
-        height: 45
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderWidth: 0.5,
+        height: 45,
     },
 
     tableHeaderText1: {
         width: 130,
-        fontWeight: 'bold',
-        height: "auto",
-        fontSize: 16,
-        textAlign: 'center'
+        alignItems: 'center',
+        justifyContent: 'center',
+        height: 45,
+        textAlign: 'center',
+        borderTopWidth: 0.5,
+        borderBottomWidth: 0.5,
+        borderLeftWidth: 0.5
+    },
+
+    tableHeaderText12: {
+        width: 130,
+        alignItems: 'center',
+        justifyContent: 'center',
+        height: 45,
+        textAlign: 'center',
+        borderTopWidth: 0.5,
+        borderBottomWidth: 0.5,
+    },
+
+    tableHeaderText13: {
+        width: 130,
+        alignItems: 'center',
+        justifyContent: 'center',
+        height: 45,
+        textAlign: 'center',
+        borderTopWidth: 0.5,
+        borderBottomWidth: 0.5,
+        borderRightWidth: 0.5
     },
 
     tableBody: {
@@ -88,11 +117,11 @@ const styles = StyleSheet.create({
 
     tableBodyText: {
         padding: 8,
-        borderWidth: 0.25,
+        borderWidth: 0.5,
         width: 130,
         fontWeight: 'bold',
-        height: "auto",
-        fontSize: 18,
+        height: 100,
+        fontSize: 16,
         backgroundColor: '#fff'
     },
 
@@ -100,26 +129,26 @@ const styles = StyleSheet.create({
         padding: 8,
         width: 130,
         fontWeight: 'bold',
-        height: "auto",
-        fontSize: 18
+        height: 100,
+        fontSize: 16
     },
 
     tableBodyTextKhac: {
         padding: 8,
-        borderWidth: 0.25,
+        borderWidth: 0.5,
         borderBottomWidth: 0,
         width: 130,
         fontWeight: 'bold',
-        height: "auto",
-        fontSize: 18
+        height: 100,
+        fontSize: 16
     },
 
     tableBodyTextKhac1: {
         padding: 8,
         width: 130,
         fontWeight: 'bold',
-        height: "auto",
-        fontSize: 18
+        height: 100,
+        fontSize: 16
     },
 
     // Chú Thích
@@ -134,11 +163,12 @@ const styles = StyleSheet.create({
 
     chuThichNTText: {
         padding: 8,
-        borderWidth: 0.25,
-        width: 180,
+        borderWidth: 0.5,
+        width: 'auto',
         fontWeight: 'bold',
-        height: "auto",
-        fontSize: 18
+        height: 'auto',
+        fontSize: 16,
+        alignSelf: 'flex-start'
     },
 
     chuThichNTBlock: {

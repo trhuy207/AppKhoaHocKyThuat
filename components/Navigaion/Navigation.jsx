@@ -347,7 +347,7 @@ const DrawerGroup = () => {
                 component={Chemistry}
                 options={{
                     headerShown: true,
-                    title: 'Từ Điển Hóa Học'
+                    title: 'Từ Điển Hóa Học',
                 }}
             />
 

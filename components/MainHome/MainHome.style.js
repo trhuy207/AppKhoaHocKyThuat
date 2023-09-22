@@ -9,11 +9,11 @@ const styles = StyleSheet.create({
     card: {
         flexDirection: 'row',
         justifyContent: 'space-around',
-        flexWrap: 'wrap'
+        flexWrap: 'wrap',
     },
 
     Btn: {
-        width: 180,
+        width: 170,
         height: "auto",
         borderRadius: 10,
         marginBottom: 10,

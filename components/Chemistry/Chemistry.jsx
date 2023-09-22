@@ -9,91 +9,91 @@ const Chemistry = ({navigation}) => {
             <ScrollView>
                 <View style={styles.card}>
                     <TouchableOpacity
-                        style={styles.CauHinhElectronBtn}
+                        style={styles.Btn}
                         onPress={() => navigation.navigate('PTHH')}
                     >   
                         <Image 
-                            style={styles.CauHinhElectronImage}
+                            style={styles.BtnImage}
                             source={require('../../assets/img/Chemistry/pthh.png')}
                         />
-                        <Text style={styles.CauHinhElectronBtnText}>Phương Trình Hóa Học{'\n'}(Đang phát triển)</Text>
+                        <Text style={styles.BtnText}>Phương Trình Hóa Học{'\n'}(Đang phát triển)</Text>
                     </TouchableOpacity>
 
                     <TouchableOpacity
-                        style={styles.CauHinhElectronBtn}
+                        style={styles.Btn}
                         onPress={() => navigation.navigate('TraCuuNT')}
                     >   
                         <Image 
-                            style={styles.CauHinhElectronImage}
+                            style={styles.BtnImage}
                             source={require('../../assets/img/Chemistry/chatHoaHoc.png')}
                         />
-                        <Text style={styles.CauHinhElectronBtnText}>Tra Cứu Nguyên Tố{'\n'}(Đang phát triển)</Text>
+                        <Text style={styles.BtnText}>Tra Cứu Nguyên Tố{'\n'}(Đang phát triển)</Text>
                     </TouchableOpacity>
 
                     <TouchableOpacity
-                        style={styles.CauHinhElectronBtn}
+                        style={styles.Btn}
                         onPress={() => navigation.navigate('DayHoatDongKimLoai')}
                     >   
                         <Image 
-                            style={styles.CauHinhElectronImage}
+                            style={styles.BtnImage}
                             source={require('../../assets/img/Chemistry/dayDienHoa.png')}
                         />
-                        <Text style={styles.CauHinhElectronBtnText}>Dãy Hoạt Động Kim Loại</Text>
+                        <Text style={styles.BtnText}>Dãy Hoạt Động Kim Loại</Text>
                     </TouchableOpacity>
 
                     <TouchableOpacity
-                        style={styles.CauHinhElectronBtn}
+                        style={styles.Btn}
                         onPress={() => navigation.navigate('CauHinhE')}
                     >   
                         <Image 
-                            style={styles.CauHinhElectronImage}
+                            style={styles.BtnImage}
                             source={require('../../assets/img/chemistry.png')}
                         />
-                        <Text style={styles.CauHinhElectronBtnText}>Cấu Hình Electron</Text>
+                        <Text style={styles.BtnText}>Cấu Hình Electron</Text>
                     </TouchableOpacity>
 
                     <TouchableOpacity
-                        style={styles.CauHinhElectronBtn}
+                        style={styles.Btn}
                         onPress={() => navigation.navigate('NTHHLop8')}
                     >   
                         <Image 
-                            style={styles.CauHinhElectronImage}
+                            style={styles.BtnImage}
                             source={require('../../assets/img/Chemistry/nthhLop8.png')}
                         />
-                        <Text style={styles.CauHinhElectronBtnText}>Nguyên Tố Hóa Học Lớp 8</Text>
+                        <Text style={styles.BtnText}>Nguyên Tố Hóa Học Lớp 8</Text>
                     </TouchableOpacity>
 
                     <TouchableOpacity
-                        style={styles.CauHinhElectronBtn}
+                        style={styles.Btn}
                         onPress={() => navigation.navigate('BangTinhTan')}
                     >   
                         <Image 
-                            style={styles.CauHinhElectronImage}
+                            style={styles.BtnImage}
                             source={require('../../assets/img/Chemistry/searchChemistry.png')}
                         />
-                        <Text style={styles.CauHinhElectronBtnText}>Bảng Tính Tan</Text>
+                        <Text style={styles.BtnText}>Bảng Tính Tan</Text>
                     </TouchableOpacity>
 
                     <TouchableOpacity
-                        style={styles.CauHinhElectronBtn}
+                        style={styles.Btn}
                         onPress={() => navigation.navigate('BangTuanHoan')}
                     >   
                         <Image 
-                            style={styles.CauHinhElectronImage}
+                            style={styles.BtnImage}
                             source={require('../../assets/img/Chemistry/bangtuanhoan.png')}
                         />
-                        <Text style={styles.CauHinhElectronBtnText}>Bảng Tuần Hoàn</Text>
+                        <Text style={styles.BtnText}>Bảng Tuần Hoàn</Text>
                     </TouchableOpacity>
 
                     <TouchableOpacity
-                        style={styles.CauHinhElectronBtn}
+                        style={styles.Btn}
                         onPress={() => navigation.navigate('ColorChemistry')}
                     >   
                         <Image 
-                            style={styles.CauHinhElectronImage}
+                            style={styles.BtnImage}
                             source={require('../../assets/img/Chemistry/colorChemistry.png')}
                         />
-                        <Text style={styles.CauHinhElectronBtnText}>Màu Một Số Chất Phổ Biến</Text>
+                        <Text style={styles.BtnText}>Màu Một Số Chất Phổ Biến</Text>
                     </TouchableOpacity>
                 </View>
             </ScrollView>
