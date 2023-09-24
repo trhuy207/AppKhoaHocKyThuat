@@ -5,7 +5,6 @@ import { StatusBar } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { createDrawerNavigator } from '@react-navigation/drawer';
 
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { Entypo } from '@expo/vector-icons';
@@ -38,6 +37,9 @@ import SeventhTense from '../English/Tenses/SeventhTense/SeventhTense'
 import EighthTense from '../English/Tenses/EighthTense/EighthTense'
 import NinethTense from '../English/Tenses/NinethTense/NinethTense'
 import TenthTense from '../English/Tenses/TenthTense/TenthTense'
+import EleventhTense from '../English/Tenses/EleventhTense/EleventhTense'
+import TwelfthTense from '../English/Tenses/TwelfthTense/TwelfthTense'
+import ThirteenthTense from '../English/Tenses/ThirteenthTense/ThirteenthTense'
 
 // English Grammar Child
 import CauDieuKien from '../English/Grammar/CauDieuKien/CauDieuKien';
@@ -62,10 +64,58 @@ const StackGroup = () => {
     return(
         <Stack.Navigator>
             <Stack.Screen
-                name='DrawerGroup'
-                component={DrawerGroup}
+                name='TabGroup'
+                component={TabGroup}
                 options={{
                     headerShown: false
+                }}
+            />
+
+            <Stack.Screen 
+                name='Chemistry'
+                component={Chemistry}
+                options={{
+                    headerShown: true,
+                    title: 'Từ Điển Hóa Học',
+                    headerTitleStyle: {
+                        fontWeight: 'bold',
+                    },
+                }}
+            />
+
+            <Stack.Screen 
+                name='Physics'
+                component={Physics}
+                options={{
+                    headerShown: true,
+                    title: 'Công Thức Vật Lý',
+                    headerTitleStyle: {
+                        fontWeight: 'bold',
+                    },
+                }}
+            />
+
+            <Stack.Screen 
+                name='Math'
+                component={Math}
+                options={{
+                    headerShown: true,
+                    title: 'Công Thức Toán',
+                    headerTitleStyle: {
+                        fontWeight: 'bold',
+                    },
+                }}
+            />
+
+            <Stack.Screen 
+                name='English'
+                component={English}
+                options={{
+                    headerShown: true,
+                    title: 'Công Thức Tiếng Anh',
+                    headerTitleStyle: {
+                        fontWeight: 'bold',
+                    },
                 }}
             />
 
@@ -239,6 +289,30 @@ const StackGroup = () => {
                 }}
             />
 
+            <Stack.Screen
+                name='EleventhTense'
+                component={EleventhTense}
+                options={{
+                    headerShown: false
+                }}
+            />
+
+            <Stack.Screen
+                name='TwelfthTense'
+                component={TwelfthTense}
+                options={{
+                    headerShown: false
+                }}
+            />
+
+            <Stack.Screen
+                name='ThirteenthTense'
+                component={ThirteenthTense}
+                options={{
+                    headerShown: false
+                }}
+            />
+
             {/* English Grammar Child */}
             <Stack.Screen
                 name='CauDieuKien'
@@ -304,6 +378,11 @@ const TabGroup = () => {
                 options={{
                     title: 'AH STUDY',
                     tabBarLabel: 'Trang Chủ',
+                    headerTitleStyle: {
+                        fontWeight: 'bold',
+                        color: '#524eb7',
+                        fontSize: 34
+                    }
                 }}
             />
 
@@ -312,7 +391,10 @@ const TabGroup = () => {
                 component={Document}
                 options={{
                     title: 'Tài Liệu',
-                    headerShown: true
+                    headerShown: true,
+                    headerTitleStyle: {
+                        fontWeight: 'bold'
+                    }
                 }}
             />
 
@@ -321,63 +403,13 @@ const TabGroup = () => {
                 component={Info}
                 options={{
                     title: 'Thông Tin',
-                    headerShown: true
+                    headerShown: true,
+                    headerTitleStyle: {
+                        fontWeight: 'bold'
+                    }
                 }}
             />
         </Tab.Navigator>
-    )
-}
-
-// Drawer
-const Drawer = createDrawerNavigator();
-
-const DrawerGroup = () => {
-    return(
-        <Drawer.Navigator screenOptions={{headerShown: false}}>
-            <Drawer.Screen 
-                name='TabGroup'
-                component={TabGroup}
-                options={{
-                    title: 'AH STUDY',
-                }}
-            />
-
-            <Drawer.Screen 
-                name='Chemistry'
-                component={Chemistry}
-                options={{
-                    headerShown: true,
-                    title: 'Từ Điển Hóa Học',
-                }}
-            />
-
-            <Drawer.Screen 
-                name='Physics'
-                component={Physics}
-                options={{
-                    headerShown: true,
-                    title: 'Công Thức Vật Lý'
-                }}
-            />
-
-            <Drawer.Screen 
-                name='Math'
-                component={Math}
-                options={{
-                    headerShown: true,
-                    title: 'Công Thức Toán'
-                }}
-            />
-
-            <Drawer.Screen 
-                name='English'
-                component={English}
-                options={{
-                    headerShown: true,
-                    title: 'Công Thức Tiếng Anh',
-                }}
-            />
-        </Drawer.Navigator>
     )
 }
 

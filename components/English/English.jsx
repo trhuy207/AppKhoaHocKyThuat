@@ -16,7 +16,7 @@ const English = ({ navigation }) => {
                             style={styles.btnImage}
                             source={require('../../assets/img/English/tense.png')}
                         />
-                        <Text style={styles.btnText}>10 Thì Cơ Bản Tiếng Anh</Text>
+                        <Text style={styles.btnText}>13 Thì Cơ Bản Tiếng Anh</Text>
                     </TouchableOpacity>
 
                     <TouchableOpacity

@@ -17,8 +17,8 @@ const BangTinhTan = ({navigation}) => {
                 <Text style={styles.headerTitle}>Bảng Tính Tan</Text>
             </View>
 
-            <View style={styles.body}>
-                <ScrollView>
+            <ScrollView>
+                <View style={styles.body}>
                     <View style={styles.chuThich}>
                         <View styles={styles.tanNhieu}>
                             <Text style={styles.tanNhieuText}>T = Tan nhiều</Text>
@@ -2084,8 +2084,8 @@ const BangTinhTan = ({navigation}) => {
                             </Text>
                         </View>
                     </View>
-                </ScrollView>
-            </View>
+                </View>
+            </ScrollView>
         </SafeAreaView>
     )
 }

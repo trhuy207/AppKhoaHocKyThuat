@@ -39,14 +39,14 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderColor: '#6A1B4D',
         borderRadius: 10,
-        alignItems: 'center'
     },
 
     cardBtnText: {
         padding: 15,
         fontSize: 15,
         fontWeight: 'bold',
-        color: '#03203C'
+        color: '#03203C',
+        textAlign: 'center'
     },
 })
 
