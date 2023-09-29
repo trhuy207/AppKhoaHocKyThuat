@@ -19,17 +19,20 @@ const BangTinhTan = ({navigation}) => {
 
             <ScrollView>
                 <View style={styles.body}>
-                    <View style={styles.chuThich}>
-                        <View styles={styles.tanNhieu}>
-                            <Text style={styles.tanNhieuText}>T = Tan nhiều</Text>
+                    <ScrollView horizontal={true}>
+                        <View style={styles.chuThich}>
+                            <View styles={styles.tanNhieu}>
+                                <Text style={styles.tanNhieuText}>T = Tan nhiều</Text>
+                            </View>
+                            <View styles={styles.itTan}>
+                                <Text style={styles.itTanText}>I = Ít tan</Text>
+                            </View>
+                            <View styles={styles.khongTan}>
+                                <Text style={styles.khongTanText}>K = Không tan</Text>
+                            </View>
                         </View>
-                        <View styles={styles.itTan}>
-                            <Text style={styles.itTanText}>I = Ít tan</Text>
-                        </View>
-                        <View styles={styles.khongTan}>
-                            <Text style={styles.khongTanText}>K = Không tan</Text>
-                        </View>
-                    </View>
+                    </ScrollView>
+                    
                     <View style={styles.bangTinhTan}>
                         <View style={styles.table}>
                             <View style={styles.tableBodyColumn}>

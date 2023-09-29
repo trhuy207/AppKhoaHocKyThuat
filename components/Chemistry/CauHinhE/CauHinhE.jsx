@@ -10,6 +10,25 @@ import styles from './CauHinhE.style'
 import data from './data'
 
 const CauHinhE = ({navigation}) => {
+    const item = ({item}) => {
+        return(
+            <View style={styles.row}>
+                <View style={[styles.rowChild, {width: '12%'}]}>
+                    <Text style={styles.rowText}>{item.id}</Text>
+                </View>
+                <View style={[styles.rowChild, {width: '28%'}]}>
+                    <Text style={styles.rowText}>{item.eName}</Text>
+                </View>
+                <View style={[styles.rowChild, {width: '25%'}]}>
+                    <Text style={styles.rowText}>{item.sign}</Text>
+                </View>
+                <View style={[styles.rowChild, {width: '35%'}]}>
+                    <Text style={styles.rowText}>{item.eC}</Text>
+                </View>
+            </View>
+        )
+    }
+
     return (
         <SafeAreaView style={styles.container}>
             <View style={styles.header}>
@@ -20,47 +39,32 @@ const CauHinhE = ({navigation}) => {
                 </TouchableOpacity>
                 <Text style={styles.headerTitle}>Cấu Hình Electron</Text>
             </View>
-            <FlatList
-                data={data}
-                renderItem={({item}) => {
-                    return(
-                        <ScrollView>
-                            <View>
-                                <Table borderStyle={{borderWidth:1, borderColor: '#c8e1ff'}}>
-                                    <Row 
-                                        data={item.header}
-                                        style={{
-                                            backgroundColor:'white',
-                                        }} 
-                                        height={40}
-                                        flexArr={[0.7,1.5,0.75,1.5]}
-                                        textStyle={{
-                                            textAlign: 'center',
-                                            fontSize: 16,
-                                            fontWeight: 'bold'
-                                        }}
-                                    />
 
-                                    <TableWrapper style={{flexDirection: 'row'}}>
-                                        <Rows 
-                                            data={item.cauhinhe}  
-                                            flexArr={[0.7,1.5,0.75,1.5]} 
-                                            style={{
-                                                backgroundColor: 'white',
-                                                height: 'auto'
-                                            }}
-                                            textStyle={{
-                                                fontSize: 14,
-                                                padding: 10
-                                            }}
-                                        />
-                                    </TableWrapper>
-                                </Table>
+            <ScrollView>
+                <View style={styles.body}>
+                    <View style={styles.table}>
+                        <View style={styles.row}>
+                            <View style={[styles.rowChildTitle, {width: '12%'}]}>
+                                <Text style={[styles.rowTitle, {fontWeight: 'bold'}]}>VỊ TRÍ</Text>
                             </View>
-                        </ScrollView>
-                    )
-                }}
-            />
+                            <View style={[styles.rowChildTitle, {width: '28%'}]}>
+                                <Text style={[styles.rowTitle, {fontWeight: 'bold'}]}>NGUYÊN TỐ</Text>
+                            </View>
+                            <View style={[styles.rowChildTitle, {width: '25%'}]}>
+                                <Text style={[styles.rowTitle, {fontWeight: 'bold'}]}>KÍ HIỆU</Text>
+                            </View>
+                            <View style={[styles.rowChildTitle, {width: '35%'}]}>
+                                <Text style={[styles.rowTitle, {fontWeight: 'bold'}]}>CẤU HÌNH E</Text>
+                            </View>
+                        </View>
+                    </View>
+                    <FlatList
+                        data={data}
+                        renderItem={item}
+                        keyExtractor={(item, index) => index.toString()}
+                    />
+                </View>
+            </ScrollView>
         </SafeAreaView>
     )
 }
