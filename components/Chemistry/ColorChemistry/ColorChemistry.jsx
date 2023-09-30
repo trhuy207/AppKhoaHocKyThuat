@@ -1,26 +1,15 @@
-import { View, Text, TouchableOpacity, ScrollView, FlatList, SafeAreaView } from 'react-native'
+import { View, Text, ScrollView, FlatList, SafeAreaView } from 'react-native'
 import React from 'react'
 
 import { Table, Row, Rows, TableWrapper } from 'react-native-table-component';
-
-import { AntDesign } from '@expo/vector-icons';
 
 import data from './data'
 
 import styles from './ColorChemistry.style'
 
-const ColorChemistry = ({navigation}) => {
+const ColorChemistry = () => {
     return (
         <SafeAreaView style={styles.container}>
-            <View style={styles.header}>
-                <TouchableOpacity
-                    onPress={() => navigation.navigate('Chemistry')}
-                >
-                    <AntDesign name="back" size={24} color="black" style={styles.icon}/>
-                </TouchableOpacity>
-                <Text style={styles.headerTitle}>Màu Một Số Chất Phổ Biến</Text>
-            </View>
-            
             <FlatList 
                 data={data}
                 renderItem={({item}) => {

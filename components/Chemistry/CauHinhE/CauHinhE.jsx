@@ -1,15 +1,11 @@
-import { View, Text, TouchableOpacity, SafeAreaView, ScrollView, FlatList } from 'react-native'
+import { View, Text, SafeAreaView, ScrollView, FlatList } from 'react-native'
 import React from 'react'
-
-import { Table, Row, Rows, TableWrapper } from 'react-native-table-component';
-
-import { AntDesign } from '@expo/vector-icons';
 
 import styles from './CauHinhE.style'
 
 import data from './data'
 
-const CauHinhE = ({navigation}) => {
+const CauHinhE = () => {
     const item = ({item}) => {
         return(
             <View style={styles.row}>
@@ -31,15 +27,6 @@ const CauHinhE = ({navigation}) => {
 
     return (
         <SafeAreaView style={styles.container}>
-            <View style={styles.header}>
-                <TouchableOpacity
-                    onPress={() => navigation.navigate('Chemistry')}
-                >
-                    <AntDesign name="back" size={24} color="black" style={styles.icon}/>
-                </TouchableOpacity>
-                <Text style={styles.headerTitle}>Cấu Hình Electron</Text>
-            </View>
-
             <ScrollView>
                 <View style={styles.body}>
                     <View style={styles.table}>

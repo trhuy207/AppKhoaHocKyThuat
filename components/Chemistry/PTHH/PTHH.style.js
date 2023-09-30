@@ -5,26 +5,6 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#D7F9FA',
     },
-
-    // Header
-    header: {
-        flexDirection:"row",
-        height: 50,
-        alignItems: 'center',
-        justifyContent: 'flex-start',
-        borderBottomWidth: 0.25,
-        backgroundColor: 'white',
-    },
-
-    icon : {
-        marginLeft: 20
-    },
-
-    headerTitle: {
-        fontWeight: 'bold',
-        fontSize: 18,
-        marginLeft: 30,
-    },
 })
 
 export default styles

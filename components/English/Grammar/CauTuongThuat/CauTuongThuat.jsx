@@ -1,11 +1,9 @@
 import { View, Text, SafeAreaView, TouchableOpacity, ScrollView } from 'react-native'
 import React, { useState } from 'react'
 
-import { AntDesign } from '@expo/vector-icons';
-
 import styles from './CauTuongThuat.style'
 
-const CauTuongThuat = ({navigation}) => {
+const CauTuongThuat = () => {
     const [showA, setShowA] = useState(false);
     const [showB, setShowB] = useState(false);
     const [showC, setShowC] = useState(false);
@@ -14,15 +12,6 @@ const CauTuongThuat = ({navigation}) => {
     const [showF, setShowF] = useState(false);
     return (
         <SafeAreaView style={styles.container}>
-            <View style={styles.header}>
-                <TouchableOpacity
-                    onPress={() => navigation.navigate('Grammar')}
-                >
-                    <AntDesign name="back" size={24} color="black" style={styles.icon}/>
-                </TouchableOpacity>
-                <Text style={styles.headerTitle}>Câu Tường Thuật</Text>
-            </View>
-
             <ScrollView>
                 <View style={styles.body}>
                     <View style={styles.card}>

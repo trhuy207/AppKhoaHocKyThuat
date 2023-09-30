@@ -8,14 +8,6 @@ import styles from './NTHHLop8.style'
 const NTHHLop8 = ({navigation}) => {
     return (
         <SafeAreaView style={styles.container}>
-            <View style={styles.header}>
-                <TouchableOpacity
-                    onPress={() => navigation.navigate('Chemistry')}
-                >
-                    <AntDesign name="back" size={24} color="black" style={styles.icon}/>
-                </TouchableOpacity>
-                <Text style={styles.headerTitle}>Nguyên Tố Hóa Học Lớp 8</Text>
-            </View>
             <ScrollView>
                 <View style={styles.body}>
                     <View styles={styles.table}>

@@ -1,22 +1,12 @@
-import { View, Text, SafeAreaView, TouchableOpacity, ScrollView } from 'react-native'
+import { View, Text, SafeAreaView, ScrollView } from 'react-native'
 import React from 'react'
 
-import { AntDesign } from '@expo/vector-icons';
 
 import styles from './CauDienTaMucDich.style'
 
-const CauDienTaMucDich = ({navigation}) => {
+const CauDienTaMucDich = () => {
     return (
         <SafeAreaView style={styles.container}>
-            <View style={styles.header}>
-                <TouchableOpacity
-                    onPress={() => navigation.navigate('Grammar')}
-                >
-                    <AntDesign name="back" size={24} color="black" style={styles.icon}/>
-                </TouchableOpacity>
-                <Text style={styles.headerTitle}>Câu Diễn Tả Mục Đích</Text>
-            </View>
-
             <ScrollView>
                 <View style={styles.body}>
                     <View style={styles.card}>

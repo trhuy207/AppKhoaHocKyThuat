@@ -8,15 +8,6 @@ import styles from './DayHoatDongKimLoai.style'
 const DayDienHoa = ({navigation}) => {
     return (
         <SafeAreaView style={styles.container}>
-            <View style={styles.header}>
-                <TouchableOpacity
-                    onPress={() => navigation.navigate('Chemistry')}
-                >
-                    <AntDesign name="back" size={24} color="black" style={styles.icon}/>
-                </TouchableOpacity>
-                <Text style={styles.headerTitle}>Dãy Hoạt Động Kim Loại</Text>
-            </View>
-
             <View style={styles.body}>
                 <ScrollView horizontal={true}>
                     <View style={styles.dayHoatDong}>

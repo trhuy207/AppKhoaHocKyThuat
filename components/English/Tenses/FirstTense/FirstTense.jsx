@@ -1,22 +1,11 @@
-import { View, Text, SafeAreaView, TouchableOpacity, ScrollView} from 'react-native'
+import { View, Text, SafeAreaView, ScrollView} from 'react-native'
 import React from 'react'
-
-import { AntDesign } from '@expo/vector-icons';
 
 import styles from './FirstTense.style'
 
-const FirstTense = ({navigation}) => {
+const FirstTense = () => {
     return (
         <SafeAreaView style={styles.container}>
-            <View style={styles.header}>
-                <TouchableOpacity
-                    onPress={() => navigation.goBack()}
-                >
-                    <AntDesign name="back" size={24} color="black" style={styles.icon}/>
-                </TouchableOpacity>
-                <Text style={styles.headerTitle}>Hiện Tại Đơn</Text>
-            </View>
-
             <ScrollView>
                 <View style={styles.body}>
                     <View style={styles.formulaCard}>
