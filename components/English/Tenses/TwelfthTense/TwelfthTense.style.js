@@ -67,7 +67,21 @@ const styles = StyleSheet.create({
         marginLeft: 10,
         fontStyle: 'italic',
         marginBottom: 5
-    }
+    },
+
+    hideShowBtn: {
+        borderWidth: 0.5,
+        alignSelf: 'flex-start',
+        borderColor: '#6A1B4D',
+        borderRadius: 5,
+        marginLeft : 10,
+        marginBottom: 5
+    },
+
+    hideShowBtnText: {
+        padding: 5,
+        color: '#0084ff'
+    },
 })
 
 export default styles

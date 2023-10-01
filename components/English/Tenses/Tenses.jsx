@@ -49,7 +49,7 @@ const Tenses = ({ navigation }) => {
                             style={styles.btn}
                             onPress={() => navigation.navigate('EleventhTense')}
                         >
-                            <Text style={styles.btnText}>Hiện tại hoàn thành tiếp diễn {'\n'}<Text style={{fontWeight: 'normal'}}>(Present Perfect Continuous){'\n'}(Đang phát triển)</Text></Text>
+                            <Text style={styles.btnText}>Hiện tại hoàn thành tiếp diễn {'\n'}<Text style={{fontWeight: 'normal'}}>(Present Perfect Continuous)</Text></Text>
                         </TouchableOpacity>
 
                         {/* quá khư đơn */}
@@ -81,7 +81,7 @@ const Tenses = ({ navigation }) => {
                             style={styles.btn}
                             onPress={() => navigation.navigate('TwelfthTense')}
                         >
-                            <Text style={styles.btnText}>Quá khứ hoàn thành tiếp diễn {'\n'}<Text style={{fontWeight: 'normal'}}>(Past Perfect Continuous){'\n'}(Đang phát triển)</Text></Text>
+                            <Text style={styles.btnText}>Quá khứ hoàn thành tiếp diễn {'\n'}<Text style={{fontWeight: 'normal'}}>(Past Perfect Continuous)</Text></Text>
                         </TouchableOpacity>
 
                         {/* tương lai đơn */}
@@ -121,7 +121,7 @@ const Tenses = ({ navigation }) => {
                             style={styles.btn}
                             onPress={() => navigation.navigate('ThirteenthTense')}
                         >
-                            <Text style={styles.btnText}>Tương lai hoàn thành tiếp diễn {'\n'}<Text style={{fontWeight: 'normal'}}>(Future Perfect Continuous){'\n'}(Đang phát triển)</Text></Text>
+                            <Text style={styles.btnText}>Tương lai hoàn thành tiếp diễn {'\n'}<Text style={{fontWeight: 'normal'}}>(Future Perfect Continuous)</Text></Text>
                         </TouchableOpacity>
                     </View>
                 </View>
