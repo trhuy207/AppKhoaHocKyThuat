@@ -1,4 +1,4 @@
-import { View, Text, SafeAreaView, ScrollView } from 'react-native'
+import { View, Text, SafeAreaView, ScrollView} from 'react-native'
 import React from 'react'
 
 import styles from './BangTinhTan.style'
@@ -26,38 +26,206 @@ const BangTinhTan = () => {
                         <View style={styles.table}>
                             <View style={styles.tableBodyColumn}>
                                 <Text style={styles.tableBodyText1}></Text>
-                                <Text style={styles.tableBodyText}>F-</Text>
-                                <Text style={styles.tableBodyText}>Cl-</Text>
-                                <Text style={styles.tableBodyText}>Br-</Text>
-                                <Text style={styles.tableBodyText}>I-</Text>
-                                <Text style={styles.tableBodyText}>S2-</Text>
-                                <Text style={styles.tableBodyText}>ClO3 -</Text>
-                                <Text style={styles.tableBodyText}>CO3 2-</Text>
-                                <Text style={styles.tableBodyText}>SO3 2-</Text>
-                                <Text style={styles.tableBodyText}>SO4 2-</Text>
-                                <Text style={styles.tableBodyText}>NO2 -</Text>
-                                <Text style={styles.tableBodyText}>NO3 -</Text>
-                                <Text style={styles.tableBodyText}>PO4 3-</Text>
-                                <Text style={styles.tableBodyText}>OH-</Text>
+                                <View style={styles.tableBodyText3}>
+                                    <Text style={styles.cthh}>F</Text>
+                                    <View style={styles.grp}>
+                                        <Text style={styles.subTop}>-</Text>
+                                        <Text style={styles.sub}></Text>
+                                    </View>
+                                </View>
+                                <View style={styles.tableBodyText3}>
+                                    <Text style={styles.cthh}>Cl</Text>
+                                    <View style={styles.grp}>
+                                        <Text style={styles.subTop}>-</Text>
+                                        <Text style={styles.sub}></Text>
+                                    </View>
+                                </View>
+                                <View style={styles.tableBodyText3}>
+                                    <Text style={styles.cthh}>Br</Text>
+                                    <View style={styles.grp}>
+                                        <Text style={styles.subTop}>-</Text>
+                                        <Text style={styles.sub}></Text>
+                                    </View>
+                                </View>
+                                <View style={styles.tableBodyText3}>
+                                    <Text style={styles.cthh}>I</Text>
+                                    <View style={styles.grp}>
+                                        <Text style={styles.subTop}>-</Text>
+                                        <Text style={styles.sub}></Text>
+                                    </View>
+                                </View>
+                                <View style={styles.tableBodyText3}>
+                                    <Text style={styles.cthh}>S</Text>
+                                    <View style={styles.grp}>
+                                        <Text style={styles.subTop}>2-</Text>
+                                        <Text style={styles.sub}></Text>
+                                    </View>
+                                </View>
+                                <View style={styles.tableBodyText3}>
+                                    <Text style={styles.cthh}>ClO</Text>
+                                    <View style={styles.grp}>
+                                        <Text style={styles.subTop}>-</Text>
+                                        <Text style={styles.sub}>3</Text>
+                                    </View>
+                                </View>
+                                <View style={styles.tableBodyText3}>
+                                    <Text style={styles.cthh}>CO</Text>
+                                    <View style={styles.grp}>
+                                        <Text style={styles.subTop}>2-</Text>
+                                        <Text style={styles.sub}>3</Text>
+                                    </View>
+                                </View>
+                                <View style={styles.tableBodyText3}>
+                                    <Text style={styles.cthh}>SO</Text>
+                                    <View style={styles.grp}>
+                                        <Text style={styles.subTop}>2-</Text>
+                                        <Text style={styles.sub}>3</Text>
+                                    </View>
+                                </View>
+                                <View style={styles.tableBodyText3}>
+                                    <Text style={styles.cthh}>SO</Text>
+                                    <View style={styles.grp}>
+                                        <Text style={styles.subTop}>2-</Text>
+                                        <Text style={styles.sub}>4</Text>
+                                    </View>
+                                </View>
+                                <View style={styles.tableBodyText3}>
+                                    <Text style={styles.cthh}>NO</Text>
+                                    <View style={styles.grp}>
+                                        <Text style={styles.subTop}>-</Text>
+                                        <Text style={styles.sub}>2</Text>
+                                    </View>
+                                </View>
+                                <View style={styles.tableBodyText3}>
+                                    <Text style={styles.cthh}>NO</Text>
+                                    <View style={styles.grp}>
+                                        <Text style={styles.subTop}>-</Text>
+                                        <Text style={styles.sub}>3</Text>
+                                    </View>
+                                </View>
+                                <View style={styles.tableBodyText3}>
+                                    <Text style={styles.cthh}>PO</Text>
+                                    <View style={styles.grp}>
+                                        <Text style={styles.subTop}>3-</Text>
+                                        <Text style={styles.sub}>4</Text>
+                                    </View>
+                                </View>
+                                <View style={styles.tableBodyText3}>
+                                    <Text style={styles.cthh}>OH</Text>
+                                    <View style={styles.grp}>
+                                        <Text style={styles.subTop}>-</Text>
+                                        <Text style={styles.sub}></Text>
+                                    </View>
+                                </View>
                             </View>
                             <ScrollView horizontal={true}>
                                 <View style={styles.tableContent}>
-                                    <View style={styles.talbeHeader}>
-                                        <Text style={styles.tableHeaderText}>H+</Text>
-                                        <Text style={styles.tableHeaderText}>NH4 +</Text>
-                                        <Text style={styles.tableHeaderText}>Li+</Text>
-                                        <Text style={styles.tableHeaderText}>Na+</Text>
-                                        <Text style={styles.tableHeaderText}>K+</Text>
-                                        <Text style={styles.tableHeaderText}>Mg2+</Text>
-                                        <Text style={styles.tableHeaderText}>Ca2+</Text>
-                                        <Text style={styles.tableHeaderText}>Ba2+</Text>
-                                        <Text style={styles.tableHeaderText}>Zn2+</Text>
-                                        <Text style={styles.tableHeaderText}>Fe2+</Text>
-                                        <Text style={styles.tableHeaderText}>Fe3+</Text>
-                                        <Text style={styles.tableHeaderText}>Cu2+</Text>
-                                        <Text style={styles.tableHeaderText}>Ag+</Text>
-                                        <Text style={styles.tableHeaderText}>Al3+</Text>
-                                        <Text style={styles.tableHeaderText}>Pb2+</Text>
+                                    <View style={styles.tableHeader}>
+                                        <View style={styles.tableHeaderText3}>
+                                            <Text style={styles.cthh}>H</Text>
+                                            <View style={styles.grp}>
+                                                <Text style={styles.subTop}>+</Text>
+                                                <Text style={styles.sub}></Text>
+                                            </View>
+                                        </View>
+                                        <View style={styles.tableHeaderText3}>
+                                            <Text style={styles.cthh}>NH</Text>
+                                            <View style={styles.grp}>
+                                                <Text style={styles.subTop}>+</Text>
+                                                <Text style={styles.sub}>4</Text>
+                                            </View>
+                                        </View>
+                                        <View style={styles.tableHeaderText3}>
+                                            <Text style={styles.cthh}>Li</Text>
+                                            <View style={styles.grp}>
+                                                <Text style={styles.subTop}>+</Text>
+                                                <Text style={styles.sub}></Text>
+                                            </View>
+                                        </View>
+                                        <View style={styles.tableHeaderText3}>
+                                            <Text style={styles.cthh}>Na</Text>
+                                            <View style={styles.grp}>
+                                                <Text style={styles.subTop}>+</Text>
+                                                <Text style={styles.sub}></Text>
+                                            </View>
+                                        </View>
+                                        <View style={styles.tableHeaderText3}>
+                                            <Text style={styles.cthh}>K</Text>
+                                            <View style={styles.grp}>
+                                                <Text style={styles.subTop}>+</Text>
+                                                <Text style={styles.sub}></Text>
+                                            </View>
+                                        </View>
+                                        <View style={styles.tableHeaderText3}>
+                                            <Text style={styles.cthh}>Mg</Text>
+                                            <View style={styles.grp}>
+                                                <Text style={styles.subTop}>2+</Text>
+                                                <Text style={styles.sub}></Text>
+                                            </View>
+                                        </View>
+                                        <View style={styles.tableHeaderText3}>
+                                            <Text style={styles.cthh}>Ca</Text>
+                                            <View style={styles.grp}>
+                                                <Text style={styles.subTop}>2+</Text>
+                                                <Text style={styles.sub}></Text>
+                                            </View>
+                                        </View>
+                                        <View style={styles.tableHeaderText3}>
+                                            <Text style={styles.cthh}>Ba</Text>
+                                            <View style={styles.grp}>
+                                                <Text style={styles.subTop}>2+</Text>
+                                                <Text style={styles.sub}></Text>
+                                            </View>
+                                        </View>
+                                        <View style={styles.tableHeaderText3}>
+                                            <Text style={styles.cthh}>Zn</Text>
+                                            <View style={styles.grp}>
+                                                <Text style={styles.subTop}>2+</Text>
+                                                <Text style={styles.sub}></Text>
+                                            </View>
+                                        </View>
+                                        <View style={styles.tableHeaderText3}>
+                                            <Text style={styles.cthh}>Fe</Text>
+                                            <View style={styles.grp}>
+                                                <Text style={styles.subTop}>2+</Text>
+                                                <Text style={styles.sub}></Text>
+                                            </View>
+                                        </View>
+                                        <View style={styles.tableHeaderText3}>
+                                            <Text style={styles.cthh}>Fe</Text>
+                                            <View style={styles.grp}>
+                                                <Text style={styles.subTop}>3+</Text>
+                                                <Text style={styles.sub}></Text>
+                                            </View>
+                                        </View>
+                                        <View style={styles.tableHeaderText3}>
+                                            <Text style={styles.cthh}>Cu</Text>
+                                            <View style={styles.grp}>
+                                                <Text style={styles.subTop}>2+</Text>
+                                                <Text style={styles.sub}></Text>
+                                            </View>
+                                        </View>
+                                        <View style={styles.tableHeaderText3}>
+                                            <Text style={styles.cthh}>Ag</Text>
+                                            <View style={styles.grp}>
+                                                <Text style={styles.subTop}>+</Text>
+                                                <Text style={styles.sub}></Text>
+                                            </View>
+                                        </View>
+                                        <View style={styles.tableHeaderText3}>
+                                            <Text style={styles.cthh}>Al</Text>
+                                            <View style={styles.grp}>
+                                                <Text style={styles.subTop}>3+</Text>
+                                                <Text style={styles.sub}></Text>
+                                            </View>
+                                        </View>
+                                        <View style={styles.tableHeaderText3}>
+                                            <Text style={styles.cthh}>Pb</Text>
+                                            <View style={styles.grp}>
+                                                <Text style={styles.subTop}>2+</Text>
+                                                <Text style={styles.sub}></Text>
+                                            </View>
+                                        </View>
                                     </View>
 
                                     <View style={styles.tableBody}>

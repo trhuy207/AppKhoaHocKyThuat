@@ -123,7 +123,8 @@ const StackGroup = () => {
                 name='Tenses'
                 component={Tenses}
                 options={{
-                    headerShown: false
+                    headerTitle: '13 Thì Cơ Bản',
+                    headerBackTitle: 'Trở lại'
                 }}
             />
 
@@ -131,7 +132,8 @@ const StackGroup = () => {
                 name='Grammar'
                 component={Grammar}
                 options={{
-                    headerShown: false
+                    headerTitle: 'Ngữ Pháp Khác',
+                    headerBackTitle: 'Trở lại'
                 }}
             />
 
@@ -140,7 +142,8 @@ const StackGroup = () => {
                 name='CauHinhE'
                 component={CauHinhE}
                 options={{
-                    headerTitle: 'Cấu Hình Electron'
+                    headerTitle: 'Cấu Hình Electron',
+                    headerBackTitle: 'Trở lại'
                 }}
             /> 
 
@@ -148,7 +151,8 @@ const StackGroup = () => {
                 name='ColorChemistry'
                 component={ColorChemistry}
                 options={{
-                    headerTitle: 'Màu Một Số Chất'
+                    headerTitle: 'Màu Một Số Chất',
+                    headerBackTitle: 'Trở lại'
                 }}
             /> 
 
@@ -156,7 +160,8 @@ const StackGroup = () => {
                 name='TraCuuNT'
                 component={TraCuuNT}
                 options={{
-                    headerTitle: 'Tra Cứu Nguyên Tố'
+                    headerTitle: 'Tra Cứu Nguyên Tố',
+                    headerBackTitle: 'Trở lại'
                 }}
             /> 
 
@@ -164,7 +169,8 @@ const StackGroup = () => {
                 name='PTHH'
                 component={PTHH}
                 options={{
-                    headerTitle: 'Phương Trình Hóa Học'
+                    headerTitle: 'Phương Trình Hóa Học',
+                    headerBackTitle: 'Trở lại'
                 }}
             /> 
 
@@ -172,7 +178,8 @@ const StackGroup = () => {
                 name='DayHoatDongKimLoai'
                 component={DayHoatDongKimLoai}
                 options={{
-                    headerTitle: 'Dãy Hoạt Động Kim Loại'
+                    headerTitle: 'Dãy Hoạt Động Kim Loại',
+                    headerBackTitle: 'Trở lại'
                 }}
             /> 
 
@@ -180,7 +187,8 @@ const StackGroup = () => {
                 name='NTHHLop8'
                 component={NTHHLop8}
                 options={{
-                    headerTitle: 'Nguyên Tố Hóa Học Lớp 8'
+                    headerTitle: 'Nguyên Tố Hóa Học Lớp 8',
+                    headerBackTitle: 'Trở lại'
                 }}
             /> 
 
@@ -188,7 +196,8 @@ const StackGroup = () => {
                 name='BangTinhTan'
                 component={BangTinhTan}
                 options={{
-                    headerTitle: 'Bảng Tính Tan'
+                    headerTitle: 'Bảng Tính Tan',
+                    headerBackTitle: 'Trở lại'
                 }}
             /> 
 
@@ -196,16 +205,18 @@ const StackGroup = () => {
                 name='BangTuanHoan'
                 component={BangTuanHoan}
                 options={{
-                    headerTitle: 'Bảng Tuần Hoàn'
+                    headerTitle: 'Bảng Tuần Hoàn',
+                    headerBackTitle: 'Trở lại'
                 }}
             /> 
 
-            {/* 10 basic tense */}
+            {/* 13 basic tense */}
             <Stack.Screen
                 name='IrregularVerbs'
                 component={IrregularVerbs}
                 options={{
-                    headerTitle: 'Động Từ Bất Quy Tắc'
+                    headerTitle: 'Động Từ Bất Quy Tắc',
+                    headerBackTitle: 'Trở lại'
                 }}
             />
 
@@ -213,7 +224,8 @@ const StackGroup = () => {
                 name='FirstTense'
                 component={FirstTense}
                 options={{
-                    headerTitle: 'Hiện Tại Đơn'
+                    headerTitle: 'Hiện Tại Đơn',
+                    headerBackTitle: 'Trở lại'
                 }}
             />
 
@@ -221,7 +233,8 @@ const StackGroup = () => {
                 name='SecondTense'
                 component={SecondTense}
                 options={{
-                    headerTitle: 'Hiện Tại Tiếp Diễn'
+                    headerTitle: 'Hiện Tại Tiếp Diễn',
+                    headerBackTitle: 'Trở lại'
                 }}
             />
 
@@ -229,7 +242,8 @@ const StackGroup = () => {
                 name='ThirdTense'
                 component={ThirdTense}
                 options={{
-                    headerTitle: 'Hiện Tại Hoàn Thành'
+                    headerTitle: 'Hiện Tại Hoàn Thành',
+                    headerBackTitle: 'Trở lại'
                 }}
             />
 
@@ -237,7 +251,8 @@ const StackGroup = () => {
                 name='FourthTense'
                 component={FourthTense}
                 options={{
-                    headerTitle: 'Quá Khứ Đơn'
+                    headerTitle: 'Quá Khứ Đơn',
+                    headerBackTitle: 'Trở lại'
                 }}
             />
 
@@ -245,7 +260,8 @@ const StackGroup = () => {
                 name='FifthTense'
                 component={FifthTense}
                 options={{
-                    headerTitle: 'Quá Khứ Tiếp Diễn'
+                    headerTitle: 'Quá Khứ Tiếp Diễn',
+                    headerBackTitle: 'Trở lại'
                 }}
             />
 
@@ -253,7 +269,8 @@ const StackGroup = () => {
                 name='SixthTense'
                 component={SixthTense}
                 options={{
-                    headerTitle: 'Quá Khứ Hoàn Thành'
+                    headerTitle: 'Quá Khứ Hoàn Thành',
+                    headerBackTitle: 'Trở lại'
                 }}
             />
 
@@ -261,7 +278,8 @@ const StackGroup = () => {
                 name='SeventhTense'
                 component={SeventhTense}
                 options={{
-                    headerTitle: 'Tương Lai Đơn'
+                    headerTitle: 'Tương Lai Đơn',
+                    headerBackTitle: 'Trở lại'
                 }}
             />
 
@@ -269,7 +287,8 @@ const StackGroup = () => {
                 name='EighthTense'
                 component={EighthTense}
                 options={{
-                    headerTitle: 'Tương Lai Gần'
+                    headerTitle: 'Tương Lai Gần',
+                    headerBackTitle: 'Trở lại'
                 }}
             />
             
@@ -277,7 +296,8 @@ const StackGroup = () => {
                 name='NinethTense'
                 component={NinethTense}
                 options={{
-                    headerTitle: 'Tương Lai Tiếp Diễn'
+                    headerTitle: 'Tương Lai Tiếp Diễn',
+                    headerBackTitle: 'Trở lại'
                 }}
             />
 
@@ -285,7 +305,8 @@ const StackGroup = () => {
                 name='TenthTense'
                 component={TenthTense}
                 options={{
-                    headerTitle: 'Tương Lai Hoàn Thành'
+                    headerTitle: 'Tương Lai Hoàn Thành',
+                    headerBackTitle: 'Trở lại'
                 }}
             />
 
@@ -293,7 +314,8 @@ const StackGroup = () => {
                 name='EleventhTense'
                 component={EleventhTense}
                 options={{
-                    headerTitle: 'Hiện Tại Hoàn Thành Tiếp Diễn'
+                    headerTitle: 'Hiện Tại Hoàn Thành Tiếp Diễn',
+                    headerBackTitle: 'Trở lại'
                 }}
             />
 
@@ -301,7 +323,8 @@ const StackGroup = () => {
                 name='TwelfthTense'
                 component={TwelfthTense}
                 options={{
-                    headerTitle: 'Quá Khứ Hoàn Thành Tiếp Diễn'
+                    headerTitle: 'Quá Khứ Hoàn Thành Tiếp Diễn',
+                    headerBackTitle: 'Trở lại'
                 }}
             />
 
@@ -309,7 +332,8 @@ const StackGroup = () => {
                 name='ThirteenthTense'
                 component={ThirteenthTense}
                 options={{
-                    headerTitle: 'Tương Lai Hoàn Thành Tiếp Diễn'
+                    headerTitle: 'Tương Lai Hoàn Thành Tiếp Diễn',
+                    headerBackTitle: 'Trở lại'
                 }}
             />
 
@@ -318,7 +342,8 @@ const StackGroup = () => {
                 name='CauDieuKien'
                 component={CauDieuKien}
                 options={{
-                    headerTitle: 'Câu Điều kiện'
+                    headerTitle: 'Câu Điều kiện',
+                    headerBackTitle: 'Trở lại'
                 }}
             />
 
@@ -326,7 +351,8 @@ const StackGroup = () => {
                 name='CauDieuUoc'
                 component={CauDieuUoc}
                 options={{
-                    headerTitle: 'Câu Điều Ước'
+                    headerTitle: 'Câu Điều Ước',
+                    headerBackTitle: 'Trở lại'
                 }}
             />
 
@@ -334,7 +360,8 @@ const StackGroup = () => {
                 name='CauTuongThuat'
                 component={CauTuongThuat}
                 options={{
-                    headerTitle: 'Câu Tường Thuật'
+                    headerTitle: 'Câu Tường Thuật',
+                    headerBackTitle: 'Trở lại'
                 }}
             />
 
@@ -342,7 +369,8 @@ const StackGroup = () => {
                 name='CauDienTaMucDich'
                 component={CauDienTaMucDich}
                 options={{
-                    headerTitle: 'Câu Diễn Tả Mục Đích'
+                    headerTitle: 'Câu Diễn Tả Mục Đích',
+                    headerBackTitle: 'Trở lại'
                 }}
             />
         </Stack.Navigator>

@@ -11,6 +11,7 @@ const MainHome = () => {
         <View style={styles.container}>
             <ScrollView>
                 <View style={styles.card}>
+                    {/* Hóa */}
                     <TouchableOpacity
                         style={styles.Btn}
                         onPress={() => navigate('Chemistry')}
@@ -22,6 +23,7 @@ const MainHome = () => {
                         <Text style={styles.BtnText}>Từ Điển Hóa Học{'\n'}(Đang phát triển)</Text>
                     </TouchableOpacity>
 
+                    {/* Lý */}
                     <TouchableOpacity
                         style={styles.Btn}
                         onPress={() => navigate('Physics')}
@@ -33,6 +35,7 @@ const MainHome = () => {
                         <Text style={styles.BtnText}>Công Thức Vật Lý{'\n'}(Đang phát triển)</Text>
                     </TouchableOpacity>
 
+                    {/* Toán */}
                     <TouchableOpacity
                         style={styles.Btn}
                         onPress={() => navigate('Math')}
@@ -44,6 +47,7 @@ const MainHome = () => {
                         <Text style={styles.BtnText}>Công Thức Toán{'\n'}(Đang phát triển)</Text>
                     </TouchableOpacity>
 
+                    {/* Anh */}
                     <TouchableOpacity
                         style={styles.Btn}
                         onPress={() => navigate('English')}
