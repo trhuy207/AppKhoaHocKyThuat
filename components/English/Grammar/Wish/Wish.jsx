@@ -1,9 +1,9 @@
 import { View, Text, SafeAreaView, ScrollView } from 'react-native'
 import React from 'react'
 
-import styles from './CauDieuUoc.style';
+import styles from './Wish.style';
 
-const CauDieuUoc = () => {
+const Wish = () => {
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView>
@@ -61,4 +61,4 @@ const CauDieuUoc = () => {
     )
 }
 
-export default CauDieuUoc
+export default Wish

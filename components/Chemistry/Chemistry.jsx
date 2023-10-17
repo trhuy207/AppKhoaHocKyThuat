@@ -21,17 +21,6 @@ const Chemistry = ({navigation}) => {
 
                     <TouchableOpacity
                         style={styles.Btn}
-                        onPress={() => navigation.navigate('TraCuuNT')}
-                    >   
-                        <Image 
-                            style={styles.BtnImage}
-                            source={require('../../assets/img/Chemistry/chatHoaHoc.png')}
-                        />
-                        <Text style={styles.BtnText}>Tra Cứu Nguyên Tố{'\n'}(Đang phát triển)</Text>
-                    </TouchableOpacity>
-
-                    <TouchableOpacity
-                        style={styles.Btn}
                         onPress={() => navigation.navigate('DayHoatDongKimLoai')}
                     >   
                         <Image 

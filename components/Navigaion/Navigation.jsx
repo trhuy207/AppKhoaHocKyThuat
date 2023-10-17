@@ -42,15 +42,15 @@ import TwelfthTense from '../English/Tenses/TwelfthTense/TwelfthTense'
 import ThirteenthTense from '../English/Tenses/ThirteenthTense/ThirteenthTense'
 
 // English Grammar Child
-import CauDieuKien from '../English/Grammar/CauDieuKien/CauDieuKien';
-import CauDieuUoc from '../English/Grammar/CauDieuUoc/CauDieuUoc';
-import CauTuongThuat from '../English/Grammar/CauTuongThuat/CauTuongThuat';
-import CauDienTaMucDich from '../English/Grammar/CauDienTaMucDich/CauDienTaMucDich';
+import ConditionalSentences from '../English/Grammar/ConditionalSentences/ConditionalSentences';
+import Wish from '../English/Grammar/Wish/Wish';
+import ReportedSpeech from '../English/Grammar/ReportedSpeech/ReportedSpeech';
+import ClausesOfPurpose from '../English/Grammar/ClausesOfPurpose/ClausesOfPurpose';
+import PassiveVoice from '../English/Grammar/PassiveVoice/PassiveVoice'
 
 // Chemistry Child
 import CauHinhE from '../Chemistry/CauHinhE/CauHinhE';
 import ColorChemistry from '../Chemistry/ColorChemistry/ColorChemistry';
-import TraCuuNT from '../Chemistry/TraCuuNT/TraCuuNT';
 import PTHH from '../Chemistry/PTHH/PTHH'
 import DayHoatDongKimLoai from '../Chemistry/DayHoatDongKimLoai/DayHoatDongKimLoai'
 import NTHHLop8 from '../Chemistry/NTHHLop8/NTHHLop8'
@@ -152,15 +152,6 @@ const StackGroup = () => {
                 component={ColorChemistry}
                 options={{
                     headerTitle: 'Màu Một Số Chất',
-                    headerBackTitle: 'Trở lại'
-                }}
-            /> 
-
-            <Stack.Screen
-                name='TraCuuNT'
-                component={TraCuuNT}
-                options={{
-                    headerTitle: 'Tra Cứu Nguyên Tố',
                     headerBackTitle: 'Trở lại'
                 }}
             /> 
@@ -339,8 +330,8 @@ const StackGroup = () => {
 
             {/* English Grammar Child */}
             <Stack.Screen
-                name='CauDieuKien'
-                component={CauDieuKien}
+                name='ConditionalSentences'
+                component={ConditionalSentences}
                 options={{
                     headerTitle: 'Câu Điều kiện',
                     headerBackTitle: 'Trở lại'
@@ -348,8 +339,8 @@ const StackGroup = () => {
             />
 
             <Stack.Screen
-                name='CauDieuUoc'
-                component={CauDieuUoc}
+                name='Wish'
+                component={Wish}
                 options={{
                     headerTitle: 'Câu Điều Ước',
                     headerBackTitle: 'Trở lại'
@@ -357,8 +348,8 @@ const StackGroup = () => {
             />
 
             <Stack.Screen
-                name='CauTuongThuat'
-                component={CauTuongThuat}
+                name='ReportedSpeech'
+                component={ReportedSpeech}
                 options={{
                     headerTitle: 'Câu Tường Thuật',
                     headerBackTitle: 'Trở lại'
@@ -366,8 +357,17 @@ const StackGroup = () => {
             />
 
             <Stack.Screen
-                name='CauDienTaMucDich'
-                component={CauDienTaMucDich}
+                name='ClausesOfPurpose'
+                component={ClausesOfPurpose}
+                options={{
+                    headerTitle: 'Câu Diễn Tả Mục Đích',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            <Stack.Screen
+                name='PassiveVoice'
+                component={PassiveVoice}
                 options={{
                     headerTitle: 'Câu Diễn Tả Mục Đích',
                     headerBackTitle: 'Trở lại'

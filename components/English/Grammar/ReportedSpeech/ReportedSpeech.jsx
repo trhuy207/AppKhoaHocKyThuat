@@ -1,9 +1,9 @@
 import { View, Text, SafeAreaView, TouchableOpacity, ScrollView } from 'react-native'
 import React, { useState } from 'react'
 
-import styles from './CauTuongThuat.style'
+import styles from './ReportedSpeech.style'
 
-const CauTuongThuat = () => {
+const ReportedSpeech = () => {
     const [showA, setShowA] = useState(false);
     const [showB, setShowB] = useState(false);
     const [showC, setShowC] = useState(false);
@@ -256,4 +256,4 @@ const CauTuongThuat = () => {
     )
 }
 
-export default CauTuongThuat
+export default ReportedSpeech

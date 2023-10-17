@@ -10,44 +10,56 @@ const Grammar = ({navigation}) => {
                 <View style={styles.body}>
                     <View style={styles.card}>
                         <View style={styles.cardElement}>
-                            <TouchableOpacity style={styles.cardBtn} onPress={() => navigation.navigate('CauDieuKien')}>
+                            <TouchableOpacity style={styles.cardBtn} onPress={() => navigation.navigate('ConditionalSentences')}>
                                 <Text style={styles.cardBtnText}>Câu Điều Kiện</Text>
                             </TouchableOpacity>
                         </View>
 
                         <View style={styles.cardElement}>
-                            <TouchableOpacity style={styles.cardBtn} onPress={() => navigation.navigate('CauDieuUoc')}>
+                            <TouchableOpacity style={styles.cardBtn} onPress={() => navigation.navigate('Wish')}>
                                 <Text style={styles.cardBtnText}>Câu Điều Ước</Text>
                             </TouchableOpacity>
                         </View>
 
                         <View style={styles.cardElement}>
-                            <TouchableOpacity style={styles.cardBtn} onPress={() => navigation.navigate('CauTuongThuat')}>
+                            <TouchableOpacity style={styles.cardBtn} onPress={() => navigation.navigate('ReportedSpeech')}>
                                 <Text style={styles.cardBtnText}>Câu Tường Thuật</Text>
                             </TouchableOpacity>
                         </View>
 
                         <View style={styles.cardElement}>
                             <TouchableOpacity style={styles.cardBtn}>
-                                <Text style={styles.cardBtnText}>Câu Chẻ{'\n'}(Đang Phát Triển)</Text>
+                                <Text style={styles.cardBtnText}>Câu Ghép{'\n'}(Đang Phát Triển)</Text>
                             </TouchableOpacity>
                         </View>
 
                         <View style={styles.cardElement}>
                             <TouchableOpacity style={styles.cardBtn}>
-                                <Text style={styles.cardBtnText}>Câu Hỏi Đuôi{'\n'}(Đang Phát Triển)</Text>
+                                <Text style={styles.cardBtnText}>To-Verb và Verb nguyên mẫu{'\n'}(Đang Phát Triển)</Text>
                             </TouchableOpacity>
                         </View>
 
                         <View style={styles.cardElement}>
                             <TouchableOpacity style={styles.cardBtn}>
-                                <Text style={styles.cardBtnText}>Cách sử dụng COULD và BE ABLE TO{'\n'}(Đang Phát Triển)</Text>
+                                <Text style={styles.cardBtnText}>Quá Khứ Đơn và Quá Khứ Tiếp diễn với When, While{'\n'}(Đang Phát Triển)</Text>
                             </TouchableOpacity>
                         </View>
 
                         <View style={styles.cardElement}>
                             <TouchableOpacity style={styles.cardBtn}>
-                                <Text style={styles.cardBtnText}>Liên Từ{'\n'}(Đang Phát Triển)</Text>
+                                <Text style={styles.cardBtnText}>Danh Động Từ và To-Verb{'\n'}(Đang Phát Triển)</Text>
+                            </TouchableOpacity>
+                        </View>
+
+                        <View style={styles.cardElement}>
+                            <TouchableOpacity style={styles.cardBtn} onPress={() => navigation.navigate('PassiveVoice')}>
+                                <Text style={styles.cardBtnText}>Câu Bị Động{'\n'}(Đang Phát Triển)</Text>
+                            </TouchableOpacity>
+                        </View>
+
+                        <View style={styles.cardElement}>
+                            <TouchableOpacity style={styles.cardBtn}>
+                                <Text style={styles.cardBtnText}>So Sánh Hơn và So Sánh Nhất{'\n'}(Đang Phát Triển)</Text>
                             </TouchableOpacity>
                         </View>
 
@@ -58,44 +70,14 @@ const Grammar = ({navigation}) => {
                         </View>
 
                         <View style={styles.cardElement}>
-                            <TouchableOpacity style={styles.cardBtn}>
-                                <Text style={styles.cardBtnText}>Danh Động Từ Và Động Từ Nguyên Mẫu{'\n'}(Đang Phát Triển)</Text>
-                            </TouchableOpacity>
-                        </View>
-
-                        <View style={styles.cardElement}>
-                            <TouchableOpacity style={styles.cardBtn}>
-                                <Text style={styles.cardBtnText}>Thể Bị Động{'\n'}(Đang Phát Triển)</Text>
-                            </TouchableOpacity>
-                        </View>
-
-                        <View style={styles.cardElement}>
-                            <TouchableOpacity style={styles.cardBtn}>
-                                <Text style={styles.cardBtnText}>Cách Sử Sụng THOUGH, ALTHOUGH, EVEN THOUGH, DESPITE và IN SPITE OF{'\n'}(Đang Phát Triển)</Text>
-                            </TouchableOpacity>
-                        </View>
-
-                        <View style={styles.cardElement}>
-                            <TouchableOpacity style={styles.cardBtn} onPress={() => navigation.navigate('CauDienTaMucDich')}>
+                            <TouchableOpacity style={styles.cardBtn} onPress={() => navigation.navigate('ClausesOfPurpose')}>
                                 <Text style={styles.cardBtnText}>Câu Diễn Tả Mục Đích</Text>
                             </TouchableOpacity>
                         </View>
 
                         <View style={styles.cardElement}>
                             <TouchableOpacity style={styles.cardBtn}>
-                                <Text style={styles.cardBtnText}>Động Từ Khiếm Khuyết{'\n'}(Đang Phát Triển)</Text>
-                            </TouchableOpacity>
-                        </View>
-
-                        <View style={styles.cardElement}>
-                            <TouchableOpacity style={styles.cardBtn}>
-                                <Text style={styles.cardBtnText}>Tính Từ Thái Độ{'\n'}(Đang Phát Triển)</Text>
-                            </TouchableOpacity>
-                        </View>
-
-                        <View style={styles.cardElement}>
-                            <TouchableOpacity style={styles.cardBtn}>
-                                <Text style={styles.cardBtnText}>Mẫu Câu Thông Dụng{'\n'}(Đang Phát Triển)</Text>
+                                <Text style={styles.cardBtnText}>Modal Verbs{'\n'}(Đang Phát Triển)</Text>
                             </TouchableOpacity>
                         </View>
                     </View>

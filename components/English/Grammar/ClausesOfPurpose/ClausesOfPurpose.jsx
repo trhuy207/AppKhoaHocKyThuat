@@ -2,9 +2,9 @@ import { View, Text, SafeAreaView, ScrollView } from 'react-native'
 import React from 'react'
 
 
-import styles from './CauDienTaMucDich.style'
+import styles from './ClausesOfPurpose.style'
 
-const CauDienTaMucDich = () => {
+const ClausesOfPurpose = () => {
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView>
@@ -30,4 +30,4 @@ const CauDienTaMucDich = () => {
     )
 }
 
-export default CauDienTaMucDich
+export default ClausesOfPurpose
