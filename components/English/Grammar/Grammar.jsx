@@ -46,8 +46,8 @@ const Grammar = ({navigation}) => {
                         </View>
 
                         <View style={styles.cardElement}>
-                            <TouchableOpacity style={styles.cardBtn}>
-                                <Text style={styles.cardBtnText}>Cách sử dụng Since, Before, After{'\n'}(Đang Phát Triển)</Text>
+                            <TouchableOpacity style={styles.cardBtn} onPress={() => navigation.navigate('SinceBeforeAfter')}>
+                                <Text style={styles.cardBtnText}>Cách sử dụng Since, Before, After</Text>
                             </TouchableOpacity>
                         </View>
 

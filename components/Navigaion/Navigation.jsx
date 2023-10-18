@@ -49,6 +49,7 @@ import ClausesOfPurpose from '../English/Grammar/ClausesOfPurpose/ClausesOfPurpo
 import PassiveVoice from '../English/Grammar/PassiveVoice/PassiveVoice';
 import ToVerbAndBareInfinitive from '../English/Grammar/ToVerbAndBareInfinitive/ToVerbAndBareInfinitive';
 import WhenWhile from '../English/Grammar/WhenWhile/WhenWhile';
+import SinceBeforeAfter from '../English/Grammar/SinceBeforeAfter/SinceBeforeAfter';
 
 // Chemistry Child
 import CauHinhE from '../Chemistry/CauHinhE/CauHinhE';
@@ -390,6 +391,15 @@ const StackGroup = () => {
                 component={WhenWhile}
                 options={{
                     headerTitle: 'When và While',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            <Stack.Screen
+                name='SinceBeforeAfter'
+                component={SinceBeforeAfter}
+                options={{
+                    headerTitle: 'Since, Before và After',
                     headerBackTitle: 'Trở lại'
                 }}
             />
