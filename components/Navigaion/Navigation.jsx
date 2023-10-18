@@ -46,7 +46,8 @@ import ConditionalSentences from '../English/Grammar/ConditionalSentences/Condit
 import Wish from '../English/Grammar/Wish/Wish';
 import ReportedSpeech from '../English/Grammar/ReportedSpeech/ReportedSpeech';
 import ClausesOfPurpose from '../English/Grammar/ClausesOfPurpose/ClausesOfPurpose';
-import PassiveVoice from '../English/Grammar/PassiveVoice/PassiveVoice'
+import PassiveVoice from '../English/Grammar/PassiveVoice/PassiveVoice';
+import ToVerbAndBareInfinitive from '../English/Grammar/ToVerbAndBareInfinitive/ToVerbAndBareInfinitive';
 
 // Chemistry Child
 import CauHinhE from '../Chemistry/CauHinhE/CauHinhE';
@@ -369,7 +370,16 @@ const StackGroup = () => {
                 name='PassiveVoice'
                 component={PassiveVoice}
                 options={{
-                    headerTitle: 'Câu Diễn Tả Mục Đích',
+                    headerTitle: 'Câu Bị Động',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            <Stack.Screen
+                name='ToVerbAndBareInfinitive'
+                component={ToVerbAndBareInfinitive}
+                options={{
+                    headerTitle: 'To-Verb và Verb Nguyên Mẫu',
                     headerBackTitle: 'Trở lại'
                 }}
             />

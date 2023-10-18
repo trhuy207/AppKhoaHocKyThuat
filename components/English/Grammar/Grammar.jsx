@@ -34,8 +34,8 @@ const Grammar = ({navigation}) => {
                         </View>
 
                         <View style={styles.cardElement}>
-                            <TouchableOpacity style={styles.cardBtn}>
-                                <Text style={styles.cardBtnText}>To-Verb và Verb nguyên mẫu{'\n'}(Đang Phát Triển)</Text>
+                            <TouchableOpacity style={styles.cardBtn} onPress={() => navigation.navigate('ToVerbAndBareInfinitive')}>
+                                <Text style={styles.cardBtnText}>To-Verb và Verb nguyên mẫu</Text>
                             </TouchableOpacity>
                         </View>
 
