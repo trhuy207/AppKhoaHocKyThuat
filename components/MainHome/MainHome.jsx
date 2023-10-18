@@ -20,7 +20,7 @@ const MainHome = () => {
                             style={styles.BtnImage}
                             source={require('../../assets/img/chemistry.png')}
                         />
-                        <Text style={styles.BtnText}>Từ Điển Hóa Học{'\n'}(Đang phát triển)</Text>
+                        <Text style={styles.BtnText}>Từ Điển Hóa Học</Text>
                     </TouchableOpacity>
 
                     {/* Lý */}

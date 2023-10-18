@@ -48,6 +48,7 @@ import ReportedSpeech from '../English/Grammar/ReportedSpeech/ReportedSpeech';
 import ClausesOfPurpose from '../English/Grammar/ClausesOfPurpose/ClausesOfPurpose';
 import PassiveVoice from '../English/Grammar/PassiveVoice/PassiveVoice';
 import ToVerbAndBareInfinitive from '../English/Grammar/ToVerbAndBareInfinitive/ToVerbAndBareInfinitive';
+import WhenWhile from '../English/Grammar/WhenWhile/WhenWhile';
 
 // Chemistry Child
 import CauHinhE from '../Chemistry/CauHinhE/CauHinhE';
@@ -380,6 +381,15 @@ const StackGroup = () => {
                 component={ToVerbAndBareInfinitive}
                 options={{
                     headerTitle: 'To-Verb và Verb Nguyên Mẫu',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            <Stack.Screen
+                name='WhenWhile'
+                component={WhenWhile}
+                options={{
+                    headerTitle: 'When và While',
                     headerBackTitle: 'Trở lại'
                 }}
             />

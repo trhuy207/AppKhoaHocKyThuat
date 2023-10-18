@@ -1,5 +1,5 @@
-import { View, Text, SafeAreaView, TouchableOpacity, ScrollView } from 'react-native'
-import React, {useState} from 'react'
+import { View, Text, SafeAreaView, ScrollView } from 'react-native'
+import React from 'react'
 
 import styles from './ToVerbAndBareInfinitive.style'
 
@@ -45,8 +45,8 @@ const ToVerbAndBareInfinitive = () => {
                             </View>
                         </View>
 
+                        {/* II. Bare Infinitive */}
                         <View style={styles.cardElement}>
-                            {/* II. Bare Infinitive */}
                             <View style={styles.cardHeader}>
                                 <Text style={styles.headerText}>II. Bare infinitive</Text>
                             </View>

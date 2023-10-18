@@ -40,8 +40,14 @@ const Grammar = ({navigation}) => {
                         </View>
 
                         <View style={styles.cardElement}>
+                            <TouchableOpacity style={styles.cardBtn} onPress={() => navigation.navigate('WhenWhile')}>
+                                <Text style={styles.cardBtnText}>Cách sử dụng When, While</Text>
+                            </TouchableOpacity>
+                        </View>
+
+                        <View style={styles.cardElement}>
                             <TouchableOpacity style={styles.cardBtn}>
-                                <Text style={styles.cardBtnText}>Quá Khứ Đơn và Quá Khứ Tiếp diễn với When, While{'\n'}(Đang Phát Triển)</Text>
+                                <Text style={styles.cardBtnText}>Cách sử dụng Since, Before, After{'\n'}(Đang Phát Triển)</Text>
                             </TouchableOpacity>
                         </View>
 
