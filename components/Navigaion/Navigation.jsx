@@ -50,6 +50,7 @@ import PassiveVoice from '../English/Grammar/PassiveVoice/PassiveVoice';
 import ToVerbAndBareInfinitive from '../English/Grammar/ToVerbAndBareInfinitive/ToVerbAndBareInfinitive';
 import WhenWhile from '../English/Grammar/WhenWhile/WhenWhile';
 import SinceBeforeAfter from '../English/Grammar/SinceBeforeAfter/SinceBeforeAfter';
+import CompoundSentence from '../English/Grammar/CompoundSentence/CompoundSentence';
 
 // Chemistry Child
 import CauHinhE from '../Chemistry/CauHinhE/CauHinhE';
@@ -400,6 +401,15 @@ const StackGroup = () => {
                 component={SinceBeforeAfter}
                 options={{
                     headerTitle: 'Since, Before và After',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            <Stack.Screen
+                name='CompoundSentence'
+                component={CompoundSentence}
+                options={{
+                    headerTitle: 'Câu Ghép',
                     headerBackTitle: 'Trở lại'
                 }}
             />
