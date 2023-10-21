@@ -36,23 +36,25 @@ const styles = StyleSheet.create({
 
     contentTitle: {
         fontSize: 16,
-        fontWeight: "bold"
+        fontWeight: "bold",
+        margin: 3
+    },
+
+    contentCT: {
+        fontSize: 15,
+        margin: 3,
+        color: '#f50010',
+        fontWeight: 'bold'
     },
 
     contentText: {
-        color: '#0084ff',
+        // color: '#0084ff',
         fontSize: 15,
-        margin: 3
+        margin: 3,
     },
 
-    contentNote: {
-        fontSize: 15,
-        fontStyle: 'italic',
-        margin: 3
-    },  
-
-    contentEx: {
-        fontSize: 15,
+    hideShowBtnText: {
+        color: 'blue',
         fontStyle: 'italic'
     }
 })

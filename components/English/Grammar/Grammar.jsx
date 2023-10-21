@@ -35,7 +35,7 @@ const Grammar = ({navigation}) => {
 
                         <View style={styles.cardElement}>
                             <TouchableOpacity style={styles.cardBtn} onPress={() => navigation.navigate('ToVerbAndBareInfinitive')}>
-                                <Text style={styles.cardBtnText}>To-Verb và Verb nguyên mẫu</Text>
+                                <Text style={styles.cardBtnText}>To-Verb và Bare Infinitive</Text>
                             </TouchableOpacity>
                         </View>
 
@@ -48,12 +48,6 @@ const Grammar = ({navigation}) => {
                         <View style={styles.cardElement}>
                             <TouchableOpacity style={styles.cardBtn} onPress={() => navigation.navigate('SinceBeforeAfter')}>
                                 <Text style={styles.cardBtnText}>Cách sử dụng Since, Before, After</Text>
-                            </TouchableOpacity>
-                        </View>
-
-                        <View style={styles.cardElement}>
-                            <TouchableOpacity style={styles.cardBtn}>
-                                <Text style={styles.cardBtnText}>Danh Động Từ và To-Verb{'\n'}(Đang Phát Triển)</Text>
                             </TouchableOpacity>
                         </View>
 

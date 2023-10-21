@@ -382,7 +382,7 @@ const StackGroup = () => {
                 name='ToVerbAndBareInfinitive'
                 component={ToVerbAndBareInfinitive}
                 options={{
-                    headerTitle: 'To-Verb và Verb Nguyên Mẫu',
+                    headerTitle: 'To-Verb và Bare Infinitive',
                     headerBackTitle: 'Trở lại'
                 }}
             />
