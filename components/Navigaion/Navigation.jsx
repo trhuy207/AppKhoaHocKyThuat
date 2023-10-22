@@ -485,8 +485,8 @@ export default class Navigation extends Component {
     render() {
         return (
             <NavigationContainer independent={true}>
-                <StackGroup />
                 <StatusBar barStyle={'dark-content'} translucent={true} />
+                <StackGroup />
             </NavigationContainer>
         )
     }

@@ -36,12 +36,12 @@ const ToVerbAndBareInfinitive = () => {
                                 <Text style={styles.contentTitle1}>+ Stop + V-ing (Ngưng hẳn một việc)</Text>
                                 <Text style={styles.contentTitle1}>+ Stop + to V (Ngưng lại để làm gì đó)</Text>
                                 <Text style={styles.contentText}>e) Một số cấu trúc To-infinitive khác</Text>
-                                <Text style={styles.contentText}>When/ where/ which/ how ... + to V</Text>
-                                <Text style={styles.contentText}>It takes/took + O + thời gian + to V (Ai đó mất bao lâu để)</Text>
-                                <Text style={styles.contentText}>S + be + adj + to V (Thật là ... để làm gì đó)</Text>
-                                <Text style={styles.contentText}>S + V + too + adj/adv + to V (Quá ... để)</Text>
-                                <Text style={styles.contentText}>S + V + adj/adv + enough + to V (Đủ ... để)</Text>
-                                <Text style={styles.contentText}>I + think/ thought/ believe/ find + it + adj + to + V-inf (tôi nghĩ ... để)</Text>
+                                <Text style={styles.contentTitle1}>+ When/ where/ which/ how ... + to V</Text>
+                                <Text style={styles.contentTitle1}>+ It takes/took + O + thời gian + to V (Ai đó mất bao lâu để)</Text>
+                                <Text style={styles.contentTitle1}>+ S + be + adj + to V (Thật là ... để làm gì đó)</Text>
+                                <Text style={styles.contentTitle1}>+ S + V + too + adj/adv + to V (Quá ... để)</Text>
+                                <Text style={styles.contentTitle1}>+ S + V + adj/adv + enough + to V (Đủ ... để)</Text>
+                                <Text style={styles.contentTitle1}>+ I + think/ thought/ believe/ find + it + adj + to + V-inf (tôi nghĩ ... để)</Text>
                             </View>
                         </View>
 
