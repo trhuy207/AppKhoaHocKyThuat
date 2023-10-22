@@ -33,6 +33,30 @@ const PassiveVoice = () => {
     const [ex51, showEx51] = useState(false);
     const [ex52, showEx52] = useState(false);
     const [ex53, showEx53] = useState(false);
+
+    const [db1, showDb1] = useState(false);
+    const [db2, showDb2] = useState(false);
+    const [db3, showDb3] = useState(false);
+    const [db4, showDb4] = useState(false);
+    const [db5, showDb5] = useState(false);
+    const [db6, showDb6] = useState(false);
+    const [db7, showDb7] = useState(false);
+    const [db8, showDb8] = useState(false);
+    const [db9, showDb9] = useState(false);
+
+    const [exdb1, showExdb1] = useState(false);
+    const [exdb2, showExdb2] = useState(false);
+    const [exdb3, showExdb3] = useState(false);
+    const [exdb41, showExdb41] = useState(false);
+    const [exdb42, showExdb42] = useState(false);
+    const [exdb43, showExdb43] = useState(false);
+    const [exdb51, showExdb51] = useState(false);
+    const [exdb52, showExdb52] = useState(false);
+    const [exdb6, showExdb6] = useState(false);
+    const [exdb7, showExdb7] = useState(false);
+    const [exdb8, showExdb8] = useState(false);
+    const [exdb9, showExdb9] = useState(false);
+    const [exdb10, showExdb10] = useState(false);
     return (
         <SafeAreaView>
             <ScrollView>
@@ -141,7 +165,6 @@ const PassiveVoice = () => {
                                         <Text style={styles.contentText}>(Dịch: Ai đó đã đập vỡ cửa sổ với một chiếc búa.)</Text>
                                         <Text style={styles.contentText}>➤ The window was broken with a hammer.</Text>
                                         <Text style={styles.contentText}>(Dịch: Cửa sổ đã bị đập vỡ với một chiếc búa.)</Text>
-                                        <Text>{'\n'}</Text>
                                     </View>
                                 ): null}
                             </View>
@@ -388,7 +411,7 @@ const PassiveVoice = () => {
                                             <View>
                                                 <Text style={styles.contentText}>• His careless driving may cause an accident.</Text>
                                                 <Text style={styles.contentText}>➤ An accident may be caused by his careless driving.</Text>
-                                                <Text style={styles.contentText}>• An accident may be caused by his careless driving.</Text>
+                                                <Text style={styles.contentText}>• They might show you the way to solve that problem.</Text>
                                                 <Text style={styles.contentText}>➤ The way to solve that problems might be shown to you by them.</Text>
                                                 <Text>{'\n'}</Text>
                                             </View>
@@ -475,6 +498,190 @@ const PassiveVoice = () => {
                                             <View>
                                                 <Text style={styles.contentText}>• He prevented me from making that mistake again.</Text>
                                                 <Text style={styles.contentText}>➤ I was prevented from making that mistake again by him.</Text>
+                                            </View>
+                                        ): null}
+                                    </View>
+                                ): null}
+                            </View>
+                        </View>
+
+                        {/* III. Các cấu trúc */}
+                        <View style={styles.cardElement}>
+                            <View style={styles.cardHeader}>
+                                <Text style={styles.headerText}>III. Một số dạng đặc biệt của câu bị động trong Tiếng Anh</Text>
+                            </View>
+                            <View style={styles.cardContent}>
+                                {/* 1. Câu bị động với 2 tân ngữ */}
+                                <Text style={styles.contentTitle}>1. Câu bị động với 2 tân ngữ</Text>
+                                <TouchableOpacity style={styles.hideShowBtn} onPress={() => showDb1(!db1)}>
+                                    <Text style={styles.hideShowBtnText}>Xem</Text>
+                                </TouchableOpacity>
+                                {db1 ? (
+                                    <View>
+                                        <Text style={styles.contentCT}>• Công thức ở dạng chủ động: S + V + O1 + O2</Text>
+                                        <Text style={styles.contentText}>⟶ TH1: Đưa tân ngữ gián tiếp lên làm chủ ngữ trong câu bị động:</Text>
+                                        <Text style={styles.contentCT}>S + be + VpII + O1</Text>
+                                        <Text style={styles.contentText}>⟶ TH2: Đưa tân ngữ trực tiếp lên làm chủ ngữ trong câu bị động:</Text>
+                                        <Text style={styles.contentCT}>S + be + VpII + giới từ + O2</Text>
+                                        <TouchableOpacity style={styles.hideShowBtn} onPress={() => showExdb1(!exdb1)}>
+                                            <Text style={styles.hideShowBtnText}>Xem Ví Dụ</Text>
+                                        </TouchableOpacity>
+                                        {exdb1 ? (
+                                            <View>
+                                                <Text style={styles.contentText}>• Tommy bought his wife a trench coat yesterday.</Text>
+                                                <Text style={styles.contentText}>➤ Tommy's wife was bought a beautiful trench coat yesterday.</Text>
+                                                <Text style={styles.contentText}>➤ A beautiful trench coat was bought for Tommy's wife yesterday.</Text>
+                                                <Text style={styles.contentText}>• My dad gave me a new phone on my 18th birthday.</Text>
+                                                <Text style={styles.contentText}>➤ I was given a new phone on my 18th birthday by my dad.</Text>
+                                                <Text style={styles.contentText}>➤ A new phone was given to me on my 18th birthday by my dad.</Text>
+                                            </View>
+                                        ): null}
+                                        <Text>{'\n'}</Text>
+                                    </View>
+                                ): null}
+
+                                {/* 2. Câu bị động với V + V-ing */}
+                                <Text style={styles.contentTitle}>2. Câu bị động với V + V-ing</Text>
+                                <TouchableOpacity style={styles.hideShowBtn} onPress={() => showDb2(!db2)}>
+                                    <Text style={styles.hideShowBtnText}>Xem</Text>
+                                </TouchableOpacity>
+                                {db2 ? (
+                                    <View>
+                                        <Text style={styles.contentCT}>• Câu chủ động: V + somebody + V-ing</Text>
+                                        <Text style={styles.contentCT}>• Câu bị động: V +somebody/something + being + V(P2)</Text>
+                                        <Text style={styles.contentText}>Dạng câu này được áp dụng với các động từ như: hate, love, like, dislike, admit, deny, regret, enjoy…</Text>
+                                        <TouchableOpacity style={styles.hideShowBtn} onPress={() => showExdb2(!exdb2)}>
+                                            <Text style={styles.hideShowBtnText}>Xem Ví Dụ</Text>
+                                        </TouchableOpacity>
+                                        {exdb2 ? (
+                                            <View>
+                                                <Text style={styles.contentText}>• John loves trying new things.</Text>
+                                                <Text style={styles.contentText}>➤ John loves new things being tried.</Text>
+                                                <Text style={styles.contentText}>• I regret not eating a lot of vegetables.</Text>
+                                                <Text style={styles.contentText}>➤ I regret a lot of vegetables not being eaten.</Text>
+                                            </View>
+                                        ): null}
+                                        <Text>{'\n'}</Text>
+                                    </View>
+                                ): null}
+
+                                {/* 3. Câu bị động với động từ tri giác */}
+                                <Text style={styles.contentTitle}>3. Câu bị động với động từ tri giác</Text>
+                                <TouchableOpacity style={styles.hideShowBtn} onPress={() => showDb3(!db3)}>
+                                    <Text style={styles.hideShowBtnText}>Xem</Text>
+                                </TouchableOpacity>
+                                {db3 ? (
+                                    <View>
+                                        <Text style={styles.contentText}>Động từ tri giác (verb of perception) là các từ như see, watch, notice, hear, look…</Text>
+                                        <Text style={styles.contentCT}>• Câu chủ động: S + V + somebody + V-ing/to V-inf</Text>
+                                        <Text style={styles.contentCT}>• Câu bị động: S + to be + V(P2) + V-ing/to V-inf</Text>
+                                        <TouchableOpacity style={styles.hideShowBtn} onPress={() => showExdb3(!exdb3)}>
+                                            <Text style={styles.hideShowBtnText}>Xem Ví Dụ</Text>
+                                        </TouchableOpacity>
+                                        {exdb3 ? (
+                                            <View>
+                                                <Text style={styles.contentText}>• My sister saw me leaving the house early today.</Text>
+                                                <Text style={styles.contentText}>➤ I was seen leaving the house early by my sister today.</Text>
+                                                <Text style={styles.contentText}>• I hear someone singing my favorite song.</Text>
+                                                <Text style={styles.contentText}>➤ Someone is heard singing my favorite song.</Text>
+                                            </View>
+                                        ): null}
+                                        <Text>{'\n'}</Text>
+                                    </View>
+                                ): null}
+
+                                {/* 4. Dạng bị động của câu mệnh lệnh */}
+                                <Text style={styles.contentTitle}>4. Dạng bị động của câu mệnh lệnh</Text>
+                                <TouchableOpacity style={styles.hideShowBtn} onPress={() => showDb4(!db4)}>
+                                    <Text style={styles.hideShowBtnText}>Xem</Text>
+                                </TouchableOpacity>
+                                {db4 ? (
+                                    <View>
+                                        <Text style={styles.contentTitle}>⁕ TH1:</Text>
+                                        <Text style={styles.contentCT}>• Câu chủ động: V + O!</Text>
+                                        <Text style={styles.contentCT}>• Câu bị động: Let + O + be + V(p2)</Text>
+                                        <TouchableOpacity style={styles.hideShowBtn} onPress={() => showExdb41(!exdb41)}>
+                                            <Text style={styles.hideShowBtnText}>Xem Ví Dụ</Text>
+                                        </TouchableOpacity>
+                                        {exdb41 ? (
+                                            <View>
+                                                <Text style={styles.contentText}>• Turn down the radio!</Text>
+                                                <Text style={styles.contentText}>➤ Let the radio be turned off!</Text>
+                                                <Text style={styles.contentText}>• Close your book!</Text>
+                                                <Text style={styles.contentText}>➤ Let your book be closed!</Text>
+                                                <Text>{'\n'}</Text>
+                                            </View>
+                                        ): null}
+
+                                        <Text style={styles.contentTitle}>⁕ TH2:</Text>
+                                        <Text style={styles.contentCT}>• Câu chủ động: It’s one’s duty to + V-inf</Text>
+                                        <Text style={styles.contentCT}>• Câu bị động: S + to be + supposed to+V inf</Text>
+                                        <TouchableOpacity style={styles.hideShowBtn} onPress={() => showExdb42(!exdb42)}>
+                                            <Text style={styles.hideShowBtnText}>Xem Ví Dụ</Text>
+                                        </TouchableOpacity>
+                                        {exdb42 ? (
+                                            <View>
+                                                <Text style={styles.contentText}>• It's your duty hang the clothes everyday.</Text>
+                                                <Text style={styles.contentText}>➤ You’re supposed to hang the clothes everyday.</Text>
+                                                <Text style={styles.contentText}>• It's students’ duty to finish their homework.</Text>
+                                                <Text style={styles.contentText}>➤ Students are supposed to finish their homework.</Text>
+                                                <Text>{'\n'}</Text>
+                                            </View>
+                                        ): null}
+
+                                        <Text style={styles.contentTitle}>⁕ TH3:</Text>
+                                        <Text style={styles.contentCT}>• Câu chủ động: It’s necessary to + V-inf</Text>
+                                        <Text style={styles.contentCT}>• Câu bị động: S + should/ must + be +P2</Text>
+                                        <TouchableOpacity style={styles.hideShowBtn} onPress={() => showExdb43(!exdb43)}>
+                                            <Text style={styles.hideShowBtnText}>Xem Ví Dụ</Text>
+                                        </TouchableOpacity>
+                                        {exdb43 ? (
+                                            <View>
+                                                <Text style={styles.contentText}>• It's necessary to protect the wild animal.</Text>
+                                                <Text style={styles.contentText}>➤ The wild animal should be protected.</Text>
+                                                <Text style={styles.contentText}>• It's necessary to stop cutting down trees.</Text>
+                                                <Text style={styles.contentText}>➤ Cutting down trees must be stopped.</Text>
+                                            </View>
+                                        ): null}
+                                        <Text>{'\n'}</Text>
+                                    </View>
+                                ): null}
+
+                                {/* 5. Dạng bị động của câu sai khiến (nhờ ai làm gì) */}
+                                <Text style={styles.contentTitle}>5. Dạng bị động của câu sai khiến (nhờ ai làm gì)</Text>
+                                <TouchableOpacity style={styles.hideShowBtn} onPress={() => showDb5(!db5)}>
+                                    <Text style={styles.hideShowBtnText}>Xem</Text>
+                                </TouchableOpacity>
+                                {db5 ? (
+                                    <View>
+                                        <Text style={styles.contentTitle}>⁕ TH1:</Text>
+                                        <Text style={styles.contentCT}>• Câu chủ động: S + have + somebody + V</Text>
+                                        <Text style={styles.contentCT}>• Câu bị động: S + have + something + P2 + by sb</Text>
+                                        <TouchableOpacity style={styles.hideShowBtn} onPress={() => showEx51(!ex51)}>
+                                            <Text style={styles.hideShowBtnText}>Xem Ví Dụ</Text>
+                                        </TouchableOpacity>
+                                        {ex51 ? (
+                                            <View>
+                                                <Text style={styles.contentText}>• I have my older brother fix my computer.</Text>
+                                                <Text style={styles.contentText}>➤ I have my older brother fix my computer.</Text>
+                                                <Text style={styles.contentText}>• She had her friend submit her essay.</Text>
+                                                <Text style={styles.contentText}>➤ She had her essay submitted by her friend.</Text>
+                                                <Text>{'\n'}</Text>
+                                            </View>
+                                        ): null}
+
+                                        <Text style={styles.contentTitle}>⁕ TH2:</Text>
+                                        <Text style={styles.contentCT}>• Câu chủ động: S + get + somebody + to-V</Text>
+                                        <Text style={styles.contentCT}>• Câu bị động: S + get + something + P2</Text>
+                                        <TouchableOpacity style={styles.hideShowBtn} onPress={() => showEx52(!ex52)}>
+                                            <Text style={styles.hideShowBtnText}>Xem Ví Dụ</Text>
+                                        </TouchableOpacity>
+                                        {ex52 ? (
+                                            <View>
+                                                <Text style={styles.contentText}>• My mother got me to sweep the floor.</Text>
+                                                <Text style={styles.contentText}>➤ My mother got the floor swept by me.</Text>
+                                                <Text style={styles.contentText}>• My father gets me to pick my younger brother up after school everyday.</Text>
+                                                <Text style={styles.contentText}>➤ My father gets my younger brother picked up after school by me everyday.</Text>
                                             </View>
                                         ): null}
                                     </View>
