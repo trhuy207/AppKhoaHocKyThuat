@@ -53,7 +53,7 @@ const Grammar = ({navigation}) => {
 
                         <View style={styles.cardElement}>
                             <TouchableOpacity style={styles.cardBtn} onPress={() => navigation.navigate('PassiveVoice')}>
-                                <Text style={styles.cardBtnText}>Câu Bị Động{'\n'}(Đang Phát Triển)</Text>
+                                <Text style={styles.cardBtnText}>Câu Bị Động</Text>
                             </TouchableOpacity>
                         </View>
 
