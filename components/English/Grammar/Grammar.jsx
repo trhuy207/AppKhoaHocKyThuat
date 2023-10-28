@@ -58,8 +58,8 @@ const Grammar = ({navigation}) => {
                         </View>
 
                         <View style={styles.cardElement}>
-                            <TouchableOpacity style={styles.cardBtn}>
-                                <Text style={styles.cardBtnText}>So Sánh Hơn và So Sánh Nhất{'\n'}(Đang Phát Triển)</Text>
+                            <TouchableOpacity style={styles.cardBtn} onPress={() => navigation.navigate('ComparativeNSuperlative')}>
+                                <Text style={styles.cardBtnText}>So Sánh Hơn và So Sánh Nhất</Text>
                             </TouchableOpacity>
                         </View>
 

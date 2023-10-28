@@ -8,7 +8,7 @@ const Chemistry = ({navigation}) => {
         <View style={styles.container}>
             <ScrollView>
                 <View style={styles.card}>
-                    {/* <TouchableOpacity
+                    <TouchableOpacity
                         style={styles.Btn}
                         onPress={() => navigation.navigate('PTHH')}
                     >   
@@ -17,7 +17,7 @@ const Chemistry = ({navigation}) => {
                             source={require('../../assets/img/Chemistry/pthh.png')}
                         />
                         <Text style={styles.BtnText}>Phương Trình Hóa Học{'\n'}(Đang phát triển)</Text>
-                    </TouchableOpacity> */}
+                    </TouchableOpacity>
 
                     <TouchableOpacity
                         style={styles.Btn}

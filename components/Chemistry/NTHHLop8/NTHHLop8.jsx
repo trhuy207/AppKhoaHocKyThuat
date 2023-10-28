@@ -1,11 +1,9 @@
 import { View, Text, TouchableOpacity, SafeAreaView, ScrollView } from 'react-native'
 import React from 'react'
 
-import { AntDesign } from '@expo/vector-icons';
-
 import styles from './NTHHLop8.style'
 
-const NTHHLop8 = ({navigation}) => {
+const NTHHLop8 = () => {
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView>

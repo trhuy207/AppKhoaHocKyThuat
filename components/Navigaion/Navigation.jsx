@@ -51,6 +51,7 @@ import ToVerbAndBareInfinitive from '../English/Grammar/ToVerbAndBareInfinitive/
 import WhenWhile from '../English/Grammar/WhenWhile/WhenWhile';
 import SinceBeforeAfter from '../English/Grammar/SinceBeforeAfter/SinceBeforeAfter';
 import CompoundSentence from '../English/Grammar/CompoundSentence/CompoundSentence';
+import ComparativeNSuperlative from '../English/Grammar/ComparativeNSuperlative/ComparativeNSuperlative';
 
 // Chemistry Child
 import CauHinhE from '../Chemistry/CauHinhE/CauHinhE';
@@ -410,6 +411,15 @@ const StackGroup = () => {
                 component={CompoundSentence}
                 options={{
                     headerTitle: 'Câu Ghép',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            <Stack.Screen
+                name='ComparativeNSuperlative'
+                component={ComparativeNSuperlative}
+                options={{
+                    headerTitle: 'So sánh hơn và nhất',
                     headerBackTitle: 'Trở lại'
                 }}
             />
