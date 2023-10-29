@@ -76,8 +76,8 @@ const Grammar = ({navigation}) => {
                         </View>
 
                         <View style={styles.cardElement}>
-                            <TouchableOpacity style={styles.cardBtn}>
-                                <Text style={styles.cardBtnText}>Modal Verbs{'\n'}(Đang Phát Triển)</Text>
+                            <TouchableOpacity style={styles.cardBtn} onPress={() => navigation.navigate('ModalVerbs')}>
+                                <Text style={styles.cardBtnText}>Modal Verbs</Text>
                             </TouchableOpacity>
                         </View>
                     </View>

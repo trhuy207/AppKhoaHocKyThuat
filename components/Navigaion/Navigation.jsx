@@ -52,6 +52,7 @@ import WhenWhile from '../English/Grammar/WhenWhile/WhenWhile';
 import SinceBeforeAfter from '../English/Grammar/SinceBeforeAfter/SinceBeforeAfter';
 import CompoundSentence from '../English/Grammar/CompoundSentence/CompoundSentence';
 import ComparativeNSuperlative from '../English/Grammar/ComparativeNSuperlative/ComparativeNSuperlative';
+import ModalVerbs from '../English/Grammar/ModalVerbs/ModalVerbs';
 
 // Chemistry Child
 import CauHinhE from '../Chemistry/CauHinhE/CauHinhE';
@@ -420,6 +421,15 @@ const StackGroup = () => {
                 component={ComparativeNSuperlative}
                 options={{
                     headerTitle: 'So sánh hơn và nhất',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            <Stack.Screen
+                name='ModalVerbs'
+                component={ModalVerbs}
+                options={{
+                    headerTitle: 'Modal Verbs',
                     headerBackTitle: 'Trở lại'
                 }}
             />

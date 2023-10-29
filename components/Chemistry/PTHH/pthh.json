@@ -1,0 +1,34 @@
+{
+    "reactions": [
+        {
+            "id": 1,
+            "reaction": "2H2 + O2 -> 2H2O",
+            "type": "combustion",
+            "description": "The combustion of hydrogen gas with oxygen gas produces water vapor."
+        },
+        {
+            "id": 2,
+            "reaction": "CH4 + 2O2 -> CO2 + 2H2O",
+            "type": "combustion",
+            "description": "The combustion of methane gas with oxygen gas produces carbon dioxide and water vapor."
+        },
+        {
+            "id": 3,
+            "reaction": "N2 + 3H2 -> 2NH3",
+            "type": "synthesis",
+            "description": "The Haber-Bosch process is used to synthesize ammonia gas from nitrogen gas and hydrogen gas."
+        },
+        {
+            "id": 4,
+            "reaction": "2Na + 2HCl -> 2NaCl + H2",
+            "type": "single replacement",
+            "description": "Sodium metal reacts with hydrochloric acid to produce sodium chloride and hydrogen gas."
+        },
+        {
+            "id": 5,
+            "reaction": "CaCO3 -> CaO + CO2",
+            "type": "decomposition",
+            "description": "Calcium carbonate decomposes into calcium oxide and carbon dioxide gas when heated."
+        }
+    ]
+}
