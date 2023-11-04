@@ -64,8 +64,8 @@ const Grammar = ({navigation}) => {
                         </View>
 
                         <View style={styles.cardElement}>
-                            <TouchableOpacity style={styles.cardBtn}>
-                                <Text style={styles.cardBtnText}>Mệnh Đề Quan Hệ{'\n'}(Đang Phát Triển)</Text>
+                            <TouchableOpacity style={styles.cardBtn} onPress={() => navigation.navigate('RelativeClause')}>
+                                <Text style={styles.cardBtnText}>Mệnh Đề Quan Hệ</Text>
                             </TouchableOpacity>
                         </View>
 

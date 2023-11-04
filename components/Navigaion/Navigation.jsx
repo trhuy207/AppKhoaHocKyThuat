@@ -53,6 +53,7 @@ import SinceBeforeAfter from '../English/Grammar/SinceBeforeAfter/SinceBeforeAft
 import CompoundSentence from '../English/Grammar/CompoundSentence/CompoundSentence';
 import ComparativeNSuperlative from '../English/Grammar/ComparativeNSuperlative/ComparativeNSuperlative';
 import ModalVerbs from '../English/Grammar/ModalVerbs/ModalVerbs';
+import RelativeClause from '../English/Grammar/RelativeClause/RelativeClause';
 
 // Chemistry Child
 import CauHinhE from '../Chemistry/CauHinhE/CauHinhE';
@@ -430,6 +431,15 @@ const StackGroup = () => {
                 component={ModalVerbs}
                 options={{
                     headerTitle: 'Modal Verbs',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            <Stack.Screen
+                name='RelativeClause'
+                component={RelativeClause}
+                options={{
+                    headerTitle: 'Relative Clause',
                     headerBackTitle: 'Trở lại'
                 }}
             />
