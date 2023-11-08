@@ -27,7 +27,7 @@ const English = ({ navigation }) => {
                             style={styles.btnImage}
                             source={require('../../assets/img/English/irregularverbs.png')}
                         />
-                        <Text style={styles.btnText}>Động Từ Bất Quy Tắc{'\n'}(Đang phát triển)</Text>
+                        <Text style={styles.btnText}>Động Từ Bất Quy Tắc</Text>
                     </TouchableOpacity>
 
                     <TouchableOpacity
@@ -38,7 +38,7 @@ const English = ({ navigation }) => {
                             style={styles.btnImage}
                             source={require('../../assets/img/English/grammar.png')}
                         />
-                        <Text style={styles.btnText}>Ngữ Pháp Khác{'\n'}(Đang phát triển)</Text>
+                        <Text style={styles.btnText}>Ngữ Pháp Khác</Text>
                     </TouchableOpacity>
                 </View>
             </ScrollView>

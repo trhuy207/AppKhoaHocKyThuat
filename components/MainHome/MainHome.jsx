@@ -56,7 +56,7 @@ const MainHome = () => {
                             style={styles.BtnImage}
                             source={require('../../assets/img/english.png')}
                         />
-                        <Text style={styles.BtnText}>Công Thức Anh Văn{'\n'}(Đang phát triển)</Text>
+                        <Text style={styles.BtnText}>Công Thức Anh Văn</Text>
                     </TouchableOpacity>
                 </View>
             </ScrollView>
