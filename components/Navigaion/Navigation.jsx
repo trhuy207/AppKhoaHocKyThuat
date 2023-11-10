@@ -69,6 +69,12 @@ import Lop10 from '../Physics/Lop10/Lop10'
 import Lop11 from '../Physics/Lop11/Lop11';
 import Lop12 from '../Physics/Lop12/Lop12';
 
+// Lop10 Child
+import Chuong1_10 from '../Physics/Lop10/Chuong1/Chuong1_10';
+
+// Chuong1 Child
+import Bai3_10 from '../Physics/Lop10/Chuong1/Bai3/Bai3_10';
+
 // Stack
 const Stack = createNativeStackNavigator();
 
@@ -476,6 +482,27 @@ const StackGroup = () => {
                     headerBackTitle: 'Trở lại'
                 }}
             />
+
+            {/* Lop10 Child */}
+            <Stack.Screen
+                name='Chuong1_10'
+                component={Chuong1_10}
+                options={{
+                    headerTitle: 'Chương 1',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            {/* Chuong1 Child */}
+            <Stack.Screen
+                name='Bai3_10'
+                component={Bai3_10}
+                options={{
+                    headerTitle: 'SAI SỐ',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
         </Stack.Navigator>
     )
 }
