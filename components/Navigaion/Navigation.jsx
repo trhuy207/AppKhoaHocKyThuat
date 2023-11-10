@@ -64,6 +64,11 @@ import NTHHLop8 from '../Chemistry/NTHHLop8/NTHHLop8'
 import BangTinhTan from '../Chemistry/BangTinhTan/BangTinhTan'
 import BangTuanHoan from '../Chemistry/BangTuanHoan/BangTuanHoan'
 
+// Physics Child
+import Lop10 from '../Physics/Lop10/Lop10'
+import Lop11 from '../Physics/Lop11/Lop11';
+import Lop12 from '../Physics/Lop12/Lop12';
+
 // Stack
 const Stack = createNativeStackNavigator();
 
@@ -440,6 +445,34 @@ const StackGroup = () => {
                 component={RelativeClause}
                 options={{
                     headerTitle: 'Relative Clause',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            {/* Physics Child */}
+            <Stack.Screen
+                name='Lop10'
+                component={Lop10}
+                options={{
+                    headerTitle: 'Lớp 10',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            <Stack.Screen
+                name='Lop11'
+                component={Lop11}
+                options={{
+                    headerTitle: 'Lớp 11',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            <Stack.Screen
+                name='Lop12'
+                component={Lop12}
+                options={{
+                    headerTitle: 'Lớp 12',
                     headerBackTitle: 'Trở lại'
                 }}
             />
