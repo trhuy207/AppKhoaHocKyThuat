@@ -1,15 +1,16 @@
 import { View, Text, TouchableOpacity, ScrollView, SafeAreaView } from 'react-native'
-import React, {useState} from 'react'
+import React from 'react'
+
+import SvgComponent1 from './SvgImage/SvgComponent1'
+import SvgComponent2 from './SvgImage/SvgComponent2'
+import SvgComponent3 from './SvgImage/SvgComponent3'
+import SvgComponent4 from './SvgImage/SvgComponent4'
+import SvgComponent5 from './SvgImage/SvgComponent5'
+import SvgComponent6 from './SvgImage/SvgComponent6'
 
 import styles from './Bai3_10.style'
 
 const Bai3_10 = () => {
-    const [p1, showP1] = useState(false)
-    const [p2, showP2] = useState(false)
-    const [p3, showP3] = useState(false)
-    const [p4, showP4] = useState(false)
-    const [p5, showP5] = useState(false)
-    const [p6, showP6] = useState(false)
     return (
         <SafeAreaView>
             <ScrollView>
@@ -51,7 +52,7 @@ const Bai3_10 = () => {
 
                                 <Text style={styles.contentTitle}>c. Giá trị trung bình.</Text>
                                 <View>
-                                    <Text style={styles.contentText}></Text>
+                                    <SvgComponent1 />
                                 </View>
                             </View>
 
@@ -60,16 +61,16 @@ const Bai3_10 = () => {
                                 <Text style={styles.contentTitle}>2. Cách xác định sai số của phép đo.</Text>
                                 <View>
                                     <Text style={styles.contentText}>Sai số ngẫu nhiên tuyệt đối của mỗi lần đo:</Text>
-                                    <Text style={styles.contentText}></Text>
+                                    <SvgComponent2 />
 
                                     <Text style={styles.contentText}>Sai số ngẫu nhiên tuyệt đối trung bình của n lần đo:</Text>
-                                    <Text style={styles.contentText}></Text>
+                                    <SvgComponent3 />
 
                                     <Text style={styles.contentText}>Sai số tuyệt đối của phép đo là tổng sai số tuyệt đối trung bình và sai số dụng cụ:</Text>
-                                    <Text style={styles.contentText}></Text>
+                                    <SvgComponent4 />
 
                                     <Text style={styles.contentText}>Sai số tỉ đối:</Text>
-                                    <Text style={styles.contentText}></Text>
+                                    <SvgComponent5 />
                                 </View>
                             </View>
 
@@ -88,7 +89,7 @@ const Bai3_10 = () => {
                             <View style={styles.cardContent}>
                                 <Text style={styles.contentTitle}>4. Cách viết kết quả đo.</Text>
                                 <View>
-                                    <Text style={styles.contentText}></Text>
+                                    <SvgComponent6 />
                                 </View>
                             </View>
                         </View>

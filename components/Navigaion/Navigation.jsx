@@ -71,9 +71,14 @@ import Lop12 from '../Physics/Lop12/Lop12';
 
 // Lop10 Child
 import Chuong1_10 from '../Physics/Lop10/Chuong1/Chuong1_10';
+import Chuong2_10 from '../Physics/Lop10/Chuong2/Chuong2_10';
 
 // Chuong1 Child
 import Bai3_10 from '../Physics/Lop10/Chuong1/Bai3/Bai3_10';
+import Bai4_10 from '../Physics/Lop10/Chuong2/Bai4/Bai4_10';
+import Bai5_10 from '../Physics/Lop10/Chuong2/Bai5/Bai5_10';
+import Bai7_10 from '../Physics/Lop10/Chuong2/Bai7/Bai7_10';
+import Bai8_10 from '../Physics/Lop10/Chuong2/Bai8/Bai8_10';
 
 // Stack
 const Stack = createNativeStackNavigator();
@@ -94,7 +99,7 @@ const StackGroup = () => {
                 component={Chemistry}
                 options={{
                     headerShown: true,
-                    title: 'Từ Điển Hóa Học',
+                    title: 'Kiến Thức Chung Môn Hóa Học',
                     headerTitleStyle: {
                         fontWeight: 'bold',
                     },
@@ -492,7 +497,15 @@ const StackGroup = () => {
                     headerBackTitle: 'Trở lại'
                 }}
             />
-
+            
+            <Stack.Screen
+                name='Chuong2_10'
+                component={Chuong2_10}
+                options={{
+                    headerTitle: 'Chương 2',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
             {/* Chuong1 Child */}
             <Stack.Screen
                 name='Bai3_10'
@@ -502,7 +515,42 @@ const StackGroup = () => {
                     headerBackTitle: 'Trở lại'
                 }}
             />
+            
+            <Stack.Screen
+                name='Bai4_10'
+                component={Bai4_10}
+                options={{
+                    headerTitle: 'Độ dịch chuyển và Quãng đường',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
 
+            <Stack.Screen
+                name='Bai5_10'
+                component={Bai5_10}
+                options={{
+                    headerTitle: 'Tốc độ và Vận Tốc',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            <Stack.Screen
+                name='Bai7_10'
+                component={Bai7_10}
+                options={{
+                    headerTitle: 'Đồ thị độ dịch chuyển - Thời gian',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            <Stack.Screen
+                name='Bai8_10'
+                component={Bai8_10}
+                options={{
+                    headerTitle: 'Chuyển động biến đổi – Gia tốc',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
         </Stack.Navigator>
     )
 }

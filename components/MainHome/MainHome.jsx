@@ -20,7 +20,7 @@ const MainHome = () => {
                             style={styles.BtnImage}
                             source={require('../../assets/img/chemistry.png')}
                         />
-                        <Text style={styles.BtnText}>Từ Điển Hóa Học</Text>
+                        <Text style={styles.BtnText}>Hóa Học</Text>
                     </TouchableOpacity>
 
                     {/* Lý */}
@@ -32,7 +32,7 @@ const MainHome = () => {
                             style={styles.BtnImage}
                             source={require('../../assets/img/physics.png')}
                         />
-                        <Text style={styles.BtnText}>Công Thức Vật Lý{'\n'}(Đang phát triển)</Text>
+                        <Text style={styles.BtnText}>Vật Lý{'\n'}(Đang phát triển)</Text>
                     </TouchableOpacity>
 
                     {/* Toán */}
@@ -44,7 +44,7 @@ const MainHome = () => {
                             style={styles.BtnImage}
                             source={require('../../assets/img/math.png')}
                         />
-                        <Text style={styles.BtnText}>Công Thức Toán{'\n'}(Đang phát triển)</Text>
+                        <Text style={styles.BtnText}>Toán{'\n'}(Đang phát triển)</Text>
                     </TouchableOpacity>
 
                     {/* Anh */}
@@ -56,7 +56,7 @@ const MainHome = () => {
                             style={styles.BtnImage}
                             source={require('../../assets/img/english.png')}
                         />
-                        <Text style={styles.BtnText}>Công Thức Anh Văn</Text>
+                        <Text style={styles.BtnText}>Anh Văn</Text>
                     </TouchableOpacity>
                 </View>
             </ScrollView>

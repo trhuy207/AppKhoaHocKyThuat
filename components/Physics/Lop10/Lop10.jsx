@@ -12,7 +12,7 @@ const Lop10 = ({navigation}) => {
                         <Text style={styles.btnText}>Chương I.{'\n'}MỞ ĐẦU</Text>
                     </TouchableOpacity>
 
-                    <TouchableOpacity style={styles.btn}>
+                    <TouchableOpacity style={styles.btn} onPress={() => navigation.navigate('Chuong2_10')}>
                         <Text style={styles.btnText}>Chương II.{'\n'}ĐỘNG HỌC</Text>
                     </TouchableOpacity>
 
