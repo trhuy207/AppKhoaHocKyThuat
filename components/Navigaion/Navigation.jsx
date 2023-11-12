@@ -72,9 +72,12 @@ import Lop12 from '../Physics/Lop12/Lop12';
 // Lop10 Child
 import Chuong1_10 from '../Physics/Lop10/Chuong1/Chuong1_10';
 import Chuong2_10 from '../Physics/Lop10/Chuong2/Chuong2_10';
+import Chuong3_10 from '../Physics/Lop10/Chuong3/Chuong3_10';
 
 // Chuong1 Child
 import Bai3_10 from '../Physics/Lop10/Chuong1/Bai3/Bai3_10';
+
+// Chuong2 Child
 import Bai4_10 from '../Physics/Lop10/Chuong2/Bai4/Bai4_10';
 import Bai5_10 from '../Physics/Lop10/Chuong2/Bai5/Bai5_10';
 import Bai7_10 from '../Physics/Lop10/Chuong2/Bai7/Bai7_10';
@@ -82,6 +85,12 @@ import Bai8_10 from '../Physics/Lop10/Chuong2/Bai8/Bai8_10';
 import Bai9_10 from '../Physics/Lop10/Chuong2/Bai9/Bai9_10';
 import Bai10_10 from '../Physics/Lop10/Chuong2/Bai10/Bai10_10';
 import Bai12_10 from '../Physics/Lop10/Chuong2/Bai12/Bai12_10';
+
+// Chuong3 Child
+import Bai13_10 from '../Physics/Lop10/Chuong3/Bai13/Bai13_10';
+import BaiChuDe1_10 from '../Physics/Lop10/Chuong3/BaiChuDe1/BaiChuDe1_10'
+import BaiChuDe2_10 from '../Physics/Lop10/Chuong3/BaiChuDe1/BaiChuDe1_10'
+import Bai21_10 from '../Physics/Lop10/Chuong3/Bai21/Bai21_10';
 
 // Stack
 const Stack = createNativeStackNavigator();
@@ -509,6 +518,16 @@ const StackGroup = () => {
                     headerBackTitle: 'Trở lại'
                 }}
             />
+
+            <Stack.Screen
+                name='Chuong3_10'
+                component={Chuong3_10}
+                options={{
+                    headerTitle: 'Chương 3',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
             {/* Chuong1 Child */}
             <Stack.Screen
                 name='Bai3_10'
@@ -519,6 +538,7 @@ const StackGroup = () => {
                 }}
             />
 
+            {/* Chuong2 Child */}
             <Stack.Screen
                 name='Bai4_10'
                 component={Bai4_10}
@@ -578,6 +598,43 @@ const StackGroup = () => {
                 component={Bai12_10}
                 options={{
                     headerTitle: 'Chuyển động ném',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            {/* Chuong3 Child */}
+            <Stack.Screen
+                name='Bai13_10'
+                component={Bai13_10}
+                options={{
+                    headerTitle: 'Lực',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            <Stack.Screen
+                name='BaiChuDe1_10'
+                component={BaiChuDe1_10}
+                options={{
+                    headerTitle: '3 Định Luật Newton',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            <Stack.Screen
+                name='BaiChuDe2_10'
+                component={BaiChuDe2_10}
+                options={{
+                    headerTitle: 'Các lực cơ học',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            <Stack.Screen
+                name='Bai21_10'
+                component={Bai21_10}
+                options={{
+                    headerTitle: 'Moment lực',
                     headerBackTitle: 'Trở lại'
                 }}
             />
