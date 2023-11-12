@@ -79,12 +79,15 @@ import Bai4_10 from '../Physics/Lop10/Chuong2/Bai4/Bai4_10';
 import Bai5_10 from '../Physics/Lop10/Chuong2/Bai5/Bai5_10';
 import Bai7_10 from '../Physics/Lop10/Chuong2/Bai7/Bai7_10';
 import Bai8_10 from '../Physics/Lop10/Chuong2/Bai8/Bai8_10';
+import Bai9_10 from '../Physics/Lop10/Chuong2/Bai9/Bai9_10';
+import Bai10_10 from '../Physics/Lop10/Chuong2/Bai10/Bai10_10';
+import Bai12_10 from '../Physics/Lop10/Chuong2/Bai12/Bai12_10';
 
 // Stack
 const Stack = createNativeStackNavigator();
 
 const StackGroup = () => {
-    return(
+    return (
         <Stack.Navigator>
             <Stack.Screen
                 name='TabGroup'
@@ -94,7 +97,7 @@ const StackGroup = () => {
                 }}
             />
 
-            <Stack.Screen 
+            <Stack.Screen
                 name='Chemistry'
                 component={Chemistry}
                 options={{
@@ -106,36 +109,36 @@ const StackGroup = () => {
                 }}
             />
 
-            <Stack.Screen 
+            <Stack.Screen
                 name='Physics'
                 component={Physics}
                 options={{
                     headerShown: true,
-                    title: 'Công Thức Vật Lý',
+                    title: 'Vật Lý',
                     headerTitleStyle: {
                         fontWeight: 'bold',
                     },
                 }}
             />
 
-            <Stack.Screen 
+            <Stack.Screen
                 name='Math'
                 component={Math}
                 options={{
                     headerShown: true,
-                    title: 'Công Thức Toán',
+                    title: 'Toán',
                     headerTitleStyle: {
                         fontWeight: 'bold',
                     },
                 }}
             />
 
-            <Stack.Screen 
+            <Stack.Screen
                 name='English'
                 component={English}
                 options={{
                     headerShown: true,
-                    title: 'Công Thức Tiếng Anh',
+                    title: 'Tiếng Anh',
                     headerTitleStyle: {
                         fontWeight: 'bold',
                     },
@@ -168,7 +171,7 @@ const StackGroup = () => {
                     headerTitle: 'Cấu Hình Electron',
                     headerBackTitle: 'Trở lại'
                 }}
-            /> 
+            />
 
             <Stack.Screen
                 name='ColorChemistry'
@@ -177,7 +180,7 @@ const StackGroup = () => {
                     headerTitle: 'Màu Một Số Chất',
                     headerBackTitle: 'Trở lại'
                 }}
-            /> 
+            />
 
             <Stack.Screen
                 name='PTHH'
@@ -186,7 +189,7 @@ const StackGroup = () => {
                     headerTitle: 'Phương Trình Hóa Học',
                     headerBackTitle: 'Trở lại'
                 }}
-            /> 
+            />
 
             <Stack.Screen
                 name='DayHoatDongKimLoai'
@@ -195,7 +198,7 @@ const StackGroup = () => {
                     headerTitle: 'Dãy Hoạt Động Kim Loại',
                     headerBackTitle: 'Trở lại'
                 }}
-            /> 
+            />
 
             <Stack.Screen
                 name='NTHHLop8'
@@ -204,7 +207,7 @@ const StackGroup = () => {
                     headerTitle: 'Nguyên Tố Hóa Học Lớp 8',
                     headerBackTitle: 'Trở lại'
                 }}
-            /> 
+            />
 
             <Stack.Screen
                 name='BangTinhTan'
@@ -213,7 +216,7 @@ const StackGroup = () => {
                     headerTitle: 'Bảng Tính Tan',
                     headerBackTitle: 'Trở lại'
                 }}
-            /> 
+            />
 
             <Stack.Screen
                 name='BangTuanHoan'
@@ -222,7 +225,7 @@ const StackGroup = () => {
                     headerTitle: 'Bảng Tuần Hoàn',
                     headerBackTitle: 'Trở lại'
                 }}
-            /> 
+            />
 
             {/* 13 basic tense */}
             <Stack.Screen
@@ -305,7 +308,7 @@ const StackGroup = () => {
                     headerBackTitle: 'Trở lại'
                 }}
             />
-            
+
             <Stack.Screen
                 name='NinethTense'
                 component={NinethTense}
@@ -497,7 +500,7 @@ const StackGroup = () => {
                     headerBackTitle: 'Trở lại'
                 }}
             />
-            
+
             <Stack.Screen
                 name='Chuong2_10'
                 component={Chuong2_10}
@@ -515,7 +518,7 @@ const StackGroup = () => {
                     headerBackTitle: 'Trở lại'
                 }}
             />
-            
+
             <Stack.Screen
                 name='Bai4_10'
                 component={Bai4_10}
@@ -551,6 +554,33 @@ const StackGroup = () => {
                     headerBackTitle: 'Trở lại'
                 }}
             />
+
+            <Stack.Screen
+                name='Bai9_10'
+                component={Bai9_10}
+                options={{
+                    headerTitle: 'Chuyển động thẳng biến đổi đều',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            <Stack.Screen
+                name='Bai10_10'
+                component={Bai10_10}
+                options={{
+                    headerTitle: 'Sự rơi tự do',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            <Stack.Screen
+                name='Bai12_10'
+                component={Bai12_10}
+                options={{
+                    headerTitle: 'Chuyển động ném',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
         </Stack.Navigator>
     )
 }
@@ -561,24 +591,24 @@ const Tab = createBottomTabNavigator();
 const TabGroup = () => {
     return (
         <Tab.Navigator
-            screenOptions={({route, navigation}) => ({
-                tabBarIcon: ({ color, focused, size}) => {
+            screenOptions={({ route, navigation }) => ({
+                tabBarIcon: ({ color, focused, size }) => {
                     let iconName;
                     if (route.name === 'Home') {
                         iconName = focused ? "home" : "home-outline";
                         return <MaterialCommunityIcons name={iconName} size={size} color={color} />
-                    }else if (route.name === 'Document') {
-                        iconName ="documents";
+                    } else if (route.name === 'Document') {
+                        iconName = "documents";
                         return <Entypo name={iconName} size={size} color={color} />
                     }
                     else if (route.name === 'Info') {
-                        iconName ="info";
+                        iconName = "info";
                         return <AntDesign name={iconName} size={size} color={color} />
                     }
                 }
             })}
         >
-            <Tab.Screen 
+            <Tab.Screen
                 name='Home'
                 component={MainHome}
                 options={{
@@ -587,12 +617,12 @@ const TabGroup = () => {
                     headerTitleStyle: {
                         fontWeight: 'bold',
                         color: '#524eb7',
-                        fontSize: 34
+                        fontSize: 34,
                     }
                 }}
             />
 
-            <Tab.Screen 
+            <Tab.Screen
                 name='Document'
                 component={Document}
                 options={{
@@ -604,7 +634,7 @@ const TabGroup = () => {
                 }}
             />
 
-            <Tab.Screen 
+            <Tab.Screen
                 name='Info'
                 component={Info}
                 options={{
