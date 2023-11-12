@@ -27,31 +27,29 @@ const CauHinhE = () => {
 
     return (
         <SafeAreaView style={styles.container}>
-            <ScrollView>
-                <View style={styles.body}>
-                    <View style={styles.table}>
-                        <View style={styles.row}>
-                            <View style={[styles.rowChildTitle, {width: '12%'}]}>
-                                <Text style={[styles.rowTitle, {fontWeight: 'bold'}]}>VỊ TRÍ</Text>
-                            </View>
-                            <View style={[styles.rowChildTitle, {width: '28%'}]}>
-                                <Text style={[styles.rowTitle, {fontWeight: 'bold'}]}>NGUYÊN TỐ</Text>
-                            </View>
-                            <View style={[styles.rowChildTitle, {width: '25%'}]}>
-                                <Text style={[styles.rowTitle, {fontWeight: 'bold'}]}>KÍ HIỆU</Text>
-                            </View>
-                            <View style={[styles.rowChildTitle, {width: '35%'}]}>
-                                <Text style={[styles.rowTitle, {fontWeight: 'bold'}]}>CẤU HÌNH E</Text>
-                            </View>
+            <View style={styles.body}>
+                <View style={styles.table}>
+                    <View style={styles.row}>
+                        <View style={[styles.rowChildTitle, {width: '12%'}]}>
+                            <Text style={[styles.rowTitle, {fontWeight: 'bold'}]}>VỊ TRÍ</Text>
+                        </View>
+                        <View style={[styles.rowChildTitle, {width: '28%'}]}>
+                            <Text style={[styles.rowTitle, {fontWeight: 'bold'}]}>NGUYÊN TỐ</Text>
+                        </View>
+                        <View style={[styles.rowChildTitle, {width: '25%'}]}>
+                            <Text style={[styles.rowTitle, {fontWeight: 'bold'}]}>KÍ HIỆU</Text>
+                        </View>
+                        <View style={[styles.rowChildTitle, {width: '35%'}]}>
+                            <Text style={[styles.rowTitle, {fontWeight: 'bold'}]}>CẤU HÌNH E</Text>
                         </View>
                     </View>
-                    <FlatList
-                        data={data}
-                        renderItem={item}
-                        keyExtractor={(item, index) => index.toString()}
-                    />
                 </View>
-            </ScrollView>
+                <FlatList
+                    data={data}
+                    renderItem={item}
+                    keyExtractor={(item, index) => index.toString()}
+                />
+            </View>
         </SafeAreaView>
     )
 }
