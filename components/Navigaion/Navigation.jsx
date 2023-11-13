@@ -89,7 +89,7 @@ import Bai12_10 from '../Physics/Lop10/Chuong2/Bai12/Bai12_10';
 // Chuong3 Child
 import Bai13_10 from '../Physics/Lop10/Chuong3/Bai13/Bai13_10';
 import BaiChuDe1_10 from '../Physics/Lop10/Chuong3/BaiChuDe1/BaiChuDe1_10'
-import BaiChuDe2_10 from '../Physics/Lop10/Chuong3/BaiChuDe1/BaiChuDe1_10'
+import BaiChuDe2_10 from '../Physics/Lop10/Chuong3/BaiChuDe2/BaiChuDe2_10'
 import Bai21_10 from '../Physics/Lop10/Chuong3/Bai21/Bai21_10';
 
 // Stack

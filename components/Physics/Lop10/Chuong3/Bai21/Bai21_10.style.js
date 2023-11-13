@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
     },
 
     contentCT: {
-        fontSize: 15,
+        fontSize: 18,
         margin: 3,
         color: '#f50010',
         fontWeight: 'bold'
