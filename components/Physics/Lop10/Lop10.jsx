@@ -20,19 +20,19 @@ const Lop10 = ({navigation}) => {
                         <Text style={styles.btnText}>Chương III.{'\n'}ĐỘNG LỰC HỌC</Text>
                     </TouchableOpacity>
 
-                    <TouchableOpacity style={styles.btn}>
+                    <TouchableOpacity style={styles.btn} onPress={() => navigation.navigate('Chuong4_10')}>
                         <Text style={styles.btnText}>Chương IV.{'\n'}NĂNG LƯỢNG – CÔNG – CÔNG SUẤT</Text>
                     </TouchableOpacity>
 
-                    <TouchableOpacity style={styles.btn}>
+                    <TouchableOpacity style={styles.btn} onPress={() => navigation.navigate('Chuong5_10')}>
                         <Text style={styles.btnText}>Chương V.{'\n'}ĐỘNG LƯỢNG</Text>
                     </TouchableOpacity>
 
-                    <TouchableOpacity style={styles.btn}>
+                    <TouchableOpacity style={styles.btn} onPress={() => navigation.navigate('Chuong6_10')}>
                         <Text style={styles.btnText}>Chương VI.{'\n'}CHUYỂN ĐỘNG TRÒN ĐỀU</Text>
                     </TouchableOpacity>
 
-                    <TouchableOpacity style={styles.btn}>
+                    <TouchableOpacity style={styles.btn} onPress={() => navigation.navigate('Chuong7_10')}>
                         <Text style={styles.btnText}>Chương VII.{'\n'}BIẾN DẠNG CỦA VẬT RẮN – ÁP SUẤT CHẤT LỎNG</Text>
                     </TouchableOpacity>
                 </View>

@@ -73,6 +73,10 @@ import Lop12 from '../Physics/Lop12/Lop12';
 import Chuong1_10 from '../Physics/Lop10/Chuong1/Chuong1_10';
 import Chuong2_10 from '../Physics/Lop10/Chuong2/Chuong2_10';
 import Chuong3_10 from '../Physics/Lop10/Chuong3/Chuong3_10';
+import Chuong4_10 from '../Physics/Lop10/Chuong4/Chuong4_10';
+import Chuong5_10 from '../Physics/Lop10/Chuong5/Chuong5_10';
+import Chuong6_10 from '../Physics/Lop10/Chuong6/Chuong6_10';
+import Chuong7_10 from '../Physics/Lop10/Chuong7/Chuong7_10';
 
 // Chuong1 Child
 import Bai3_10 from '../Physics/Lop10/Chuong1/Bai3/Bai3_10';
@@ -91,6 +95,25 @@ import Bai13_10 from '../Physics/Lop10/Chuong3/Bai13/Bai13_10';
 import BaiChuDe1_10 from '../Physics/Lop10/Chuong3/BaiChuDe1/BaiChuDe1_10'
 import BaiChuDe2_10 from '../Physics/Lop10/Chuong3/BaiChuDe2/BaiChuDe2_10'
 import Bai21_10 from '../Physics/Lop10/Chuong3/Bai21/Bai21_10';
+
+// Chuong4 Child
+import Bai23_10 from '../Physics/Lop10/Chuong4/Bai23/Bai23_10'
+import Bai24_10 from '../Physics/Lop10/Chuong4/Bai24/Bai24_10'
+import Bai25_10 from '../Physics/Lop10/Chuong4/Bai25/Bai25_10'
+import Bai26_10 from '../Physics/Lop10/Chuong4/Bai26/Bai26_10'
+import Bai27_10 from '../Physics/Lop10/Chuong4/Bai27/Bai27_10'
+
+// Chuong5 Child
+import Bai28_10 from '../Physics/Lop10/Chuong5/Bai28/Bai28_10'
+import Bai29_10 from '../Physics/Lop10/Chuong5/Bai29/Bai29_10'
+
+// Chuong6 Child
+import Bai31_10 from '../Physics/Lop10/Chuong6/Bai31/Bai31_10';
+import Bai32_10 from '../Physics/Lop10/Chuong6/Bai32/Bai32_10';
+
+// Chuong7 Child
+import Bai33_10 from '../Physics/Lop10/Chuong7/Bai33/Bai33_10';
+import Bai34_10 from '../Physics/Lop10/Chuong7/Bai34/Bai34_10';
 
 // Stack
 const Stack = createNativeStackNavigator();
@@ -505,7 +528,7 @@ const StackGroup = () => {
                 name='Chuong1_10'
                 component={Chuong1_10}
                 options={{
-                    headerTitle: 'Chương 1',
+                    headerTitle: 'Chương I',
                     headerBackTitle: 'Trở lại'
                 }}
             />
@@ -514,7 +537,7 @@ const StackGroup = () => {
                 name='Chuong2_10'
                 component={Chuong2_10}
                 options={{
-                    headerTitle: 'Chương 2',
+                    headerTitle: 'Chương II',
                     headerBackTitle: 'Trở lại'
                 }}
             />
@@ -523,7 +546,43 @@ const StackGroup = () => {
                 name='Chuong3_10'
                 component={Chuong3_10}
                 options={{
-                    headerTitle: 'Chương 3',
+                    headerTitle: 'Chương III',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            <Stack.Screen
+                name='Chuong4_10'
+                component={Chuong4_10}
+                options={{
+                    headerTitle: 'Chương IV',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            <Stack.Screen
+                name='Chuong5_10'
+                component={Chuong5_10}
+                options={{
+                    headerTitle: 'Chương V',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            <Stack.Screen
+                name='Chuong6_10'
+                component={Chuong6_10}
+                options={{
+                    headerTitle: 'Chương VI',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            <Stack.Screen
+                name='Chuong7_10'
+                component={Chuong7_10}
+                options={{
+                    headerTitle: 'Chương VII',
                     headerBackTitle: 'Trở lại'
                 }}
             />
@@ -635,6 +694,109 @@ const StackGroup = () => {
                 component={Bai21_10}
                 options={{
                     headerTitle: 'Moment lực',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            {/* Chuong4 Child */}
+            <Stack.Screen
+                name='Bai23_10'
+                component={Bai23_10}
+                options={{
+                    headerTitle: 'Năng lượng - Công cơ học',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            <Stack.Screen
+                name='Bai24_10'
+                component={Bai24_10}
+                options={{
+                    headerTitle: 'Công suất',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            <Stack.Screen
+                name='Bai25_10'
+                component={Bai25_10}
+                options={{
+                    headerTitle: 'Động năng - Thế năng',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            <Stack.Screen
+                name='Bai26_10'
+                component={Bai26_10}
+                options={{
+                    headerTitle: 'Cơ năng',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            <Stack.Screen
+                name='Bai27_10'
+                component={Bai27_10}
+                options={{
+                    headerTitle: 'Hiệu suất',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            {/* Chuong5 Child */}
+            <Stack.Screen
+                name='Bai28_10'
+                component={Bai28_10}
+                options={{
+                    headerTitle: 'Động lượng',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            <Stack.Screen
+                name='Bai29_10'
+                component={Bai29_10}
+                options={{
+                    headerTitle: 'Định luật bảo toàn Động lượng',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            {/* Chuong6 Child */}
+            <Stack.Screen
+                name='Bai31_10'
+                component={Bai31_10}
+                options={{
+                    headerTitle: 'Động học của CĐ Tròn đều',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            <Stack.Screen
+                name='Bai32_10'
+                component={Bai32_10}
+                options={{
+                    headerTitle: 'Lực và Gia tốc hướng tâm',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            {/* Chuong7 Child */}
+            <Stack.Screen
+                name='Bai33_10'
+                component={Bai33_10}
+                options={{
+                    headerTitle: 'Biến dạng của vật rắn',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            <Stack.Screen
+                name='Bai34_10'
+                component={Bai34_10}
+                options={{
+                    headerTitle: 'Khối lượng riêng - Áp suất chất lỏng',
                     headerBackTitle: 'Trở lại'
                 }}
             />
