@@ -78,10 +78,10 @@ import Chuong5_10 from '../Physics/Lop10/Chuong5/Chuong5_10';
 import Chuong6_10 from '../Physics/Lop10/Chuong6/Chuong6_10';
 import Chuong7_10 from '../Physics/Lop10/Chuong7/Chuong7_10';
 
-// Chuong1 Child
+// Chuong1 10 Child
 import Bai3_10 from '../Physics/Lop10/Chuong1/Bai3/Bai3_10';
 
-// Chuong2 Child
+// Chuong2 10 Child
 import Bai4_10 from '../Physics/Lop10/Chuong2/Bai4/Bai4_10';
 import Bai5_10 from '../Physics/Lop10/Chuong2/Bai5/Bai5_10';
 import Bai7_10 from '../Physics/Lop10/Chuong2/Bai7/Bai7_10';
@@ -90,30 +90,36 @@ import Bai9_10 from '../Physics/Lop10/Chuong2/Bai9/Bai9_10';
 import Bai10_10 from '../Physics/Lop10/Chuong2/Bai10/Bai10_10';
 import Bai12_10 from '../Physics/Lop10/Chuong2/Bai12/Bai12_10';
 
-// Chuong3 Child
+// Chuong3 10 Child
 import Bai13_10 from '../Physics/Lop10/Chuong3/Bai13/Bai13_10';
 import BaiChuDe1_10 from '../Physics/Lop10/Chuong3/BaiChuDe1/BaiChuDe1_10'
 import BaiChuDe2_10 from '../Physics/Lop10/Chuong3/BaiChuDe2/BaiChuDe2_10'
 import Bai21_10 from '../Physics/Lop10/Chuong3/Bai21/Bai21_10';
 
-// Chuong4 Child
+// Chuong4 10 Child
 import Bai23_10 from '../Physics/Lop10/Chuong4/Bai23/Bai23_10'
 import Bai24_10 from '../Physics/Lop10/Chuong4/Bai24/Bai24_10'
 import Bai25_10 from '../Physics/Lop10/Chuong4/Bai25/Bai25_10'
 import Bai26_10 from '../Physics/Lop10/Chuong4/Bai26/Bai26_10'
 import Bai27_10 from '../Physics/Lop10/Chuong4/Bai27/Bai27_10'
 
-// Chuong5 Child
+// Chuong5 10 Child
 import Bai28_10 from '../Physics/Lop10/Chuong5/Bai28/Bai28_10'
 import Bai29_10 from '../Physics/Lop10/Chuong5/Bai29/Bai29_10'
 
-// Chuong6 Child
+// Chuong6 10 Child
 import Bai31_10 from '../Physics/Lop10/Chuong6/Bai31/Bai31_10';
 import Bai32_10 from '../Physics/Lop10/Chuong6/Bai32/Bai32_10';
 
-// Chuong7 Child
+// Chuong7 10 Child
 import Bai33_10 from '../Physics/Lop10/Chuong7/Bai33/Bai33_10';
 import Bai34_10 from '../Physics/Lop10/Chuong7/Bai34/Bai34_10';
+
+// Lop11 Child
+import Chuong1_11 from '../Physics/Lop11/Chuong1/Chuong1_11';
+
+// Chuong1 11 Child
+import BaiChuDe1_11 from '../Physics/Lop11/Chuong1/BaiChuDe1/BaiChuDe1_11';
 
 // Stack
 const Stack = createNativeStackNavigator();
@@ -587,7 +593,7 @@ const StackGroup = () => {
                 }}
             />
 
-            {/* Chuong1 Child */}
+            {/* Chuong1 10 Child */}
             <Stack.Screen
                 name='Bai3_10'
                 component={Bai3_10}
@@ -597,7 +603,7 @@ const StackGroup = () => {
                 }}
             />
 
-            {/* Chuong2 Child */}
+            {/* Chuong2 10 Child */}
             <Stack.Screen
                 name='Bai4_10'
                 component={Bai4_10}
@@ -661,7 +667,7 @@ const StackGroup = () => {
                 }}
             />
 
-            {/* Chuong3 Child */}
+            {/* Chuong3 10 Child */}
             <Stack.Screen
                 name='Bai13_10'
                 component={Bai13_10}
@@ -698,7 +704,7 @@ const StackGroup = () => {
                 }}
             />
 
-            {/* Chuong4 Child */}
+            {/* Chuong4 10 Child */}
             <Stack.Screen
                 name='Bai23_10'
                 component={Bai23_10}
@@ -744,7 +750,7 @@ const StackGroup = () => {
                 }}
             />
 
-            {/* Chuong5 Child */}
+            {/* Chuong5 10 Child */}
             <Stack.Screen
                 name='Bai28_10'
                 component={Bai28_10}
@@ -763,7 +769,7 @@ const StackGroup = () => {
                 }}
             />
 
-            {/* Chuong6 Child */}
+            {/* Chuong6 10 Child */}
             <Stack.Screen
                 name='Bai31_10'
                 component={Bai31_10}
@@ -782,7 +788,7 @@ const StackGroup = () => {
                 }}
             />
 
-            {/* Chuong7 Child */}
+            {/* Chuong7 10 Child */}
             <Stack.Screen
                 name='Bai33_10'
                 component={Bai33_10}
@@ -797,6 +803,26 @@ const StackGroup = () => {
                 component={Bai34_10}
                 options={{
                     headerTitle: 'Khối lượng riêng - Áp suất chất lỏng',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            {/* Lop11 Child */}
+            <Stack.Screen
+                name='Chuong1_11'
+                component={Chuong1_11}
+                options={{
+                    headerTitle: 'Chương I',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+            
+            {/* Chuong1 11 Child */}
+            <Stack.Screen
+                name='BaiChuDe1_11'
+                component={BaiChuDe1_11}
+                options={{
+                    headerTitle: 'Dao động điều hòa',
                     headerBackTitle: 'Trở lại'
                 }}
             />

@@ -19,6 +19,7 @@ const styles = StyleSheet.create({
         borderWidth: 1.5,
         borderColor: '#8d60bd',
         alignItems: 'center',
+        backgroundColor: '#cdd1e4'
     },
 
     btnText: {
