@@ -6,7 +6,7 @@ import styles from './Math.style'
 const Math = () => {
     return (
         <View style={styles.container}>
-            <Text>Math</Text>
+            <Text>conca</Text>
         </View>
     )
 }

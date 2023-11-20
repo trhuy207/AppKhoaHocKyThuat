@@ -4,13 +4,9 @@ import { StatusBar } from 'react-native';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-
-import { AntDesign } from '@expo/vector-icons';
 
 // Tab
 import MainHome from '../MainHome/MainHome';
-import Info from '../Info/Info';
 
 // Subject
 import Chemistry from '../Chemistry/Chemistry';
@@ -125,10 +121,11 @@ const StackGroup = () => {
     return (
         <Stack.Navigator>
             <Stack.Screen
-                name='TabGroup'
-                component={TabGroup}
+                name='Home'
+                component={MainHome}
                 options={{
-                    headerShown: false
+                    headerShown: true,
+                    title: 'Tổng hợp lý thuyết'
                 }}
             />
 
@@ -824,55 +821,6 @@ const StackGroup = () => {
                 }}
             />
         </Stack.Navigator>
-    )
-}
-
-// Tab Bottom
-const Tab = createBottomTabNavigator();
-
-const TabGroup = () => {
-    return (
-        <Tab.Navigator
-            screenOptions={({ route, navigation }) => ({
-                tabBarIcon: ({ color, focused, size }) => {
-                    let iconName;
-                    if (route.name === 'Home') {
-                        iconName = "home";
-                        return <AntDesign name={iconName} size={size} color={color} />
-                    }
-                    else if (route.name === 'Info') {
-                        iconName = "info";
-                        return <AntDesign name={iconName} size={size} color={color} />
-                    }
-                }
-            })}
-        >
-            <Tab.Screen
-                name='Home'
-                component={MainHome}
-                options={{
-                    title: 'AH STUDY',
-                    tabBarLabel: 'Trang Chủ',
-                    headerTitleStyle: {
-                        fontWeight: 'bold',
-                        color: '#524eb7',
-                        fontSize: 34,
-                    }
-                }}
-            />
-
-            <Tab.Screen
-                name='Info'
-                component={Info}
-                options={{
-                    title: 'Thông Tin',
-                    headerShown: true,
-                    headerTitleStyle: {
-                        fontWeight: 'bold'
-                    }
-                }}
-            />
-        </Tab.Navigator>
     )
 }
 
