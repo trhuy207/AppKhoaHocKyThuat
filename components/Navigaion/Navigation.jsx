@@ -6,13 +6,10 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import { MaterialCommunityIcons } from '@expo/vector-icons';
-import { Entypo } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
 
 // Tab
 import MainHome from '../MainHome/MainHome';
-import Document from '../Document/Document';
 import Info from '../Info/Info';
 
 // Subject
@@ -840,11 +837,8 @@ const TabGroup = () => {
                 tabBarIcon: ({ color, focused, size }) => {
                     let iconName;
                     if (route.name === 'Home') {
-                        iconName = focused ? "home" : "home-outline";
-                        return <MaterialCommunityIcons name={iconName} size={size} color={color} />
-                    } else if (route.name === 'Document') {
-                        iconName = "documents";
-                        return <Entypo name={iconName} size={size} color={color} />
+                        iconName = "home";
+                        return <AntDesign name={iconName} size={size} color={color} />
                     }
                     else if (route.name === 'Info') {
                         iconName = "info";
@@ -863,18 +857,6 @@ const TabGroup = () => {
                         fontWeight: 'bold',
                         color: '#524eb7',
                         fontSize: 34,
-                    }
-                }}
-            />
-
-            <Tab.Screen
-                name='Document'
-                component={Document}
-                options={{
-                    title: 'Tài Liệu',
-                    headerShown: true,
-                    headerTitleStyle: {
-                        fontWeight: 'bold'
                     }
                 }}
             />
