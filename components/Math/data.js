@@ -1,0 +1,27 @@
+const IMAGES = {
+    image1: require('../../assets/img/math/tron-bo-cong-thuc-toan-cap-3/tron-bo-cong-thuc-toan-cap-3-01.png'),
+    image2: require('../../assets/img/math/tron-bo-cong-thuc-toan-cap-3/tron-bo-cong-thuc-toan-cap-3-02.png'),
+    image3: require('../../assets/img/math/tron-bo-cong-thuc-toan-cap-3/tron-bo-cong-thuc-toan-cap-3-03.png'),
+    image4: require('../../assets/img/math/tron-bo-cong-thuc-toan-cap-3/tron-bo-cong-thuc-toan-cap-3-04.png'),
+    image5: require('../../assets/img/math/tron-bo-cong-thuc-toan-cap-3/tron-bo-cong-thuc-toan-cap-3-05.png'),
+    image6: require('../../assets/img/math/tron-bo-cong-thuc-toan-cap-3/tron-bo-cong-thuc-toan-cap-3-06.png'),
+    image7: require('../../assets/img/math/tron-bo-cong-thuc-toan-cap-3/tron-bo-cong-thuc-toan-cap-3-07.png'),
+    image8: require('../../assets/img/math/tron-bo-cong-thuc-toan-cap-3/tron-bo-cong-thuc-toan-cap-3-08.png'),
+    image9: require('../../assets/img/math/tron-bo-cong-thuc-toan-cap-3/tron-bo-cong-thuc-toan-cap-3-09.png'),
+    image10: require('../../assets/img/math/tron-bo-cong-thuc-toan-cap-3/tron-bo-cong-thuc-toan-cap-3-10.png'),
+    image11: require('../../assets/img/math/tron-bo-cong-thuc-toan-cap-3/tron-bo-cong-thuc-toan-cap-3-11.png'),
+    image12: require('../../assets/img/math/tron-bo-cong-thuc-toan-cap-3/tron-bo-cong-thuc-toan-cap-3-12.png'),
+    image13: require('../../assets/img/math/tron-bo-cong-thuc-toan-cap-3/tron-bo-cong-thuc-toan-cap-3-13.png'),
+    image14: require('../../assets/img/math/tron-bo-cong-thuc-toan-cap-3/tron-bo-cong-thuc-toan-cap-3-14.png'),
+    image15: require('../../assets/img/math/tron-bo-cong-thuc-toan-cap-3/tron-bo-cong-thuc-toan-cap-3-15.png'),
+    image16: require('../../assets/img/math/tron-bo-cong-thuc-toan-cap-3/tron-bo-cong-thuc-toan-cap-3-16.png'),
+    image17: require('../../assets/img/math/tron-bo-cong-thuc-toan-cap-3/tron-bo-cong-thuc-toan-cap-3-17.png'),
+    image18: require('../../assets/img/math/tron-bo-cong-thuc-toan-cap-3/tron-bo-cong-thuc-toan-cap-3-18.png'),
+    image19: require('../../assets/img/math/tron-bo-cong-thuc-toan-cap-3/tron-bo-cong-thuc-toan-cap-3-19.png'),
+    image20: require('../../assets/img/math/tron-bo-cong-thuc-toan-cap-3/tron-bo-cong-thuc-toan-cap-3-20.png'),
+    image21: require('../../assets/img/math/tron-bo-cong-thuc-toan-cap-3/tron-bo-cong-thuc-toan-cap-3-21.png'),
+    image22: require('../../assets/img/math/tron-bo-cong-thuc-toan-cap-3/tron-bo-cong-thuc-toan-cap-3-22.png'),
+    image23: require('../../assets/img/math/tron-bo-cong-thuc-toan-cap-3/tron-bo-cong-thuc-toan-cap-3-23.png'),
+};
+
+export default IMAGES

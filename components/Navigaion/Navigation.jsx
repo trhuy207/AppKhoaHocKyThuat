@@ -138,6 +138,7 @@ const StackGroup = () => {
                     headerTitleStyle: {
                         fontWeight: 'bold',
                     },
+                    headerBackTitle: 'Trở lại'
                 }}
             />
 
@@ -150,6 +151,7 @@ const StackGroup = () => {
                     headerTitleStyle: {
                         fontWeight: 'bold',
                     },
+                    headerBackTitle: 'Trở lại'
                 }}
             />
 
@@ -162,6 +164,7 @@ const StackGroup = () => {
                     headerTitleStyle: {
                         fontWeight: 'bold',
                     },
+                    headerBackTitle: 'Trở lại'
                 }}
             />
 
@@ -174,6 +177,7 @@ const StackGroup = () => {
                     headerTitleStyle: {
                         fontWeight: 'bold',
                     },
+                    headerBackTitle: 'Trở lại'
                 }}
             />
 

@@ -44,7 +44,7 @@ const MainHome = () => {
                             style={styles.BtnImage}
                             source={require('../../assets/img/math.png')}
                         />
-                        <Text style={styles.BtnText}>Toán{'\n'}(Đang phát triển)</Text>
+                        <Text style={styles.BtnText}>Toán</Text>
                     </TouchableOpacity>
 
                     {/* Anh */}

@@ -2,9 +2,7 @@
   "expo": {
     "scheme": "acme",
     "plugins": [
-      "expo-router",
-      "@config-plugins/react-native-blob-util",
-      "@config-plugins/react-native-pdf"
+      "expo-router"
     ],
     "name": "AH STUDY",
     "slug": "AppKhoaHocKyThuat",
