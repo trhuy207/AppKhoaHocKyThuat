@@ -14,6 +14,10 @@ import Physics from '../Physics/Physics';
 import English from '../English/English';
 import Math from '../Math/Math';
 
+// More
+import ThoiKhoaBieu from '../ThoiKhoaBieu/ThoiKhoaBieu';
+import LichKiemTra from '../LichKiemTra/LichKiemTra';
+
 // English Child
 import Tenses from '../English/Tenses/Tenses'
 import Grammar from '../English/Grammar/Grammar'
@@ -125,7 +129,7 @@ const StackGroup = () => {
                 component={MainHome}
                 options={{
                     headerShown: true,
-                    title: 'Tổng hợp lý thuyết'
+                    title: 'AH Study'
                 }}
             />
 
@@ -181,6 +185,34 @@ const StackGroup = () => {
                 }}
             />
 
+            {/* More */}
+            <Stack.Screen
+                name='ThoiKhoaBieu'
+                component={ThoiKhoaBieu}
+                options={{
+                    headerShown: true,
+                    title: 'Thời Khóa Biểu',
+                    headerTitleStyle: {
+                        fontWeight: 'bold',
+                    },
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            <Stack.Screen
+                name='LichKiemTra'
+                component={LichKiemTra}
+                options={{
+                    headerShown: true,
+                    title: 'Lịch Kiểm Tra',
+                    headerTitleStyle: {
+                        fontWeight: 'bold',
+                    },
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            {/* English Child */}
             <Stack.Screen
                 name='Tenses'
                 component={Tenses}
@@ -832,7 +864,7 @@ export default class Navigation extends Component {
     render() {
         return (
             <NavigationContainer independent={true}>
-                <StatusBar barStyle={'dark-content'} translucent={true} />
+                <StatusBar barStyle={'dark-content'} />
                 <StackGroup />
             </NavigationContainer>
         )

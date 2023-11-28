@@ -58,6 +58,30 @@ const MainHome = () => {
                         />
                         <Text style={styles.BtnText}>Anh Văn</Text>
                     </TouchableOpacity>
+
+                    {/* Thời Khóa Biểu */}
+                    <TouchableOpacity
+                        style={styles.Btn}
+                        onPress={() => navigate('ThoiKhoaBieu')}
+                    >
+                        <Image 
+                            style={styles.BtnImage}
+                            source={require('../../assets/img/tkb.png')}
+                        />
+                        <Text style={styles.BtnText}>Thời Khóa Biểu</Text>
+                    </TouchableOpacity>
+
+                    {/* Lịch Kiểm Tra */}
+                    <TouchableOpacity
+                        style={styles.Btn}
+                        onPress={() => navigate('LichKiemTra')}
+                    >
+                        <Image 
+                            style={styles.BtnImage}
+                            source={require('../../assets/img/lkt.png')}
+                        />
+                        <Text style={styles.BtnText}>Lịch Kiểm Tra</Text>
+                    </TouchableOpacity>
                 </View>
             </ScrollView>
         </View>
