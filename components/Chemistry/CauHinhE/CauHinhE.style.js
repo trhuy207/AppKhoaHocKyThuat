@@ -40,19 +40,6 @@ const styles = StyleSheet.create({
         margin: 2,
         textAlign: 'center'
     },
-
-    searchBar: {
-        width: '80%',
-        height: 40,
-        borderRadius: 10,
-        borderWidth: 1.5,
-        alignSelf: 'center',
-        margin: 5
-    },
-
-    searchBox: {
-        padding: 5
-    }
 })
 
 export default styles

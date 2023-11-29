@@ -46,7 +46,7 @@ const Math = () => {
     };
 
     return (
-        <View style={{ flex: 1, backgroundColor: 'black', alignItems: 'center' }}>
+        <View style={{ flex: 1, backgroundColor: '#e5e5e5', alignItems: 'center' }}>
             {/* Title JSX Remains same */}
             {/* Carousel View */}
             <View style={{ flex: 1 / 2 }}>
