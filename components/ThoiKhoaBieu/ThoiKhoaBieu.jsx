@@ -11,39 +11,39 @@ const ThoiKhoaBieu = ({ navigation }) => {
     const [tkb, setTkb] = useState([])
     const [id, setId] = useState([])
 
-    const [currentTkb, setCurrentTkb] = useState(undefined)
-
     useEffect(() => {
-        db.transaction(tx => {
-            tx.executeSql('CREATE TABLE IF NOT EXISTS Tkb (id INTEGER PRIMARY KEY AUTOINCREMENT, TietSang1 TEXT, TietSang2 TEXT, TietSang3 TEXT, TietSang4 TEXT, TietSang5 TEXT, TietChieu1 TEXT, TietChieu2 TEXT, TietChieu3 TEXT, TietChieu4 TEXT, TietChieu5 TEXT, TietChieu6 TEXT)')
-        })
-
-        db.transaction(tx => {
-            tx.executeSql('SELECT id FROM Tkb', null,
-                (txObj, resultSet) => setId(resultSet.rows._array),
-                (txObj, error) => console.log(error)
-            )
-        })
-
-        if (id <= 6) {
+        navigation.addListener('focus', () => {
             db.transaction(tx => {
-                tx.executeSql('INSERT INTO Tkb (id) VALUES ("1")'),
-                tx.executeSql('INSERT INTO Tkb (id) VALUES ("2")'),
-                tx.executeSql('INSERT INTO Tkb (id) VALUES ("3")'),
-                tx.executeSql('INSERT INTO Tkb (id) VALUES ("4")'),
-                tx.executeSql('INSERT INTO Tkb (id) VALUES ("5")'),
-                tx.executeSql('INSERT INTO Tkb (id) VALUES ("6")')
+                tx.executeSql('CREATE TABLE IF NOT EXISTS Tkb (id INTEGER PRIMARY KEY AUTOINCREMENT, TietSang1 TEXT, TietSang2 TEXT, TietSang3 TEXT, TietSang4 TEXT, TietSang5 TEXT, TietChieu1 TEXT, TietChieu2 TEXT, TietChieu3 TEXT, TietChieu4 TEXT, TietChieu5 TEXT, TietChieu6 TEXT)')
             })
-        }
 
-        db.transaction(tx => {
-            tx.executeSql('SELECT * FROM Tkb', null,
-                (txObj, resultSet) => setTkb(resultSet.rows._array),
-                (txObj, error) => console.log(error)
-            )
+            db.transaction(tx => {
+                tx.executeSql('SELECT id FROM Tkb', null,
+                    (txObj, resultSet) => setId(resultSet.rows._array),
+                    (txObj, error) => console.log(error)
+                )
+            })
+
+            if (id <= 6) {
+                db.transaction(tx => {
+                    tx.executeSql('INSERT INTO Tkb (id) VALUES ("1")'),
+                    tx.executeSql('INSERT INTO Tkb (id) VALUES ("2")'),
+                    tx.executeSql('INSERT INTO Tkb (id) VALUES ("3")'),
+                    tx.executeSql('INSERT INTO Tkb (id) VALUES ("4")'),
+                    tx.executeSql('INSERT INTO Tkb (id) VALUES ("5")'),
+                    tx.executeSql('INSERT INTO Tkb (id) VALUES ("6")')
+                })
+            }
+
+            db.transaction(tx => {
+                tx.executeSql('SELECT * FROM Tkb', null,
+                    (txObj, resultSet) => setTkb(resultSet.rows._array),
+                    (txObj, error) => console.log(error)
+                )
+            })
+
+            setIsLoading(false)
         })
-
-        setIsLoading(false)
     }, [])
 
     if (isLoading) {
@@ -52,20 +52,6 @@ const ThoiKhoaBieu = ({ navigation }) => {
                 <Text>loading...</Text>
             </View>
         )
-    }
-
-    const addTiet = () => {
-        db.transaction(tx => {
-            tx.executeSql('INSERT INTO Tkb (TietSang1) VALUES (?)', [currentTkb],
-                (txObj, resultSet) => {
-                    let existingTietSang1 = [...tkb];
-                    existingTietSang1.push({ id: resultSet.insertId, TietSang1: currentTkb });
-                    setTkb(existingTietSang1);
-                    setCurrentTkb(undefined);
-                },
-                (txObj, error) => console.log(error)
-            )
-        })
     }
 
     const showTkb = () => {
@@ -81,7 +67,7 @@ const ThoiKhoaBieu = ({ navigation }) => {
                             <Button
                                 title='Chỉnh Sửa'
                                 style={styles.btnUpdate}
-                                onPress={() => { }}
+                                onPress={() => navigation.navigate('UpdateThoiKhoaBieu', {id: tkb.id})}
                             />
                         </View>
                     )
@@ -93,7 +79,7 @@ const ThoiKhoaBieu = ({ navigation }) => {
                             <Button
                                 title='Chỉnh Sửa'
                                 style={styles.btnUpdate}
-                                onPress={() => { }}
+                                onPress={() => navigation.navigate('UpdateThoiKhoaBieu', {id: tkb.id})}
                             />
                         </View>
                     )
@@ -105,7 +91,7 @@ const ThoiKhoaBieu = ({ navigation }) => {
                             <Button
                                 title='Chỉnh Sửa'
                                 style={styles.btnUpdate}
-                                onPress={() => { }}
+                                onPress={() => navigation.navigate('UpdateThoiKhoaBieu', {id: tkb.id})}
                             />
                         </View>
                     )
@@ -117,7 +103,7 @@ const ThoiKhoaBieu = ({ navigation }) => {
                             <Button
                                 title='Chỉnh Sửa'
                                 style={styles.btnUpdate}
-                                onPress={() => { }}
+                                onPress={() => navigation.navigate('UpdateThoiKhoaBieu', {id: tkb.id})}
                             />
                         </View>
                     )
@@ -129,7 +115,7 @@ const ThoiKhoaBieu = ({ navigation }) => {
                             <Button
                                 title='Chỉnh Sửa'
                                 style={styles.btnUpdate}
-                                onPress={() => { }}
+                                onPress={() => navigation.navigate('UpdateThoiKhoaBieu', {id: tkb.id})}
                             />
                         </View>
                     )
@@ -141,7 +127,7 @@ const ThoiKhoaBieu = ({ navigation }) => {
                             <Button
                                 title='Chỉnh Sửa'
                                 style={styles.btnUpdate}
-                                onPress={() => { }}
+                                onPress={() => navigation.navigate('UpdateThoiKhoaBieu', {id: tkb.id})}
                             />
                         </View>
                     )
@@ -211,14 +197,6 @@ const ThoiKhoaBieu = ({ navigation }) => {
         })
     }
 
-    const showConsole = () => {
-        db.transaction(tx => {
-            tx.executeSql('SELECT id FROM Tkb', null,
-                (txObj, resultSet) => console.log(resultSet.rows._array)
-            )
-        })
-    }
-
     return (
         <View style={styles.container}>
             <ScrollView>
@@ -230,7 +208,7 @@ const ThoiKhoaBieu = ({ navigation }) => {
                     />
                     <Button title="Thêm tiết" onPress={addTiet} />
                     <Button title='Drop Tkb' onPress={dropTkb} />
-                    <Button title='Show console' onPress={showConsole} /> */}
+                    */}
                     {showTkb()}
                 </View>
             </ScrollView>

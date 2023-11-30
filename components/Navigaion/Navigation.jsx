@@ -18,6 +18,9 @@ import Math from '../Math/Math';
 import ThoiKhoaBieu from '../ThoiKhoaBieu/ThoiKhoaBieu';
 import LichKiemTra from '../LichKiemTra/LichKiemTra';
 
+// ThoiKhoaBieu Child
+import UpdateThoiKhoaBieu from '../ThoiKhoaBieu/UpdateThoiKhoaBieu/UpdateThoiKhoaBieu';
+
 // English Child
 import Tenses from '../English/Tenses/Tenses'
 import Grammar from '../English/Grammar/Grammar'
@@ -211,6 +214,20 @@ const StackGroup = () => {
                 options={{
                     headerShown: true,
                     title: 'Lịch Kiểm Tra',
+                    headerTitleStyle: {
+                        fontWeight: 'bold',
+                    },
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            {/* ThoiKhoaBieuChild */}
+            <Stack.Screen
+                name='UpdateThoiKhoaBieu'
+                component={UpdateThoiKhoaBieu}
+                options={{
+                    headerShown: true,
+                    title: 'Chỉnh sửa',
                     headerTitleStyle: {
                         fontWeight: 'bold',
                     },

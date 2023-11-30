@@ -18,10 +18,10 @@ const styles = StyleSheet.create({
 
     rowChildTitle: {
         borderWidth: 0.5,
-        backgroundColor: '#30336b',
+        backgroundColor: '#284387',
         height: 'auto',
         alignItems: 'center',
-        borderColor: '#102543',
+        borderColor: '#c8e1ff',
         justifyContent: 'space-evenly',
         flexDirection: 'row',
         borderRadius: 10
@@ -31,8 +31,7 @@ const styles = StyleSheet.create({
         borderWidth: 0.5,
         height: 'auto',
         alignItems: 'center',
-        borderColor: '#102543',
-        borderRadius: 10
+        borderColor: '#c8e1ff'
     },
 
     rowTitle: {
@@ -57,7 +56,7 @@ const styles = StyleSheet.create({
     },
 
     btnUpdate: {
-        alignSelf: 'flex-end',
+        alignSelf: 'flex-end'
     }
 })
 
