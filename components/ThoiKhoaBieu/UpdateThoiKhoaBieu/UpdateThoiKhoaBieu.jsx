@@ -178,30 +178,35 @@ const UpdateThoiKhoaBieu = ({ navigation, route }) => {
                         style={styles.rowText}
                         value={tietSang1}
                         placeholder='Nhập tiết 1'
+                        placeholderTextColor={'grey'}
                         onChangeText={setTietSang1}
                     />
                     <TextInput
                         style={styles.rowText}
                         value={tietSang2}
                         placeholder='Nhập tiết 2'
+                        placeholderTextColor={'grey'}
                         onChangeText={setTietSang2}
                     />
                     <TextInput
                         style={styles.rowText}
                         value={tietSang3}
                         placeholder='Nhập tiết 3'
+                        placeholderTextColor={'grey'}
                         onChangeText={setTietSang3}
                     />
                     <TextInput
                         style={styles.rowText}
                         value={tietSang4}
                         placeholder='Nhập tiết 4'
+                        placeholderTextColor={'grey'}
                         onChangeText={setTietSang4}
                     />
                     <TextInput
                         style={styles.rowText}
                         value={tietSang5}
                         placeholder='Nhập tiết 5'
+                        placeholderTextColor={'grey'}
                         onChangeText={setTietSang5}
                     />
                 </View>
@@ -211,36 +216,42 @@ const UpdateThoiKhoaBieu = ({ navigation, route }) => {
                         style={styles.rowText}
                         value={tietChieu1}
                         placeholder='Nhập tiết 1'
+                        placeholderTextColor={'grey'}
                         onChangeText={setTietChieu1}
                     />
                     <TextInput
                         style={styles.rowText}
                         value={tietChieu2}
                         placeholder='Nhập tiết 2'
+                        placeholderTextColor={'grey'}
                         onChangeText={setTietChieu2}
                     />
                     <TextInput
                         style={styles.rowText}
                         value={tietChieu3}
                         placeholder='Nhập tiết 3'
+                        placeholderTextColor={'grey'}
                         onChangeText={setTietChieu3}
                     />
                     <TextInput
                         style={styles.rowText}
                         value={tietChieu4}
                         placeholder='Nhập tiết 4'
+                        placeholderTextColor={'grey'}
                         onChangeText={setTietChieu4}
                     />
                     <TextInput
                         style={styles.rowText}
                         value={tietChieu5}
                         placeholder='Nhập tiết 5'
+                        placeholderTextColor={'grey'}
                         onChangeText={setTietChieu5}
                     />
                     <TextInput
                         style={styles.rowText}
                         value={tietChieu6}
                         placeholder='Nhập tiết 6'
+                        placeholderTextColor={'grey'}
                         onChangeText={setTietChieu6}
                     />
                 </View>

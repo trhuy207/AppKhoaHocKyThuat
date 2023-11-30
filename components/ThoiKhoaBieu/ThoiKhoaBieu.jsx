@@ -191,24 +191,10 @@ const ThoiKhoaBieu = ({ navigation }) => {
         })
     }
 
-    const dropTkb = () => {
-        db.transaction(tx => {
-            tx.executeSql('DROP TABLE Tkb')
-        })
-    }
-
     return (
         <View style={styles.container}>
             <ScrollView>
                 <View style={styles.body}>
-                    {/* <TextInput
-                        value={currentTkb}
-                        placeholder='Tiết sáng 1'
-                        onChangeText={setCurrentTkb}
-                    />
-                    <Button title="Thêm tiết" onPress={addTiet} />
-                    <Button title='Drop Tkb' onPress={dropTkb} />
-                    */}
                     {showTkb()}
                 </View>
             </ScrollView>

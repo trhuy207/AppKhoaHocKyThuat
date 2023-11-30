@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
     rowText: {
         padding: 10,
         margin: 2,
-        textAlign: 'center'
+        textAlign: 'center',
     },
 
     btnUpdate: {
