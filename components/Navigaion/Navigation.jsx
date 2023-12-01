@@ -117,6 +117,9 @@ import Bai34_10 from '../Physics/Lop10/Chuong7/Bai34/Bai34_10';
 
 // Lop11 Child
 import Chuong1_11 from '../Physics/Lop11/Chuong1/Chuong1_11';
+import Chuong2_11 from '../Physics/Lop11/Chuong2/Chuong2_11';
+import Chuong3_11 from '../Physics/Lop11/Chuong3/Chuong3_11';
+import Chuong4_11 from '../Physics/Lop11/Chuong4/Chuong4_11';
 
 // Chuong1 11 Child
 import BaiChuDe1_11 from '../Physics/Lop11/Chuong1/BaiChuDe1/BaiChuDe1_11';
@@ -866,6 +869,33 @@ const StackGroup = () => {
                 component={Chuong1_11}
                 options={{
                     headerTitle: 'Chương I',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            <Stack.Screen
+                name='Chuong2_11'
+                component={Chuong2_11}
+                options={{
+                    headerTitle: 'Chương II',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            <Stack.Screen
+                name='Chuong3_11'
+                component={Chuong3_11}
+                options={{
+                    headerTitle: 'Chương III',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            <Stack.Screen
+                name='Chuong4_11'
+                component={Chuong4_11}
+                options={{
+                    headerTitle: 'Chương IV',
                     headerBackTitle: 'Trở lại'
                 }}
             />

@@ -11,12 +11,19 @@ const Chuong1_11 = ({navigation}) => {
                     <TouchableOpacity style={styles.btn} onPress={() => navigation.navigate('BaiChuDe1_11')}>
                         <Text style={styles.btnText}>DAO ĐỘNG ĐIỀU HÒA</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity style={styles.btn} onPress={() => navigation.navigate('Bai5_11')}>
+                    <TouchableOpacity style={styles.btn} onPress={() => {}}>
+                        <Text style={styles.btnText}>ĐỘNG NĂNG – THẾ NĂNG. {'\n'}SỰ CHUYỂN HÓA NĂNG LƯỢNG TRONG DAO ĐỘNG ĐIỀU HÒA</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style={styles.btn} onPress={() => {}}>
+                        <Text style={styles.btnText}>DAO ĐỘNG TẮT DẦN – DAO ĐỘNG CƯỠNG BỨC. HIỆN TƯỢNG CỘNG HƯỞNG</Text>
+                    </TouchableOpacity>
+
+                    {/* <TouchableOpacity style={styles.btn} onPress={() => navigation.navigate('Bai5_11')}>
                         <Text style={styles.btnText}>ĐỘNG NĂNG – THẾ NĂNG. {'\n'}SỰ CHUYỂN HÓA NĂNG LƯỢNG TRONG DAO ĐỘNG ĐIỀU HÒA</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style={styles.btn} onPress={() => navigation.navigate('Bai6_11')}>
                         <Text style={styles.btnText}>DAO ĐỘNG TẮT DẦN – DAO ĐỘNG CƯỠNG BỨC. HIỆN TƯỢNG CỘNG HƯỞNG</Text>
-                    </TouchableOpacity>
+                    </TouchableOpacity> */}
                 </View>
             </ScrollView>
         </SafeAreaView>
