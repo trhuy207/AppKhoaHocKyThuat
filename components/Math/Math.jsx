@@ -9,7 +9,7 @@ import IMAGES from './data';
 
 const Math = ({ navigation }) => {
     return (
-        <View style={{ flex: 1 }}>
+        <View style={styles.container}>
             <Modal visible={true} transparent onRequestClose={() => navigation.navigate('Home')} animationType="fade">
                 <ImageViewer imageUrls={IMAGES} backgroundColor={'#cecece'} onCancel={() => navigation.navigate('Home')} enableSwipeDown />
             </Modal>
