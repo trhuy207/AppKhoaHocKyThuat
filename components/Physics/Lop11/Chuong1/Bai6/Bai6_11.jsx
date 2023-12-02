@@ -1,58 +1,61 @@
 import { View, Text, TouchableOpacity, ScrollView, SafeAreaView, Image } from 'react-native'
 import React from 'react'
 
-import styles from './Bai7_10.style'
+import styles from './Bai6_11.style'
 
-const Bai7_10 = () => {
+const Bai6_11 = () => {
     return (
         <SafeAreaView>
             <ScrollView>
                 <View style={styles.body}>
                     <View style={styles.card}>
-                        {/* I. Chuyển động thẳng */}
+                        {/* I. Dao động tắt dần */}
                         <View style={styles.cardElement}>
                             <View style={styles.cardHeader}>
-                                <Text style={styles.headerText}>I. Chuyển động thẳng</Text>
+                                <Text style={styles.headerText}>I. Dao động tắt dần</Text>
                             </View>
                             <View style={styles.cardContent}>
-                                <Text style={styles.contentText}>- Quỹ đạo chuyển động là đường thẳng</Text>
-                                <Text style={styles.contentText}>- Khi vật chuyển động theo một chiều không đổi thì d = s (độ dịch chuyển = quãng đường đi được)</Text>
-                                <Text style={styles.contentText}>- Khi vật đang chuyển động theo chiều dương, nếu đổi chiều chuyển động thì trong khoảng thời gian chuyển động ngược chiều đó s {'>'} 0; d {'<'} 0; tốc độ dương còn vận tốc âm.</Text>
-                            </View>
-                        </View>
-
-                        {/* II. Đồ thị độ dịch chuyển – thời gian trong chuyển động thẳng */}
-                        <View style={styles.cardElement}>
-                            <View style={styles.cardHeader}>
-                                <Text style={styles.headerText}>II. Đồ thị độ dịch chuyển – thời gian trong chuyển động thẳng</Text>
-                            </View>
-                            {/* 1. Cách vẽ đồ thị độ dịch chuyển – thời gian (d – t) trong chuyển động thẳng đều */}
-                            <View style={styles.cardContent}>
-                                <Text style={styles.contentTitle}>1. Cách vẽ đồ thị độ dịch chuyển – thời gian (d – t) trong chuyển động thẳng đều</Text>
-                                <Text style={styles.contentText}>- Biểu thức d = v.t, vẽ giống biểu thức hàm số y = a.x</Text>
-                                <Text style={styles.contentText}>- Hình dạng: đường thẳng</Text>
-                                <Text style={styles.contentText}>Ví dụ: </Text>
+                                <Text style={styles.contentTitle}>1. Khái niệm:</Text>
+                                <Text style={styles.contentText}>Dao động tắt dần là dao động do có lực cản của môi trường mà biên độ (hay cơ năng) giảm dần theo thời gian.</Text>
+                                <Text style={styles.contentTitle}>2. Đặc điểm: </Text>
+                                <Text style={styles.contentText}>Lực cản môi trường càng lớn thì dao động tắt dần xảy ra càng nhanh.</Text>
+                                <Text style={styles.contentText}>Nếu vật dao động điều hoà với tần số ω0 mà chịu thêm lực cản nhỏ, thì dao động của vật tắt dần chậm. Dao động tắt dần chậm cũng có biên độ giảm dần theo thời gian cho đến 0. </Text>
                                 <Image 
-                                    style={styles.image}
-                                    source={require('../../../../../assets/img/Physics/d-t.png')}
+                                    style={{width: 200, height: 150}}
+                                    source={require('../../../../../assets/img/Physics/ddtd.png')}
                                 />
-                            </View>
-
-                            {/* 2. Sử dụng đồ thị độ dịch chuyển – thời gian trong chuyển động thẳng */}
-                            <View style={styles.cardContent}>
-                                <Text style={styles.contentTitle}>2. Sử dụng đồ thị độ dịch chuyển – thời gian trong chuyển động thẳng</Text>
-                                <Text style={styles.contentText}>Dựa vào đồ thị, ta có thể thu thập số liệu để tính toán yêu cầu của đề bài</Text>
-                                <Text style={styles.contentText}>Có thể mô tả được chuyển động: đều, đứng yên, NDĐ, CDĐ, đổi chiều chuyển động…</Text>
+                                <Text style={styles.contentTitle}>3. Ứng dụng:</Text>
+                                <Text style={styles.contentText}>Bộ phận giảm xóc của xe máy, ...</Text>
                             </View>
                         </View>
 
-                        {/* III. Vận tốc và đồ thị độ dịch chuyển – thời gian trong chuyển động thẳng */}
+                        {/* II. Dao động cưỡng bức */}
                         <View style={styles.cardElement}>
                             <View style={styles.cardHeader}>
-                                <Text style={styles.headerText}>III. Vận tốc và đồ thị độ dịch chuyển – thời gian trong chuyển động thẳng</Text>
+                                <Text style={styles.headerText}>II. Dao động cưỡng bức</Text>
                             </View>
                             <View style={styles.cardContent}>
-                                <Text style={styles.contentText}>- Độ dốc của độ dịch chuyển – thời gian trong chuyển động thẳng cho biết độ lớn vận tốc chuyển động</Text>
+                                <Text style={styles.contentTitle}>1. Khái niệm:</Text>
+                                <Text style={styles.contentText}>Dao động cưỡng bức là dao động xảy ra dưới tác dụng của ngoại lực tuần hoàn có tần số fn bất kì. Khi dao động ổn định tần số dao động cưỡng bức bằng tần số của ngoại lực.</Text>
+                                <Text style={styles.contentTitle}>2. Đặc điểm: </Text>
+                                <Text style={styles.contentText}>Dao động cưỡng bức có biên độ không đổi và có tần số bằng tần số của lực cưỡng bức.</Text>
+                                <Text style={styles.contentText}>Biên độ dao động cưỡng bức (Acb) phụ thuộc vào các yếu tố sau:</Text>
+                                <Text style={styles.contentText}>Biên độ của lực cưỡng bức.</Text>
+                                <Text style={styles.contentText}>Mối quan hệ giữa tần số ngoại lực và tần số dao động riêng (Acb càng tăng khi |fn - f0| càng giảm). Khi  |fn - f0| = 0 thì (Acb)max</Text>
+                            </View>
+                        </View>
+
+                        {/* IV. Hiện tượng cộng hưởng */}
+                        <View style={styles.cardElement}>
+                            <View style={styles.cardHeader}>
+                                <Text style={styles.headerText}>IV. Hiện tượng cộng hưởng</Text>
+                            </View>
+                            <View style={styles.cardContent}>
+                                <Text style={styles.contentTitle}>1. Khái niệm:</Text>
+                                <Text style={styles.contentText}>là hiện tượng biên độ dao động cưỡng bức đạt giá trị cực đại (Acb)max khi tần số ngoại lực (fn) bằng với tần số riêng (f0) của vật dao động. Hay: (Acb)max {'<=>'} fn = f0.</Text>
+                                <Text style={styles.contentTitle}>2. Ứng dụng:</Text>
+                                <Text style={styles.contentTitle}>Hộp đàn của các đàn ghi ta, violon,…</Text>
+                                <Text style={styles.contentTitle}>Hoạt động của lò vi sóng</Text>
                             </View>
                         </View>
                     </View>
@@ -62,4 +65,4 @@ const Bai7_10 = () => {
     )
 }
 
-export default Bai7_10
+export default Bai6_11

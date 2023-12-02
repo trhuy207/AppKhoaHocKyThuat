@@ -123,6 +123,8 @@ import Chuong4_11 from '../Physics/Lop11/Chuong4/Chuong4_11';
 
 // Chuong1 11 Child
 import BaiChuDe1_11 from '../Physics/Lop11/Chuong1/BaiChuDe1/BaiChuDe1_11';
+import Bai5_11 from '../Physics/Lop11/Chuong1/Bai5/Bai5_11';
+import Bai6_11 from '../Physics/Lop11/Chuong1/Bai6/Bai6_11';
 
 // Stack
 const Stack = createNativeStackNavigator();
@@ -906,6 +908,24 @@ const StackGroup = () => {
                 component={BaiChuDe1_11}
                 options={{
                     headerTitle: 'Dao động điều hòa',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            <Stack.Screen
+                name='Bai5_11'
+                component={Bai5_11}
+                options={{
+                    headerTitle: 'Động năng & Thế năng',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            <Stack.Screen
+                name='Bai6_11'
+                component={Bai6_11}
+                options={{
+                    headerTitle: 'Dao động tắt dần - cưỡng bức',
                     headerBackTitle: 'Trở lại'
                 }}
             />
