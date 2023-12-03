@@ -32,7 +32,7 @@ const MainHome = () => {
                             style={styles.BtnImage}
                             source={require('../../assets/img/physics.png')}
                         />
-                        <Text style={styles.BtnText}>Vật Lý{'\n'}(Đang phát triển)</Text>
+                        <Text style={styles.BtnText}>Vật Lý</Text>
                     </TouchableOpacity>
 
                     {/* Toán */}
