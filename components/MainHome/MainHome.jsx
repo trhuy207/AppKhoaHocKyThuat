@@ -80,7 +80,7 @@ const MainHome = () => {
                             style={styles.BtnImage}
                             source={require('../../assets/img/lkt.png')}
                         />
-                        <Text style={styles.BtnText}>Lịch Kiểm Tra{'\n'}(Đang phát triển)</Text>
+                        <Text style={styles.BtnText}>Lịch Kiểm Tra</Text>
                     </TouchableOpacity>
                 </View>
             </ScrollView>
