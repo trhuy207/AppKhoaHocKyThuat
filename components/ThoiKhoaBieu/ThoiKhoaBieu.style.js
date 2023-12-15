@@ -58,7 +58,29 @@ const styles = StyleSheet.create({
 
     btnUpdate: {
         alignSelf: 'flex-end',
-    }
+    },
+
+    lktPart: {
+        alignItems: 'center'
+    },
+
+    btnLkt: {
+        width: 170,
+        height: "auto",
+        borderRadius: 10,
+        marginBottom: 10,
+        marginTop: 10,
+        borderWidth: 1.5,
+        borderColor: '#8d60bd',
+        alignItems: 'center'
+    },
+
+    btnLktText: {
+        padding: 10,
+        fontSize: 14,
+        fontWeight: 'bold',
+        color: '#8d60bd'
+    },
 })
 
 export default styles

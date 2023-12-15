@@ -9,13 +9,10 @@ const styles = StyleSheet.create({
     body: {
         alignItems: 'center',
         justifyContent: 'center',
-        flexDirection: 'row',
-        justifyContent: 'space-around',
-        flexWrap: 'wrap',
     },
 
-    btn10: {
-        width: 160,
+    btn: {
+        width: '60%',
         height: "auto",
         borderRadius: 10,
         marginBottom: 10,
@@ -24,30 +21,6 @@ const styles = StyleSheet.create({
         borderColor: '#8d60bd',
         alignItems: 'center',
         backgroundColor: '#1aa6c1'
-    },
-
-    btn11: {
-        width: 160,
-        height: "auto",
-        borderRadius: 10,
-        marginBottom: 10,
-        marginTop: 10,
-        borderWidth: 1.5,
-        borderColor: '#8d60bd',
-        alignItems: 'center',
-        backgroundColor: '#0073b6'
-    },
-
-    btn12: {
-        width: 160,
-        height: "auto",
-        borderRadius: 10,
-        marginBottom: 10,
-        marginTop: 10,
-        borderWidth: 1.5,
-        borderColor: '#8d60bd',
-        alignItems: 'center',
-        backgroundColor: '#cdd1e4'
     },
 
     btnImage: {
@@ -64,6 +37,8 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontWeight: 'bold',
         alignSelf: 'center',
+        textAlign: 'center',
+        color: '#fcef04',
     },
 })
 

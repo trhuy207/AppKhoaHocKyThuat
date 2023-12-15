@@ -195,6 +195,11 @@ const ThoiKhoaBieu = ({ navigation }) => {
         <View style={styles.container}>
             <ScrollView>
                 <View style={styles.body}>
+                    <View style={styles.lktPart}>
+                        <TouchableOpacity style={styles.btnLkt} onPress={() => navigation.navigate('LichKiemTra')}>
+                            <Text style={styles.btnLktText}>Lịch Kiểm Tra</Text>
+                        </TouchableOpacity>
+                    </View>
                     {showTkb()}
                 </View>
             </ScrollView>

@@ -70,18 +70,6 @@ const MainHome = () => {
                         />
                         <Text style={styles.BtnText}>Thời Khóa Biểu</Text>
                     </TouchableOpacity>
-
-                    {/* Lịch Kiểm Tra */}
-                    <TouchableOpacity
-                        style={styles.Btn}
-                        onPress={() => navigate('LichKiemTra')}
-                    >
-                        <Image 
-                            style={styles.BtnImage}
-                            source={require('../../assets/img/lkt.png')}
-                        />
-                        <Text style={styles.BtnText}>Lịch Kiểm Tra{'\n'}(Đang Phát Triển)</Text>
-                    </TouchableOpacity>
                 </View>
             </ScrollView>
         </View>

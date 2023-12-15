@@ -592,7 +592,7 @@ const StackGroup = () => {
                 name='Chuong1_10'
                 component={Chuong1_10}
                 options={{
-                    headerTitle: 'Chương I',
+                    headerTitle: 'MỞ ĐẦU',
                     headerBackTitle: 'Trở lại'
                 }}
             />
@@ -601,7 +601,7 @@ const StackGroup = () => {
                 name='Chuong2_10'
                 component={Chuong2_10}
                 options={{
-                    headerTitle: 'Chương II',
+                    headerTitle: 'ĐỘNG HỌC',
                     headerBackTitle: 'Trở lại'
                 }}
             />
@@ -610,7 +610,7 @@ const StackGroup = () => {
                 name='Chuong3_10'
                 component={Chuong3_10}
                 options={{
-                    headerTitle: 'Chương III',
+                    headerTitle: 'ĐỘNG LỰC HỌC',
                     headerBackTitle: 'Trở lại'
                 }}
             />
@@ -619,7 +619,7 @@ const StackGroup = () => {
                 name='Chuong4_10'
                 component={Chuong4_10}
                 options={{
-                    headerTitle: 'Chương IV',
+                    headerTitle: 'NĂNG LƯỢNG – CÔNG – CÔNG SUẤT',
                     headerBackTitle: 'Trở lại'
                 }}
             />
@@ -628,7 +628,7 @@ const StackGroup = () => {
                 name='Chuong5_10'
                 component={Chuong5_10}
                 options={{
-                    headerTitle: 'Chương V',
+                    headerTitle: 'ĐỘNG LƯỢNG',
                     headerBackTitle: 'Trở lại'
                 }}
             />
@@ -637,7 +637,7 @@ const StackGroup = () => {
                 name='Chuong6_10'
                 component={Chuong6_10}
                 options={{
-                    headerTitle: 'Chương VI',
+                    headerTitle: 'CHUYỂN ĐỘNG TRÒN ĐỀU',
                     headerBackTitle: 'Trở lại'
                 }}
             />
@@ -646,7 +646,7 @@ const StackGroup = () => {
                 name='Chuong7_10'
                 component={Chuong7_10}
                 options={{
-                    headerTitle: 'Chương VII',
+                    headerTitle: 'BIẾN DẠNG CỦA VẬT RẮN – ÁP SUẤT CHẤT LỎNG',
                     headerBackTitle: 'Trở lại'
                 }}
             />
@@ -870,7 +870,7 @@ const StackGroup = () => {
                 name='Chuong1_11'
                 component={Chuong1_11}
                 options={{
-                    headerTitle: 'Chương I',
+                    headerTitle: 'DAO ĐỘNG',
                     headerBackTitle: 'Trở lại'
                 }}
             />
@@ -879,7 +879,7 @@ const StackGroup = () => {
                 name='Chuong2_11'
                 component={Chuong2_11}
                 options={{
-                    headerTitle: 'Chương II',
+                    headerTitle: 'SÓNG',
                     headerBackTitle: 'Trở lại'
                 }}
             />
@@ -888,7 +888,7 @@ const StackGroup = () => {
                 name='Chuong3_11'
                 component={Chuong3_11}
                 options={{
-                    headerTitle: 'Chương III',
+                    headerTitle: 'ĐIỆN TRƯỜNG',
                     headerBackTitle: 'Trở lại'
                 }}
             />
@@ -897,7 +897,7 @@ const StackGroup = () => {
                 name='Chuong4_11'
                 component={Chuong4_11}
                 options={{
-                    headerTitle: 'Chương IV',
+                    headerTitle: 'DÒNG ĐIỆN – MẠCH ĐIỆN',
                     headerBackTitle: 'Trở lại'
                 }}
             />
