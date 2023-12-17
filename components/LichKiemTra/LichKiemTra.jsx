@@ -38,7 +38,7 @@ const LichKiemTra = ({ navigation }) => {
     }
 
     const handleDeleteTodo = (id) => {
-        Alert.alert('Thông báo', 'Bạn có chắc muốn xóa nội dung này không ?', [
+        Alert.alert('Thông báo', 'Bạn có chắc muốn xóa nội dung này không?', [
             {
                 text: 'Có', 
                 onPress: () => db.transaction(tx => {
@@ -61,7 +61,7 @@ const LichKiemTra = ({ navigation }) => {
                 <View key={index} style={styles.todosList}>
                     <Text style={styles.todosListText}>{todo.title}</Text>
                     <IconButton icon='pencil' iconColor='#fff' onPress={() => navigation.navigate('UpdateLichKiemTra', { id: todo.id })} />
-                    <IconButton icon='trash-can' iconColor='#fff' onPress={() => handleDeleteTodo(todo.id)} />
+                    <IconButton icon='trash-can' iconColor='#fff' onPress={() => navigation.navigate('DeleteLichKiemTra', {id: todo.id})} />
                 </View>
             )
         })

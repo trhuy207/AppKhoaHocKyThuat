@@ -19,6 +19,7 @@ import ThoiKhoaBieu from '../ThoiKhoaBieu/ThoiKhoaBieu';
 import LichKiemTra from '../LichKiemTra/LichKiemTra';
 import InsertLichKiemTra from '../LichKiemTra/InsertLichKiemTra';
 import UpdateLichKiemTra from '../LichKiemTra/UpdateLichKiemTra';
+import DeleteLichKiemTra from '../LichKiemTra/DeleteLichKiemTra';
 
 // ThoiKhoaBieu Child
 import UpdateThoiKhoaBieu from '../ThoiKhoaBieu/UpdateThoiKhoaBieu/UpdateThoiKhoaBieu';
@@ -247,6 +248,19 @@ const StackGroup = () => {
                 options={{
                     headerShown: true,
                     title: 'Sửa',
+                    headerTitleStyle: {
+                        fontWeight: 'bold',
+                    },
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            <Stack.Screen
+                name='DeleteLichKiemTra'
+                component={DeleteLichKiemTra}
+                options={{
+                    headerShown: true,
+                    title: 'Xóa',
                     headerTitleStyle: {
                         fontWeight: 'bold',
                     },
