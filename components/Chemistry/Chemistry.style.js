@@ -12,6 +12,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-evenly',
         flexWrap: 'wrap',
+        marginTop: '35%'
     },
 
     Btn: {
