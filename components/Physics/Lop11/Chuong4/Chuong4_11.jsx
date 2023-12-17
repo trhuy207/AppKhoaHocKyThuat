@@ -10,8 +10,8 @@ import IMAGES from './data';
 const Chuong4_11 = ({ navigation }) => {
     return (
         <View style={styles.container}>
-            <Modal visible={true} transparent onRequestClose={() => navigation.navigate('Lop11')} animationType="fade">
-                <ImageViewer imageUrls={IMAGES} backgroundColor={'#cecece'} onCancel={() => navigation.navigate('Lop11')} enableSwipeDown />
+            <Modal visible={true} transparent onRequestClose={() => navigation.goBack()} animationType="fade">
+                <ImageViewer imageUrls={IMAGES} backgroundColor={'#cecece'} onCancel={() => navigation.goBack()} enableSwipeDown />
             </Modal>
         </View>
     )
