@@ -4,6 +4,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: 'center',
+        backgroundColor: '#cbffe6'
     },
 
     card: {
@@ -33,7 +34,7 @@ const styles = StyleSheet.create({
         padding: 3,
         fontSize: 13,
         fontWeight: 'bold',
-        color: '#8d60bd',
+        color: '#4a4fa0',
     },
 })
 

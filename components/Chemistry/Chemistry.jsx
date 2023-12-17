@@ -49,7 +49,7 @@ const Chemistry = ({navigation}) => {
                             style={styles.BtnImage}
                             source={require('../../assets/img/Chemistry/nthhLop8.png')}
                         />
-                        <Text style={styles.BtnText}>Nguyên Tố Hóa Học Lớp 8</Text>
+                        <Text style={styles.BtnText}>Một Vài Nguyên Tố Thường Gặp</Text>
                     </TouchableOpacity>
 
                     <TouchableOpacity

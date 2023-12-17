@@ -17,6 +17,8 @@ import Math from '../Math/Math';
 // More
 import ThoiKhoaBieu from '../ThoiKhoaBieu/ThoiKhoaBieu';
 import LichKiemTra from '../LichKiemTra/LichKiemTra';
+import InsertLichKiemTra from '../LichKiemTra/InsertLichKiemTra';
+import UpdateLichKiemTra from '../LichKiemTra/UpdateLichKiemTra';
 
 // ThoiKhoaBieu Child
 import UpdateThoiKhoaBieu from '../ThoiKhoaBieu/UpdateThoiKhoaBieu/UpdateThoiKhoaBieu';
@@ -226,6 +228,32 @@ const StackGroup = () => {
                 }}
             />
 
+            <Stack.Screen
+                name='InsertLichKiemTra'
+                component={InsertLichKiemTra}
+                options={{
+                    headerShown: true,
+                    title: 'Thêm',
+                    headerTitleStyle: {
+                        fontWeight: 'bold',
+                    },
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            <Stack.Screen
+                name='UpdateLichKiemTra'
+                component={UpdateLichKiemTra}
+                options={{
+                    headerShown: true,
+                    title: 'Sửa',
+                    headerTitleStyle: {
+                        fontWeight: 'bold',
+                    },
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
             {/* ThoiKhoaBieuChild */}
             <Stack.Screen
                 name='UpdateThoiKhoaBieu'
@@ -300,7 +328,7 @@ const StackGroup = () => {
                 name='NTHHLop8'
                 component={NTHHLop8}
                 options={{
-                    headerTitle: 'Nguyên Tố Hóa Học Lớp 8',
+                    headerTitle: 'Một Vài Nguyên Tố Thường Gặp',
                     headerBackTitle: 'Trở lại'
                 }}
             />
@@ -901,7 +929,7 @@ const StackGroup = () => {
                     headerBackTitle: 'Trở lại'
                 }}
             />
-            
+
             {/* Chuong1 11 Child */}
             <Stack.Screen
                 name='BaiChuDe1_11'

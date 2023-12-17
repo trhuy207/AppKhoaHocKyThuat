@@ -140,7 +140,7 @@ const UpdateThoiKhoaBieu = ({ navigation, route }) => {
             const addTiet = () => {
                 db.transaction(tx => {
                     tx.executeSql('UPDATE Tkb SET TietSang1 = ?, TietSang2 = ?, TietSang3 = ?, TietSang4 = ?, TietSang5 = ?, TietChieu1 = ?, TietChieu2 = ?, TietChieu3 = ?, TietChieu4 = ?, TietChieu5 = ?, TietChieu6 = ? WHERE id = ?', [tietSang1, tietSang2, tietSang3, tietSang4, tietSang5, tietChieu1, tietChieu2, tietChieu3, tietChieu4, tietChieu5, tietChieu6, route.params.id],
-                        (txObj, resultSet) => Alert.alert('Message', 'Successful', [
+                        (txObj, resultSet) => Alert.alert('Thông báo', 'Đã thêm tiết học thành công!', [
                             { text: 'OK!', onPress: () => navigation.goBack() }
                         ]),
                         (txObj, error) => console.log(error)

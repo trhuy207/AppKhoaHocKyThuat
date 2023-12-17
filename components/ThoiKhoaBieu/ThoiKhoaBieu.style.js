@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#e5e5e5',
+        backgroundColor: '#dff9fb',
         alignItems: 'center',
         justifyContent: 'center'
     },
@@ -18,10 +18,10 @@ const styles = StyleSheet.create({
 
     rowChildTitle: {
         borderWidth: 0.5,
-        backgroundColor: '#30336b',
+        backgroundColor: '#4e54b7',
         height: 'auto',
         alignItems: 'center',
-        borderColor: '#102543',
+        borderColor: '#4e54b7',
         justifyContent: 'space-evenly',
         flexDirection: 'row',
         borderRadius: 10
@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
         borderWidth: 0.5,
         height: 'auto',
         alignItems: 'center',
-        borderColor: '#102543',
+        borderColor: '#4e54b7',
         borderRadius: 10
     },
 
