@@ -10,6 +10,9 @@ const MainHome = () => {
     return (
         <View style={styles.container}>
             <ScrollView>
+                <View style={styles.title}>
+                    <Text style={styles.titleText}>AH STUDY</Text>
+                </View>
                 <View style={styles.card}>
                     {/* Hóa */}
                     <TouchableOpacity

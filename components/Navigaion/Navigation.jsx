@@ -139,14 +139,7 @@ const StackGroup = () => {
                 name='Home'
                 component={MainHome}
                 options={{
-                    headerShown: true,
-                    title: 'AH Study',
-                    headerTitleStyle: {
-                        fontSize: 35,
-                        fontWeight: '800',
-                        color: '#195298',
-                    },
-                    headerTitleAlign: 'center'
+                    headerShown: false,
                 }}
             />
 

@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-around',
         flexWrap: 'wrap',
-        marginTop: '35%',
+        marginTop: '20%',
     },
 
     Btn: {
@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
         marginBottom: 10,
         marginTop: 10,
         borderWidth: 1.5,
-        borderColor: '#8d60bd',
+        borderColor: '#235190',
         alignItems: 'center'
     },
 
@@ -34,8 +34,19 @@ const styles = StyleSheet.create({
         padding: 10,
         fontSize: 14,
         fontWeight: 'bold',
-        color: '#8d60bd'
+        color: '#235190'
     },
+
+    title: {
+        alignItems: 'center'
+    },
+
+    titleText: {
+        fontSize: 60,
+        fontWeight: '900',
+        color: '#c62f52',
+        padding: 20
+    }
 })
 
 export default styles
