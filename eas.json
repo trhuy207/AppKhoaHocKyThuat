@@ -17,6 +17,10 @@
     }
   },
   "submit": {
-    "production": {}
+    "production": {
+      "android": {
+        "serviceAccountKeyPath": "./serviceAccountKey/ah-study-61aecaad8b56.json"
+      }
+    }
   }
 }
