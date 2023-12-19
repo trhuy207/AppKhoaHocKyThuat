@@ -22,7 +22,8 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.quochuyph207.AppKhoaHocKyThuat"
+      "package": "com.quochuyph207.AppKhoaHocKyThuat",
+      "versionCode": 2
     },
     "web": {
       "bundler": "metro",
