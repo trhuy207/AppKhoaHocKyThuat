@@ -16,14 +16,16 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.quochuyph207.AppKhoaHocKyThuat"
+      "bundleIdentifier": "com.quochuyph207.AppKhoaHocKyThuat",
+      "buildNumber": "2"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.quochuyph207.AppKhoaHocKyThuat"
+      "package": "com.quochuyph207.AppKhoaHocKyThuat",
+      "versionCode": 6
     },
     "web": {
       "bundler": "metro",
