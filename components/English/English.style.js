@@ -4,6 +4,7 @@ const styles = StyleSheet.create({
     container: {
         flex:1,
         alignItems: 'center',
+        backgroundColor: '#c0d3f7'
     },
 
     card: {
@@ -11,7 +12,6 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-evenly',
         flexWrap: 'wrap',
-        marginTop: '40%'
     },
 
     button: {

@@ -11,7 +11,7 @@ const Math = ({ navigation }) => {
     return (
         <View style={styles.container}>
             <Modal visible={true} transparent onRequestClose={() => navigation.navigate('Home')} animationType="fade">
-                <ImageViewer imageUrls={IMAGES} backgroundColor={'#cecece'} onCancel={() => navigation.navigate('Home')} enableSwipeDown />
+                <ImageViewer imageUrls={IMAGES} backgroundColor={'#85cfc2'} onCancel={() => navigation.navigate('Home')} enableSwipeDown />
             </Modal>
         </View>
     )

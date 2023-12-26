@@ -11,7 +11,6 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-around',
         flexWrap: 'wrap',
-        marginTop: '20%',
     },
 
     Btn: {
@@ -42,10 +41,10 @@ const styles = StyleSheet.create({
     },
 
     titleText: {
-        fontSize: 60,
+        fontSize: 45,
         fontWeight: '900',
         color: '#c62f52',
-        padding: 20
+        paddingTop: 15
     }
 })
 
