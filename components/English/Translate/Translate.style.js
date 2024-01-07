@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#026efd',
         width: 200,
         height: 50,
-        marginTop: 50,
+        marginTop: 20,
         borderRadius: 10,
         justifyContent: 'center',
         alignItems: 'center'
@@ -56,7 +56,26 @@ const styles = StyleSheet.create({
 
     text: {
         fontSize: 20
-    }
+    },
+
+    translateBox: {},
+
+    copyBtn: {
+        alignSelf: 'center',
+        backgroundColor: '#026efd',
+        width: 150,
+        height: 50,
+        marginBottom: 20,
+        borderRadius: 10,
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+
+    btnCopyText: {
+        color: '#fff',
+        fontSize: 15,
+        fontWeight: 'bold'
+    },
 })
 
 export default styles

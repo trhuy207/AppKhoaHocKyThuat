@@ -38,8 +38,16 @@ const Translate = () => {
             )
         }
         else {
+            const onCopy = async() => {
+                
+            }
             return (
-                <Text style={styles.text}>{translatedText}</Text>
+                <View style={styles.translateBox}>
+                    <TouchableOpacity style={styles.copyBtn} onPress={() => onCopy()}>
+                        <Text style={styles.btnCopyText}>Copy</Text>
+                    </TouchableOpacity>
+                    <Text style={styles.text}>{translatedText}</Text>
+                </View>
             )
         }
     }
