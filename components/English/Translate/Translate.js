@@ -8,6 +8,7 @@ import styles from './Translate.style'
 const Translate = () => {
     const [inputText, setInputText] = useState('')
     const [translatedText, setTranslatedText] = useState('')
+    const [isLoading, setIsLoading] = useState(true)
 
     const onSend = useCallback((messages) => {
         getApiResp(messages)
@@ -25,8 +26,22 @@ const Translate = () => {
                 }
                 setTranslatedText(chatAIResp.text)
                 console.log(resp.data.choices[0].message.content)
+                setIsLoading(false)
             }
         })
+    }
+
+    const loadingText = () => {
+        if (isLoading == true) {
+            return (
+                <Text style={styles.text}>Đang tải ...</Text>
+            )
+        }
+        else {
+            return (
+                <Text style={styles.text}>{translatedText}</Text>
+            )
+        }
     }
 
     return (
@@ -45,11 +60,8 @@ const Translate = () => {
                     <TouchableOpacity style={styles.translateBtn} onPress={() => onSend(inputText)}>
                         <Text style={styles.btnText}>Translate</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity style={styles.translateBtn} onPress={() => console.log(inputText)}>
-                        <Text style={styles.btnText}>Translate</Text>
-                    </TouchableOpacity>
                     <Text style={styles.title}>Translated Text:</Text>
-                    <Text style={styles.text}>{translatedText}</Text>
+                    {loadingText()}
                 </View>
             </ScrollView>
         </SafeAreaView>
