@@ -28,6 +28,7 @@ import UpdateThoiKhoaBieu from '../ThoiKhoaBieu/UpdateThoiKhoaBieu/UpdateThoiKho
 import Tenses from '../English/Tenses/Tenses'
 import Grammar from '../English/Grammar/Grammar'
 import IrregularVerbs from '../English/IrregularVerbs/IrregularVerbs'
+import Translate from '../English/Translate/Translate';
 
 // English Tenses Child
 import FirstTense from '../English/Tenses/FirstTense/FirstTense'
@@ -290,6 +291,15 @@ const StackGroup = () => {
                 component={Grammar}
                 options={{
                     headerTitle: 'Ngữ Pháp Khác',
+                    headerBackTitle: 'Trở lại'
+                }}
+            />
+
+            <Stack.Screen
+                name='Translate'
+                component={Translate}
+                options={{
+                    headerTitle: 'Dịch',
                     headerBackTitle: 'Trở lại'
                 }}
             />

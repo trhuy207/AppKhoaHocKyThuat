@@ -40,6 +40,17 @@ const English = ({ navigation }) => {
                         />
                         <Text style={styles.btnText}>Ngữ Pháp Khác</Text>
                     </TouchableOpacity>
+
+                    <TouchableOpacity
+                        style={styles.button}
+                        onPress={() => navigation.navigate('Translate')}
+                    >
+                        <Image 
+                            style={styles.btnImage}
+                            source={require('../../assets/img/English/translate.png')}
+                        />
+                        <Text style={styles.btnText}>Dịch Anh - Việt</Text>
+                    </TouchableOpacity>
                 </View>
             </ScrollView>
         </View>
