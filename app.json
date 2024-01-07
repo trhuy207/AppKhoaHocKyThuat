@@ -6,7 +6,7 @@
     ],
     "name": "AH STUDY",
     "slug": "AppKhoaHocKyThuat",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -17,7 +17,7 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.quochuyph207.AppKhoaHocKyThuat",
-      "buildNumber": "2"
+      "buildNumber": "4"
     },
     "android": {
       "adaptiveIcon": {
