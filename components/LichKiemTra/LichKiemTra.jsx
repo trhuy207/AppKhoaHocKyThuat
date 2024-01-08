@@ -37,24 +37,6 @@ const LichKiemTra = ({ navigation }) => {
         )
     }
 
-    const handleDeleteTodo = (id) => {
-        Alert.alert('Thông báo', 'Bạn có chắc muốn xóa nội dung này không?', [
-            {
-                text: 'Có', 
-                onPress: () => db.transaction(tx => {
-                    tx.executeSql('DELETE FROM todo WHERE id = ?', [id],
-                        (txObj, resultSet) => console.log('Success'),
-                        (txObj, error) => console.log(error)
-                    )
-                })
-            },
-            {
-                text: 'Không', 
-                onPress: () => {}
-            }
-        ])
-    }
-
     const renderTodos = () => {
         return todo.map((todo, index) => {
             return (
