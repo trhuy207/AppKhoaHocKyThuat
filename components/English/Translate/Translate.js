@@ -1,5 +1,6 @@
-import { View, Text, TextInput, SafeAreaView, TouchableOpacity, ScrollView } from 'react-native'
+import { View, Text, TextInput, SafeAreaView, TouchableOpacity, ScrollView, Alert } from 'react-native'
 import React, { useState, useCallback } from 'react'
+import * as Clipboard from 'expo-clipboard';
 
 import GlobalApi from './Services/GlobalApi'
 
@@ -38,12 +39,15 @@ const Translate = () => {
             )
         }
         else {
-            const onCopy = async() => {
-                
-            }
+            const copyToClipboard = async () => {
+                await Clipboard.setStringAsync(translatedText);
+                Alert.alert('Thông Báo!', 'Copy thành công', [
+                    { text: 'OK'},
+                ]);
+            };
             return (
                 <View style={styles.translateBox}>
-                    <TouchableOpacity style={styles.copyBtn} onPress={() => onCopy()}>
+                    <TouchableOpacity style={styles.copyBtn} onPress={copyToClipboard}>
                         <Text style={styles.btnCopyText}>Copy</Text>
                     </TouchableOpacity>
                     <Text style={styles.text}>{translatedText}</Text>
