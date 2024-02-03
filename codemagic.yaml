@@ -3,8 +3,8 @@ workflows:
     environment:
       vars:
         BUNDLE_ID: "com.quochuyph207.AppKhoaHocKyThuat"
-        XCODE_WORKSPACE: "{{}}" # <-- Name of your Xcode workspace
-        XCODE_SCHEME: "{{}}" # <-- Name of your Xcode scheme
+        XCODE_WORKSPACE: "ahstudy" # <-- Name of your Xcode workspace
+        XCODE_SCHEME: "ahstudy" # <-- Name of your Xcode scheme
     scripts:
       # ...
       - name: Build ipa for distribution
